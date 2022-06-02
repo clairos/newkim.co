@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+/*-- CORES --
+Branco #E4E3DF
+Cinza #B8C2B9
+Preto #020B0F */
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
