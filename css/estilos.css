@@ -5,6 +5,42 @@ Branco #E4E3DF
 Cinza #B8C2B9
 Preto #020B0F */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Heebo', sans-serif;
+    background-color: #E4E3DF;
+    margin: 0 auto;
+    width: 100%;
+    min-width: max-content;
+    border: .5px solid #dadada;
+}
+
+header {
+    padding: 160px, 400px;
+    display: inline-block;
+}
+
+#menu {
+    width: 35px;
+    margin: 20px;
+}
+
+#search {
+    width: 20px;
+    margin: 25px;
+}
+
+#logo {
+    width: 200px;
+    margin-left: 400px;
+    margin-bottom: 20px;
+}
+
+#cart {
+    width: 31px;
+    margin: 25px;
+    margin-left: 530px;
 }
