@@ -18,30 +18,39 @@ body {
 }
 
 header {
-    padding: 160px, 400px;
-    display: inline-block;
+    min-width: max-content;
+    padding: auto;
+    transition: 1s;
+}
+
+header:hover {
+    -webkit-text-stroke: 1px #E4E3DF;
+    color: #E4E3DF;
+    background-color: #E4E3DF;
 }
 
 #menu {
     width: 35px;
-    margin: 20px;
+    margin-left: 60px;
+    margin-bottom: 13px;
 }
 
 #search {
     width: 20px;
-    margin: 25px;
+    margin-left: 30px;
+    margin-bottom: 19px;
 }
 
 #logo {
     width: 200px;
-    margin-left: 420px;
-    margin-bottom: 20px;
+    margin-left: 430px;
+    margin-bottom: 19px;
 }
 
 #cart {
     width: 31px;
-    margin: 25px;
-    margin-left: 500px;
+    margin: 20px;
+    margin-left: 510px;
 }
 
 .shop {
@@ -68,8 +77,10 @@ header {
 }
 
 .shop a:hover {
-    -webkit-text-stroke: 1px #E4E3DF;
-    color: transparent;
+    -webkit-text-stroke: 0.5px #E4E3DF;
+    color: #E4E3DF;
+    background-color: transparent;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 1);
 }
 
 .video {
