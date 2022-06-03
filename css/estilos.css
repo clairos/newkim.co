@@ -20,13 +20,15 @@ body {
 header {
     min-width: max-content;
     padding: auto;
-    transition: 1s;
+    filter: invert(1.0);
+    transition: 0.8s;
 }
 
 header:hover {
     -webkit-text-stroke: 1px #E4E3DF;
     color: #E4E3DF;
     background-color: #E4E3DF;
+    filter: invert(0);
 }
 
 #menu {
@@ -50,7 +52,7 @@ header:hover {
 #cart {
     width: 31px;
     margin: 20px;
-    margin-left: 510px;
+    margin-left: 500px;
 }
 
 .shop {
@@ -60,24 +62,25 @@ header:hover {
 .shop p {
     color: #E4E3DF;
     font-size: 18px;
-    font-weight: 700px;
+    font-weight: 600;
     margin-top: 390px;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .shop a {
     text-decoration: none;
     display: inline-block;
     color: #E4E3DF;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bolder;
     border: 2px solid #E4E3DF;
-    padding: 8px 30px;
+    padding: 5px 30px;
     margin-top: 6px;
     transition: 0.5s;
 }
 
 .shop a:hover {
-    -webkit-text-stroke: 0.5px #E4E3DF;
+    -webkit-text-stroke: 0.2px #E4E3DF;
     color: #E4E3DF;
     background-color: transparent;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 1);
