@@ -61,9 +61,9 @@ header:hover {
 
 .shop p {
     color: #E4E3DF;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    margin-top: 390px;
+    margin-top: 410px;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -71,11 +71,11 @@ header:hover {
     text-decoration: none;
     display: inline-block;
     color: #E4E3DF;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bolder;
     border: 2px solid #E4E3DF;
     padding: 5px 30px;
-    margin-top: 6px;
+    margin-top: 5px;
     transition: 0.5s;
 }
 
