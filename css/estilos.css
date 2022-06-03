@@ -15,7 +15,6 @@ body {
     margin: 0 auto;
     width: 100%;
     min-width: max-content;
-    border: .5px solid #dadada;
 }
 
 header {
@@ -35,12 +34,61 @@ header {
 
 #logo {
     width: 200px;
-    margin-left: 400px;
+    margin-left: 420px;
     margin-bottom: 20px;
 }
 
 #cart {
     width: 31px;
     margin: 25px;
-    margin-left: 530px;
+    margin-left: 500px;
+}
+
+.shop {
+    text-align: center;
+}
+
+.shop p {
+    color: #E4E3DF;
+    font-size: 18px;
+    font-weight: 700px;
+    margin-top: 390px;
+}
+
+.shop a {
+    text-decoration: none;
+    display: inline-block;
+    color: #E4E3DF;
+    font-size: 14px;
+    font-weight: bolder;
+    border: 2px solid #E4E3DF;
+    padding: 8px 30px;
+    margin-top: 6px;
+    transition: 0.5s;
+}
+
+.shop a:hover {
+    -webkit-text-stroke: 1px #E4E3DF;
+    color: transparent;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: auto;
+        height: 100%;
+    }
 }
