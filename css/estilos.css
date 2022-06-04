@@ -19,6 +19,7 @@ body {
 
 header {
     min-width: max-content;
+    max-width: 100%;
     padding: auto;
     filter: invert(1.0);
     transition: 0.8s;
@@ -33,33 +34,38 @@ header:hover {
 
 #menu {
     width: 35px;
-    margin-left: 60px;
+    max-width: 100%;
+    margin-left: 40px;
     margin-bottom: 13px;
 }
 
 #search {
     width: 20px;
+    max-width: 100%;
     margin-left: 30px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
 }
 
 #logo {
     width: 200px;
+    max-width: 100%;
     margin-left: 430px;
     margin-bottom: 19px;
 }
 
 #cart {
     width: 31px;
-    margin: 20px;
-    margin-left: 500px;
+    max-width: 100%;
+    margin: 19px;
+    margin-left: 520px;
 }
 
-.shop {
+.info {
     text-align: center;
+    max-width: 100%;
 }
 
-.shop p {
+.info p {
     color: #E4E3DF;
     font-size: 16px;
     font-weight: 600;
@@ -67,19 +73,20 @@ header:hover {
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.shop a {
+.info a {
     text-decoration: none;
     display: inline-block;
     color: #E4E3DF;
     font-size: 17px;
     font-weight: bolder;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     border: 2px solid #E4E3DF;
     padding: 5px 30px;
     margin-top: 5px;
     transition: 0.5s;
 }
 
-.shop a:hover {
+.info a:hover {
     -webkit-text-stroke: 0.2px #E4E3DF;
     color: #E4E3DF;
     background-color: transparent;
@@ -105,4 +112,54 @@ header:hover {
         width: auto;
         height: 100%;
     }
+}
+
+.shop {
+    text-align: center;
+    color: #020B0F;
+}
+
+.shop #collection {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.shop #quote {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.shop img {
+    width: 370px;
+    max-width: 100%;
+    padding: 1px 60px;
+    transition: 0.5s;
+}
+
+.shop img #dress1:hover {
+    background: url("img/model-dress1");
+}
+
+.description p {
+    text-align: center;
+    display: inline-block;
+}
+
+.shop a {
+    text-decoration: none;
+    display: inline-block;
+    color: #020B0F;
+    font-size: 17px;
+    font-weight: bolder;
+    border: 1px solid #020B0F;
+    padding: 5px 30px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.shop a:hover {
+    -webkit-text-stroke: 0.1px #020B0F;
+    color: #020B0F;
+    background-color: transparent;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
