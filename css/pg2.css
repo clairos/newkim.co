@@ -50,7 +50,8 @@ main {
   padding: 5%;
 }
 div {
-  font-family: 'Heebo', sans-serif;
+  font-family:'Heebo', sans-serif;
+  font-size: 12px;
   display: inline-block;
   justify-content: right;
 
