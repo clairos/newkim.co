@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+/*-- CORES --
+Branco #E4E3DF
+Cinza #B8C2B9
+Preto #020B0F */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  margin: 0 auto;
+  width: 100%;
+  min-width: max-content;
+}
+
+header {
+  min-width: max-content;
+  max-width: 100%;
+  padding: auto;
+  filter: invert(1.0);
+  transition: 0.8s;
+}
+
+#logo {
+  width: 200px;
+  max-width: 100%;
+  margin-left: 430px;
+  margin-bottom: 19px;
+}
+
+#cart {
+  width: 31px;
+  max-width: 100%;
+  margin: 19px;
+  margin-left: 520px;
+}
+
+#search {
+  width: 20px;
+  max-width: 100%;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 5%;
+}
+
+#model21 {
+  width: 300px;
+}
+
+#model21-2, #model21-3 {
+  width: 180px;
+}
