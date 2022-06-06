@@ -120,7 +120,7 @@ header:hover {
 }
 
 .shop #collection {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -129,20 +129,15 @@ header:hover {
     font-weight: 500;
 }
 
-.shop img {
-    width: 370px;
-    max-width: 100%;
-    padding: 1px 60px;
-    transition: 0.5s;
-}
-
-.shop img #dress1:hover {
-    background: url("img/model-dress1");
-}
-
-.description p {
-    text-align: center;
+#img1, #img2, #img3 {
     display: inline-block;
+    position: relative;
+}
+
+.shop img {
+    width: 350px;
+    align-items: center;
+    padding: 5px 45px;
 }
 
 .shop a {
@@ -151,6 +146,7 @@ header:hover {
     color: #020B0F;
     font-size: 17px;
     font-weight: bolder;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
     border: 1px solid #020B0F;
     padding: 5px 30px;
     margin-top: 5px;
