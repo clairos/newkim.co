@@ -25,6 +25,8 @@ header {
     min-width: max-content;
     max-width: 100%;
     padding: auto;
+    background-attachment: fixed;
+    background-size: cover;
     filter: invert(1.0);
     transition: 0.6s;
 }
@@ -35,6 +37,11 @@ header:hover {
     background-color: #E4E3DF;
     filter: invert(0);
 }
+/*
+.navbar {
+    position: sticky;
+    top: 0;
+}*/
 
 #menu {
     width: 35px;
@@ -90,7 +97,7 @@ header:hover {
     width: 145px;
     height: 40px;
     font-family: 'Heebo', sans-serif;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 15px;
     color: #E4E3DF;
     background-color: transparent;
@@ -111,14 +118,15 @@ header:hover {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #020B0F;
+    background-color: #E4E3DF;
+    font-weight: bolder;
     z-index: -1;
 }
 
 .btn-tp1:hover {
     background-color: transparent;
-    border: solid 1px #020B0F;
-    color: #E4E3DF;
+    text-shadow: 0px 0.5px 1px rgba(2, 11, 15, 1);
+    color: #020B0F;
 }
 
 .btn-tp1:hover::before {
@@ -155,6 +163,13 @@ header:hover {
     font-size: 30px;
     font-weight: 600;
     margin-top: 50px;
+    text-shadow: 0px 1px 1px rgba(2, 11, 15, 0.25);
+}
+
+.text #quote {
+    font-size: 21px;
+    font-weight: 500;
+    text-shadow: 0px 1px 2px rgba(2, 11, 15, 0.5);
 }
 
 .shop {
@@ -162,15 +177,77 @@ header:hover {
     color: #020B0F;
 }
 
-.shop:hover {
-    opacity: 1;
+figure {
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+}
+
+.model-blouse {
+    position: absolute;
+}
+
+.blouse {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shop img.blouse:hover {
+    opacity: 0;
+}
+
+.model-trousers {
+    position: absolute;
+}
+
+.trousers {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shop img.trousers:hover {
+    opacity: 0;
+}
+
+
+.model-dress3 {
+    position: absolute;
+}
+
+.dress3 {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shop img.dress3:hover {
+    opacity: 0;
+}
+
+
+.model-dress4 {
+    position: absolute;
+}
+
+.dress4 {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shop img.dress4:hover {
+    opacity: 0;
+}
+
+.shop img {
+    width: 270px;
+    align-items: center;
+    padding: 0px 10px;
 }
 
 .shop p {
     font-size: 14px;
     font-weight: bolder;
-    text-align: justify;
-    margin-left: 40px;
+    text-align: left;
+    margin-left: 12px;
 }
 
 .shop span {
@@ -178,17 +255,6 @@ header:hover {
     font-weight: bold;
     color: #8D928D;
     margin-left: 5px;
-}
-
-#img1, #img2, #img3, #img4 {
-    display: inline-block;
-    position: relative;
-}
-
-.shop img {
-    width: 300px;
-    align-items: center;
-    padding: 1px 35px;
 }
 
 .container {
@@ -229,6 +295,7 @@ header:hover {
 .btn-tp2:hover {
     background-color: #020B0F;
     border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
     color: #020B0F;
 }
 
