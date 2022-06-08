@@ -21,8 +21,6 @@ header {
   min-width: max-content;
   max-width: 100%;
   padding: auto;
-  filter: invert(1.0);
-  transition: 0.8s;
 }
 
 #logo {
@@ -48,12 +46,81 @@ header {
 
 main {
   padding: 5%;
+  font-family: 'Heebo', sans-serif;
 }
 
-#model21 {
-  width: 300px;
+.product {
+  display: flex;
+  justify-content: space-around;
+
 }
 
-#model21-2, #model21-3 {
+#model1 {
+  width: 330px;
+  justify-content: center;
+  flex-grow: 0.15;
+    
+}
+
+#model2, #model3 {
   width: 180px;
+ }
+
+.prod {
+ display: flex;
+ flex-direction: column;
+}
+
+.info {
+  align-items: flex-end;
+  font-family: 'Heebo', sans-serif;
+}
+
+.firstBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#colorBar { 
+  width: 140px;
+  float: left;
+  height: 30px;
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  border: 1px solid #020B0F;
+  align-self: center;
+}
+
+
+.secondBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+#sizeBar {
+  width: 140px;
+  float: left;
+  height: 30px;
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  border: 1px solid #020B0F;
+  align-self: center;
+}
+
+button {
+  width: 180px;
+  height: 50px;
+  border: 1px solid #020B0F;
+  cursor: pointer;
+  display: block;
+  margin: 5px;
+}
+
+#addcart {
+  background-color: #E4E3DF;
+}
+
+#buynow {
+  background-color: #020B0F;
+  color: #E4E3DF;
 }
