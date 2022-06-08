@@ -6,7 +6,7 @@ Cinza #B8C2B9
 Preto #020B0F */
 
 * {
-    box-sizing: border-box;
+     box-sizing: border-box;
 }
 
 body {
@@ -21,8 +21,6 @@ header {
   min-width: max-content;
   max-width: 100%;
   padding: auto;
-  filter: invert(1.0);
-  transition: 0.8s;
 }
 
 #logo {
@@ -57,10 +55,29 @@ div {
 
 }
 
+#collections {
+  display: flex;
+}
+
 #collections img {
   width: 300px;
   height: fit-content;
   padding: 0;
   margin-top: 10%;
   align-items: center;
+  justify-content: center;
+}
+
+#relBar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#selectBar {
+  width: 150px;
+  float: left;
+  height: 30px;
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  border: 1px solid #020B0F;
 }
