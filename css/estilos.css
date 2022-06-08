@@ -183,6 +183,19 @@ figure {
     margin: 0;
 }
 
+.model-dress2 {
+    position: absolute;
+}
+
+.dress2 {
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.shop img.dress2:hover {
+    opacity: 0;
+}
+
 .model-blouse {
     position: absolute;
 }
@@ -209,7 +222,6 @@ figure {
     opacity: 0;
 }
 
-
 .model-dress3 {
     position: absolute;
 }
@@ -220,20 +232,6 @@ figure {
 }
 
 .shop img.dress3:hover {
-    opacity: 0;
-}
-
-
-.model-dress4 {
-    position: absolute;
-}
-
-.dress4 {
-    position: relative;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.shop img.dress4:hover {
     opacity: 0;
 }
 
