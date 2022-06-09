@@ -23,12 +23,13 @@ body {
 
 header {
     min-width: max-content;
-    max-width: 100%;
-    padding: auto;
-    background-attachment: fixed;
-    background-size: cover;
+    height: 10vh;
+    padding: 0 50px;
     filter: invert(1.0);
     transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header:hover {
@@ -43,36 +44,50 @@ header:hover {
     top: 0;
 }*/
 
+.menu-search {
+    display: flex;
+}
+
 #menu {
     width: 35px;
     max-width: 100%;
-    margin-left: 40px;
-    margin-bottom: 13px;
 }
 
 #search {
     width: 20px;
     max-width: 100%;
-    margin-left: 30px;
-    margin-bottom: 20px;
+    margin-left: 40px;
+    align-self: center;
 }
 
 #logo {
     width: 200px;
     max-width: 100%;
-    margin-left: 430px;
-    margin-bottom: 19px;
 }
 
 #cart {
     width: 31px;
     max-width: 100%;
-    margin: 19px;
-    margin-left: 520px;
+}
+
+.index {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.videodiv {
+    width: max-content;
+    height: max-content;
 }
 
 .info {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
 }
 
@@ -80,7 +95,6 @@ header:hover {
     color: #E4E3DF;
     font-size: 16px;
     font-weight: 600;
-    margin-top: 410px;
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -104,10 +118,6 @@ header:hover {
     border: solid 1px #E4E3DF;
     cursor: pointer;
     z-index: 1;
-}
-
-.btn-tp1 {
-    overflow: hidden;
 }
 
 .btn-tp1::before {
@@ -143,14 +153,12 @@ header:hover {
 @media (min-aspect-ratio: 16/9){
     .video {
         width: 100%;
-        height: auto;
     }
 }
 
 @media (max-aspect-ratio: 16/9){
     .video {
         width: auto;
-        height: 100%;
     }
 }
 
@@ -194,6 +202,7 @@ figure {
 
 .shop img.dress2:hover {
     opacity: 0;
+    cursor: pointer;
 }
 
 .model-blouse {
@@ -207,6 +216,7 @@ figure {
 
 .shop img.blouse:hover {
     opacity: 0;
+    cursor: pointer;
 }
 
 .model-trousers {
@@ -220,6 +230,7 @@ figure {
 
 .shop img.trousers:hover {
     opacity: 0;
+    cursor: pointer;
 }
 
 .model-dress3 {
@@ -233,6 +244,7 @@ figure {
 
 .shop img.dress3:hover {
     opacity: 0;
+    cursor: pointer;
 }
 
 .shop img {
@@ -298,5 +310,81 @@ figure {
 }
 
 .btn-tp2:hover::before {
+    width: 100%;
+}
+
+.title-col {
+    display: flex;
+    font-size: large;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-bottom: solid 1px lightgray;
+}
+
+.scroll3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: solid 1px lightgray;
+}
+
+.scroll3 img {
+    width: 33vw;
+    padding: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #020B0F;
+}
+
+.description h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.description p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn3 {
+    position: relative;
+    width: 145px;
+    height: 40px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #E4E3DF;
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-tp3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: #E4E3DF;
+    z-index: -1;
+}
+
+.btn-tp3:hover {
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-tp3:hover::before {
     width: 100%;
 }
