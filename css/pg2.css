@@ -6,7 +6,7 @@ Cinza #B8C2B9
 Preto #020B0F */
 
 * {
-     box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 body {
@@ -80,4 +80,15 @@ div {
   font-family: 'Heebo', sans-serif;
   background-color: #E4E3DF;
   border: 1px solid #020B0F;
+}
+
+@media (min-width: 320px) {
+  
+  header {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
 }
