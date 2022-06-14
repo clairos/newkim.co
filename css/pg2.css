@@ -70,7 +70,7 @@ figure {
 figure img {
   width: 300px;
   align-items: center;
-  padding: 0px 10px;
+  padding: 30px 10px;
 }
 
 .model19-2 {
@@ -83,6 +83,48 @@ figure img {
 }
 
 figure img.model19:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.model24-2 {
+  position: absolute;
+}
+
+.model24 {
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+}
+
+figure img.model24:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.model26-2 {
+  position: absolute;
+}
+
+.model26 {
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+}
+
+figure img.model26:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.model21-2 {
+  position: absolute;
+}
+
+.model21 {
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+}
+
+figure img.model21:hover {
   opacity: 0;
   cursor: pointer;
 }
@@ -100,14 +142,16 @@ figure img.model19:hover {
   background-color: #E4E3DF;
   border: 1px solid #020B0F;
 }
-
-@media (min-width: 320px) {
+/* 
+@media (min-width: 375px) {
   
   header {
-    width: 100%;
+    vw: 100%;
+    vh: 100%;
   }
 
   main {
-    width: 100%;
+    vw: 100%;
+    vh: 100%
   }
-}
+} */

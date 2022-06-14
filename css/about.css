@@ -65,15 +65,16 @@ div {
 .texto {
   font-family: 'Heebo', sans-serif;
   text-align: justify;
-  margin: 20px;
-  width: 90%;
+  margin: 40px;
+  width: 50%;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 
 .background {
   opacity: 0.7;
   display: block;
   width: 20%;
-  margin: 10px;
+  margin: 70px;
 }
 
 .imagem {
@@ -82,3 +83,13 @@ div {
   position: relative;
   width: 0;
 }
+
+/* @media (min-width: 375px) {
+  header {
+    viewport-fit: 100%;
+  }
+
+  div {
+    flex-direction: column;
+  }
+} */
