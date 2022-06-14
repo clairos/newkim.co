@@ -57,15 +57,34 @@ div {
 
 #collections {
   display: flex;
-}
-
-#collections img {
-  width: 300px;
-  height: fit-content;
-  padding: 0;
-  margin-top: 10%;
   align-items: center;
   justify-content: center;
+}
+
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+figure img {
+  width: 300px;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.model19-2 {
+  position: absolute;
+}
+
+.model19 {
+  position: relative;
+  transition: opacity 0.3s ease-in-out;
+}
+
+figure img.model19:hover {
+  opacity: 0;
+  cursor: pointer;
 }
 
 #relBar {
