@@ -441,11 +441,13 @@ footer {
     width: 300px;
     max-width: 100%;
     padding: 10px;
-    margin-right: 70px;
+    margin-right: 100px;
     filter: invert(1);
 }
 
 .right {
+    display: flex;
+    align-items: center;
     margin-right: 25px;
 }
 
@@ -456,7 +458,7 @@ footer {
 }
 
 .ig img {
-    width: 50px;
+    width: 35px;
     max-width: 100%;
     filter: invert(1);
 }
