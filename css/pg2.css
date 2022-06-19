@@ -18,9 +18,12 @@ body {
 }
 
 header {
-  min-width: max-content;
-  max-width: 100%;
-  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  max-width: 100vw;
+  margin-top: 1%;
 }
 
 #logo {
@@ -41,18 +44,12 @@ header {
   width: 20px;
   max-width: 100%;
   margin-left: 30px;
-  margin-bottom: 20px;
 }
 
-main {
-  padding: 5%;
-}
 div {
   font-family:'Heebo', sans-serif;
   font-size: 12px;
-  display: inline-block;
-  justify-content: right;
-
+  display: flex;
 }
 
 #collections {
@@ -132,6 +129,8 @@ figure img.model21:hover {
 #relBar {
   display: flex;
   justify-content: flex-end;
+  margin-right: 5%;
+  margin-top: 2%;
 }
 
 #selectBar {
@@ -142,16 +141,63 @@ figure img.model21:hover {
   background-color: #E4E3DF;
   border: 1px solid #020B0F;
 }
-/* 
-@media (min-width: 375px) {
-  
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #020B0F;
+  max-width: 100vw;
+}
+
+.contact {
+  display: flex;
+  color: #E4E3DF;
+  font-size: 10px;
+  margin-left: 15px;
+  padding: 10px;
+}
+
+.logo2 img {
+  width: 300px;
+  max-width: 100%;
+  padding: 10px;
+  margin-right: 100px;
+  filter: invert(1);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.aboutfooter {
+  text-decoration: none;
+  color: #E4E3DF;
+  margin-right: 20px;
+}
+
+.ig img {
+  width: 35px;
+  max-width: 100vw;
+  filter: invert(1);
+}
+
+@media (max-width: 1000px) {
+  body {
+    width: 100vw;
+  }
+}
+
+
+@media (max-width: 875px) {
   header {
-    vw: 100%;
-    vh: 100%;
+    max-width: 100%;
   }
 
-  main {
-    vw: 100%;
-    vh: 100%
+  footer {
+    max-width: 100vw;  
   }
-} */
+}
