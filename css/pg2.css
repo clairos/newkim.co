@@ -26,24 +26,22 @@ header {
   margin-top: 1%;
 }
 
+#search {
+  width: 20px;
+  max-width: 100%;
+  margin-left: 2%;
+}
+
 #logo {
   width: 200px;
   max-width: 100%;
-  margin-left: 430px;
   margin-bottom: 19px;
 }
 
 #cart {
   width: 31px;
   max-width: 100%;
-  margin: 19px;
-  margin-left: 520px;
-}
-
-#search {
-  width: 20px;
-  max-width: 100%;
-  margin-left: 30px;
+  margin-right: 1%;
 }
 
 div {
@@ -54,20 +52,32 @@ div {
 
 #collections {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  width: 98vw;
+  align-items: flex-start;
   justify-content: center;
+  height: 80vh;
+  margin-bottom: 5%;
 }
 
 figure {
-  display: inline-block;
+  position: relative;
   text-align: center;
   margin: 0;
+  width: 20vw;
+  height: 68vh;
 }
 
 figure img {
-  width: 300px;
+  width: 100%;
+  height: 100%;
   align-items: center;
-  padding: 30px 10px;
+  padding: 30px 10px 0px;
+}
+
+.model {
+  height: 60vh;
+  position: relative;
 }
 
 .model19-2 {
@@ -129,7 +139,7 @@ figure img.model21:hover {
 #relBar {
   display: flex;
   justify-content: flex-end;
-  margin-right: 5%;
+  margin-right: 3vw;
   margin-top: 2%;
 }
 
@@ -155,7 +165,7 @@ footer {
   display: flex;
   color: #E4E3DF;
   font-size: 10px;
-  margin-left: 15px;
+  margin-left: 1%;
   padding: 10px;
 }
 
@@ -163,14 +173,13 @@ footer {
   width: 300px;
   max-width: 100%;
   padding: 10px;
-  margin-right: 100px;
   filter: invert(1);
 }
 
 .right {
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 1%;
 }
 
 .aboutfooter {
@@ -185,19 +194,69 @@ footer {
   filter: invert(1);
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+  header {
+    width: 100vw;
+  }
+
   body {
     width: 100vw;
   }
+
+  figure img {
+    height: 45vh;
+ }
+
+ footer {
+  width: 100vw;
+ }
 }
 
 
-@media (max-width: 875px) {
+@media screen and (max-width: 875px) {
   header {
     max-width: 100%;
   }
 
   footer {
     max-width: 100vw;  
+  }
+
+  #collections {
+    height: fit-content;
+    gap: 20%;
+  }
+
+  .model {
+    margin-bottom: 10%;
+  }
+
+  figure > h2 {
+    font-size: 16px !important;
+  }
+
+  figure > h3 {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .logo2 img {
+    display: none;
+  }
+
+  #collections {
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  figure {
+    width: 60vw;
+    height: 40vh;
+  }
+
+  .model {
+    justify-self: center;
   }
 }
