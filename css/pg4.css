@@ -9,6 +9,10 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*HEADER-CABEÇALHO*/
 header{
     background-color: #020B0F;
