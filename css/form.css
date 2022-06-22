@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Heebo', sans-serif;
-    background-color: #E4E3DF;
+    background-color: #B8C2B9;
     margin: 0 auto;
     width: 100%;
     min-width: max-content;
@@ -29,7 +29,7 @@ header {
     justify-content: space-between;
     height: 10vh;
     padding: 0 50px;
-    max-width: 100vw;
+    max-width: 100%;
     background-color: #020B0F;
 }
 
@@ -72,23 +72,63 @@ form {
     justify-content: center;
 }
 
+.bg {
+    background-color: #E4E3DF;
+    padding: 50px 100px;
+}
+
+.shippingInfo, .contactInfo {
+    width: 50vw;
+}
+
+.flex {
+    display: flex;
+    gap: 3px;
+}
+
+.itens-center {
+    align-items: center;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 33%;
+}
+
 input, select {
+    color: #6d6d6d;
     border: solid 1px #B8C2B9;
     border-radius: 0%;
     border-color: #B8C2B9;
     height: 27px;
     padding: 5px;
-    margin: 2px;
+    margin: 2px 0;
 }
 
 main a {
-    text-decoration: none;
+    font-weight: bold;
     color: #020B0F;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.button a {
+    margin-right: 3%;
 }
 
 .btn {
     position: relative;
-    margin-left: 100%;
     width: 145px;
     height: 40px;
     font-family: 'Heebo', sans-serif;
@@ -131,8 +171,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #020B0F;
-    max-width: 100vw;
-    margin-top: 2%;
+    max-width: 100%;
 }
 
 .contact {
