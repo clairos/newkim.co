@@ -11,13 +11,19 @@ body {
 
 /*HEADER-CABEÇALHO*/
 header{
-    background-color: #020B0F;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-width: max-content;
+    height: 10vh;
+    padding: 0 50px;
+    background-color: #020B0F;
+    transition: 0.6s;
+    
 }
 
 header img  {
+    
     filter: invert(1);
 }
 
@@ -29,9 +35,7 @@ header img  {
     width: 15px;
 }
 
-.botaotxt{
-    background-color: #020B0F;
-}
+
 
 .logo1{
     width: 200px; 
