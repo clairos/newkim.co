@@ -6,7 +6,11 @@ Cinza #B8C2B9
 Preto #020B0F */
 
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,21 +34,17 @@ header {
 #logo {
   width: 200px;
   max-width: 100%;
-  margin-left: 430px;
   margin-bottom: 19px;
 }
 
 #cart {
   width: 31px;
   max-width: 100%;
-  margin: 19px;
-  margin-left: 520px;
 }
 
 #search {
   width: 20px;
   max-width: 100%;
-  margin-left: 30px;
   margin-bottom: 20px;
 }
 
@@ -54,20 +54,21 @@ main {
 
 .product {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 5%;
-
+  width: 98vw;
 }
 
 #model1 {
-  width: 330px;
+  width: 30vw;
   justify-content: center;
   flex-grow: 0.15;
     
 }
 
 #model2, #model3 {
-  width: 180px;
+  width: 16vw;
  }
 
 .prod {
@@ -134,7 +135,6 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: #020B0F;
-  margin-top: 5%;
   max-width: 100vw;
 }
 
@@ -142,7 +142,7 @@ footer {
   display: flex;
   color: #E4E3DF;
   font-size: 10px;
-  margin-left: 15px;
+  margin-left: 1%;
   padding: 10px;
 }
 
@@ -150,14 +150,13 @@ footer {
   width: 300px;
   max-width: 100%;
   padding: 10px;
-  margin-right: 100px;
   filter: invert(1);
 }
 
 .right {
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 1%;
 }
 
 .aboutfooter {
@@ -172,7 +171,21 @@ footer {
   filter: invert(1);
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
+  header {
+    width: 100vw;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  footer {
+    width: 100vw;  
+  }
+}
+
+@media screen and (max-width: 875px) {
   header {
     max-width: 100%;
   }
@@ -182,13 +195,28 @@ footer {
   }
 }
 
-@media (max-width: 875px) {
-  header {
-    max-width: 100%;
+@media screen and (max-width: 675px) {
+  #model1 {
+    width: 60vw;
   }
 
-  footer {
-    max-width: 100vw;  
+   #model2, #model3 {
+    width: 30vw;
   }
 
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prod {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+
+   .logo2 img {
+    display: none;
+   }
 }
