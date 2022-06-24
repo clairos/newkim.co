@@ -14,7 +14,7 @@
             <form class="botaochefe" action="#" method="post" >
                
                 <button class="botao1" type="submit"><img class="botao" src="./img/search.png" alt="pesquisa"   /><i class="fas fa-search"></i></button>
-                <input class="botaotxt" type="text" name="search" id="search" placeholder="" required>
+               
                 
             </form>
               <!--LOGO-->
@@ -25,17 +25,23 @@
          <!--CONTEUDO PRINCIPAL-->
         <main>
              <!--CARRINHO-->
-             <h1 class="texto1">CARRINHO</h1>
+             <h1 class="textoA">CARRINHO</h1>
             <section>
                 <ul>
                     <li>
                           <!--ITEM-->
-                          
+                        <div style="display:inline-block;vertical-align:top;" >  
                         <img class="blusa" src="./img/blouse.jpg" alt="blouse" /> 
+                        </div>
+                        <div style="display:inline-block;">
                         <h1>Camisa Estampada</h1>
-                        
+                        </div>
                           <!--QUANTIDADE-->
+                          <div style="display:inline-block;">
                         <h2>QTD</h2>
+                        </div>
+
+                            <div style="display:inline-block;">
                             <select id="Quantidade">
                                 <option value="" >Selecione a Quantidade</option>
                                 <option value="1" >1</option>
@@ -48,7 +54,9 @@
                                 <option value="8" >8</option>
                                 <option value="9" >9</option>
                             </select>
+                            </div>
                               <!--COR-->
+                        <div style="display:inline-block;">
                         <h2>COLOR</h2>
                         <select id="Cor">
                             <option value="" >Selecione a Cor</option>
@@ -62,7 +70,9 @@
                             <option value="LILAS" >Lilas</option>
                             <option value="VERMELHO" >Vermelho</option>
                         </select>
+                        </div>
                           <!--TAMANHO-->
+                        <div style="display:inline-block;">
                         <h2>SIZE</h2>
                         <select id=Size>
                             <option value="" >Selecione a Size</option>
@@ -72,19 +82,29 @@
                             <option value="G" >G</option>
                             <option value="GG" >GG</option>
                             <option value="XG" >XG</option>
-                                  <!--PREÇO-->
-                                  <h3>R$00,00</h3> 
+                            
+                                  
 
                         </select>
+                        </div>
+                        <!--PREÇO-->
+                        <h3>R$00,00</h3> 
                     </li>
                     <li>
                         <!--ITEM-->
-                        <img class="vestido" src="./img/dress4.jpg" alt="vestido4" /> 
-                        <h1>Vestido Estampada</h1>
-                        
-                          <!--QUANTIDADE-->
+                        <div style="display:inline-block;vertical-align:top;" >
+                            <img class="vestido" src="./img/dress4.jpg" alt="vestido4" /> 
+                        </div>    
+                            <div style="display:inline-block;">
+                            <h1>Vestido Estampada</h1>
+                            </div>
+                             <!--QUANTIDADE-->
+                          <div style="display:inline-block;">
                         <h2>QTD</h2>
-                            <select id=Quantidade>
+                        </div>
+
+                            <div style="display:inline-block;">
+                            <select id="Quantidade">
                                 <option value="" >Selecione a Quantidade</option>
                                 <option value="1" >1</option>
                                 <option value="2" >2</option>
@@ -96,9 +116,11 @@
                                 <option value="8" >8</option>
                                 <option value="9" >9</option>
                             </select>
+                            </div>
                               <!--COR-->
+                        <div style="display:inline-block;">
                         <h2>COLOR</h2>
-                        <select id=Cor>
+                        <select id="Cor">
                             <option value="" >Selecione a Cor</option>
                             <option value="BRANCA" >Branca</option>
                             <option value="PRETA" >Preta</option>
@@ -110,7 +132,9 @@
                             <option value="LILAS" >Lilas</option>
                             <option value="VERMELHO" >Vermelho</option>
                         </select>
+                        </div>
                           <!--TAMANHO-->
+                        <div style="display:inline-block;">
                         <h2>SIZE</h2>
                         <select id=Size>
                             <option value="" >Selecione a Size</option>
@@ -120,10 +144,13 @@
                             <option value="G" >G</option>
                             <option value="GG" >GG</option>
                             <option value="XG" >XG</option>
-                                  <!--PREÇO-->
-                                  <h3>R$00,00 </h3> 
+                            
+                                  
 
                         </select>
+                        </div>
+                        <!--PREÇO-->
+                        <h3>R$00,00</h3> 
                     </li>
                 </ul>
             </section>
