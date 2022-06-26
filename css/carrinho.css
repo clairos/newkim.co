@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Heebo', sans-serif;
-    background-color: #B8C2B9;
+    /* background-color: #B8C2B9; */
     margin: 0 auto;
     width: 100%;
     min-width: max-content;
@@ -53,75 +53,138 @@ header {
     margin: 19px;
     filter: invert(1);
 }
-/* CONTEUDO */
-#Container-Pai { 
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-right: 20px;
-}
-
-#Container-Produtos {
-    display:block;
-    width: 57%;
-    height: 100%;
-}
-
+/* CONTEUDO e tag section */
+/* div da lista */
 #Estilo-Produtos {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 80px;
+    left: 45rem;
     transform: translate(-50%, -50%);
-
-    
-}
-#produtos {  
-    background-color: #E4E3DF;
-    margin-top: 100px;
-    margin-right: 60px;
+    margin-bottom: -18%;
+    margin-right: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    height: 69vh;
+    align-items: flex-start;  
 }
-
+/* titulo carrinho */
+.car{
+    font-family: 'Heebo', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 15%;
+    align-items: center;
+}
+/* tag p */
 .produto{
     font-family: 'Heebo', sans-serif;
     font-size: 25px;
     font-weight: bold;
-    margin-bottom: 65%;
-    margin-left: 10%;
+    margin-right: -220px;
+    margin-bottom: 200px;
+    white-space: nowrap;
 } 
+.ls-label{
+    appearance: none;
+    border: 1px solid #E4E3DF;
+    font-size: 15px;
+}
+ 
+/* b{
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    margin-top: 200px;
+    white-space: nowrap;
+}  */
+/* tag b */
+
 #Quantidade, 
 #Cor, 
 #Size {
     display: block;
     position: relative;
-    overflow: hidden;
-    height: 20px; /*ALTERE PARA O TAMANHO DESEJADO*/
-    width: 35px;
-    margin: 0 0px;
     box-sizing: border-box;
-    flex-wrap: wrap;
-    padding-top: 1rem;
-    margin-left: 10;
-
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px;
 }
+/* barra divisoria */
 hr{
     border-color: #E4E3DF;
     box-sizing: border-box;
-    width: 90%;
+    width: 100%;
+    margin-top: -65px;
+    margin-bottom: -40px;
 }
+/* imagens */
 li img {
-    width: 190px;
+    width: 16%;
     padding: 20px;
+    margin: 54px;
 
 }
+/* lista li */
 li{
     display: flex;
     align-items: center;
-    list-style: none
+    /* list-style: none; */
+}
+/* VALOR DO PRODUTO  */
+.preco{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 100%;
+    text-shadow: 0px 1px 1px rgba(2, 11, 15, 0.25);
+
+}
+/* PREÇO TOTAL  */
+.total{
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 12%;
+    margin-left: 100%;
+    text-shadow: 0px 1px 1px rgba(2, 11, 15, 0.25);
+    white-space: nowrap;
+}
+/* BOTÃO */
+.btn-compra {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    width: 145px;
+    height: 50px;
+    margin-left: 102%;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #E4E3DF;
+    background-color:#020B0F;
+    border: solid 0.5px #000000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-compra::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: #E4E3DF;
+    font-weight: bolder;
+    z-index: -1;
+}
+
+.btn-compra:hover {
+    background-color: transparent;
+    text-shadow: 0px 0.5px 1px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-:hover::before {
+    width: 100%;
 }
 /* scrollbar */
 ::-webkit-scrollbar{
