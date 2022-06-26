@@ -84,6 +84,7 @@ header {
     margin-bottom: 200px;
     white-space: nowrap;
 } 
+/* label  */
 .ls-label{
     appearance: none;
     border: 1px solid #E4E3DF;
