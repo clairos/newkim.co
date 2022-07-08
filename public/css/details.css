@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+/*-- CORES --
+Branco #E4E3DF
+Cinza #B8C2B9
+Preto #020B0F */
+
+* {
+   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  margin: 0 auto;
+  width: 100%;
+  min-width: max-content;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0 50px;
+  max-width: 100vw;
+  margin-top: 1%;
+}
+
+.menu-search {
+    display: flex;
+}
+
+#menu {
+  width: 35px;
+  max-width: 100%;
+}
+
+#logo {
+  width: 200px;
+  max-width: 100%;
+  margin-bottom: 19px;
+}
+
+#cart {
+  width: 31px;
+  max-width: 100%;
+}
+
+#search {
+  width: 20px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+main {
+  font-family: 'Heebo', sans-serif;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5%;
+  width: 98vw;
+}
+
+#model1 {
+  width: 30vw;
+  justify-content: center;
+  flex-grow: 0.15;
+    
+}
+
+#model2, #model3 {
+  width: 16vw;
+ }
+
+.prod {
+ display: flex;
+ flex-direction: column;
+}
+
+.info {
+  align-items: flex-end;
+  font-family: 'Heebo', sans-serif;
+}
+
+.firstBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#colorBar { 
+  width: 140px;
+  float: left;
+  height: 30px;
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  border: 1px solid #020B0F;
+  align-self: center;
+}
+
+
+.secondBar{
+  display: flex;
+  justify-content: space-between;
+}
+
+#sizeBar {
+  width: 140px;
+  float: left;
+  height: 30px;
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  border: 1px solid #020B0F;
+  align-self: center;
+}
+
+button {
+  width: 180px;
+  height: 50px;
+  border: 1px solid #020B0F;
+  cursor: pointer;
+  display: block;
+  margin: 5px;
+}
+
+#addcart {
+  background-color: #E4E3DF;
+}
+
+#buynow {
+  background-color: #020B0F;
+  color: #E4E3DF;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #020B0F;
+  max-width: 100vw;
+}
+
+.contact {
+  display: flex;
+  color: #E4E3DF;
+  font-size: 10px;
+  margin-left: 1%;
+  padding: 10px;
+}
+
+.logo2 img {
+  width: 300px;
+  max-width: 100%;
+  padding: 10px;
+  filter: invert(1);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+
+.aboutfooter {
+  text-decoration: none;
+  color: #E4E3DF;
+  margin-right: 20px;
+}
+
+.ig img {
+  width: 35px;
+  max-width: 100vw;
+  filter: invert(1);
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    width: 100vw;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  footer {
+    width: 100vw;  
+  }
+}
+
+@media screen and (max-width: 875px) {
+  header {
+    max-width: 100%;
+  }
+
+  footer {
+    max-width: 100vw;  
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #model1 {
+    width: 60vw;
+  }
+
+   #model2, #model3 {
+    width: 30vw;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prod {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+
+   .logo2 img {
+    display: none;
+   }
+}

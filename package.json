@@ -1,0 +1,30 @@
+{
+  "name": "pi",
+  "version": "1.0.0",
+  "description": "<img width=\"400px\" src=\"https://www.tubeshowroom.com/wp-content/uploads/2020/06/MINJUKIM@4x-8.png\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clairos/newkim.co.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clairos/newkim.co/issues"
+  },
+  "homepage": "https://github.com/clairos/newkim.co#readme",
+  "dependencies": {
+    "express-generator": "^4.16.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+}
