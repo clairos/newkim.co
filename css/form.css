@@ -33,6 +33,18 @@ header {
     background-color: #020B0F;
 }
 
+
+.menu-search {
+    display: flex;
+}
+
+#menu {
+    width: 35px;
+    max-width: 100%;
+    filter: invert(1);
+}
+
+
 #search {
     width: 20px;
     max-width: 100%;

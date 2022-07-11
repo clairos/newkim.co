@@ -30,6 +30,16 @@ header {
   margin-top: 1%;
 }
 
+.menu-search {
+  display: flex;
+}
+
+#menu {
+  width: 35px;
+  max-width: 100%;
+}
+
+
 #search {
   width: 20px;
   max-width: 100%;
