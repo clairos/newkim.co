@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include('/partials/head')  %> 
-  <link rel="stylesheet" href="/css/details.css">
+  <%- include('partials/head')  %> 
+  <link rel="stylesheet" href="css/details.css">
 </head>
 <body>
-  <%- include('/partials/header')  %> 
+  <%- include('partials/header')  %> 
   <main>
     <div class="product">
       <div class="prod">
@@ -35,11 +35,15 @@
           </select>
         </div>
         <p>Size Chart</p>
-        <button id="addcart">ADD TO CART</button>
-        <button id="buynow">BUY NOW</button>
+        <a href="/cart">
+          <button id="addcart">ADD TO CART</button>
+        </a>
+        <a href="">
+          <button id="buynow">BUY NOW</button>
+        </a>
       </div>
     </div>
   </main>
-  <%- include('/partials/footer') %>
+  <%- include('partials/footer') %>
 </body>
 </html>
