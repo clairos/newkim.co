@@ -21,8 +21,7 @@ body {
     min-width: max-content;
 }
 
-/* ----- HEADER ----- */
-
+/* --- I ----- HEADER ----- */
 header {
     display: flex;
     align-items: center;
@@ -35,37 +34,37 @@ header {
 
 .menu-search {
     display: flex;
-  }
+}
   
-  #menu {
+#menu {
     width: 35px;
     max-width: 100%;
     filter: invert(1);
-  }
+}
   
-  #search {
+#search {
     width: 20px;
     max-width: 100%;
     margin-left: 20%;
     align-self: center;
     filter: invert(1);
-  }
+}
   
-  #logo {
+#logo {
     width: 200px;
     max-width: 100%;
     margin-right: 1%;
     filter: invert(1);
-  }
+}
   
-  #cart {
+#cart {
     width: 31px;
     max-width: 100%;
     filter: invert(1);
-  } 
+} 
+/* --- F ----- HEADER ----- */
 
-/* ----- MAIN ----- */
-
+/* --- I ----- MAIN ----- */
 main {
     display: flex;
     align-items: center;
@@ -172,9 +171,9 @@ main a {
 .btn-tp1:hover::before {
     width: 100%;
 }
+/* --- F ----- MAIN ----- */
 
-/* ----- FOOTER ----- */
-
+/* --- I ----- FOOTER ----- */
 footer {
     display: flex;
     align-items: center;
@@ -215,9 +214,12 @@ footer {
     max-width: 100%;
     filter: invert(1);
 }
+/* --- F ----- FOOTER ----- */
 
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
 @media screen and (max-width: 675px) {
     .logo2 img {
       display: none;
     }
 }
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */

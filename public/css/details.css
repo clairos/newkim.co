@@ -181,6 +181,7 @@ footer {
   filter: invert(1);
 }
 
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
 @media screen and (max-width: 1000px) {
   header {
     width: 100vw;
@@ -230,3 +231,4 @@ footer {
     display: none;
    }
 }
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */

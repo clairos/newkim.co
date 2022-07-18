@@ -21,6 +21,7 @@ body {
   min-width: max-content;
 }
 
+/* --- I ----- HEADER ----- */
 header {
   display: flex;
   align-items: center;
@@ -57,7 +58,9 @@ header {
   width: 31px;
   max-width: 100%;
 } 
+/* --- F ----- HEADER ----- */
 
+/* --- I ----- MAIN ----- */
 div {
   font-family:'Heebo', sans-serif;
   font-size: 12px;
@@ -165,8 +168,9 @@ figure img.model21:hover {
   background-color: #E4E3DF;
   border: 1px solid #020B0F;
 }
+/* --- F ----- MAIN ----- */
 
-
+/* --- I ----- FOOTER ----- */
 footer {
   display: flex;
   align-items: center;
@@ -207,7 +211,9 @@ footer {
   max-width: 100%;
   filter: invert(1);
 }
+/* --- F ----- FOOTER ----- */
 
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
 @media screen and (max-width: 1000px) {
   header {
     width: 100vw;
@@ -274,3 +280,4 @@ footer {
     justify-self: center;
   }
 }
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */

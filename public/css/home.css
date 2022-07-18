@@ -20,6 +20,7 @@ body {
     width: 100%;
 }
 
+/* --- I ----- HEADER ----- */
 header {
     display: flex;
     align-items: center;
@@ -65,7 +66,9 @@ header:hover {
     width: 31px;
     max-width: 100%;
 } 
+/* --- F ----- HEADER ----- */
 
+/* --- I ----- MAIN ----- */
 .info {
     display: flex;
     flex-direction: column;
@@ -158,117 +161,6 @@ header:hover {
     bottom: 0;
     z-index: -1;
 }
-
-@media (min-width: 1100px){
-    .videoauto {
-        width: 100%;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .videoauto {
-        width: 100%;
-        height: 100vh;
-    }
-}
-
-@media (max-width: 1099px){
-    .videoauto {
-        display: none;
-    }
-
-    header {
-        filter: invert(0);
-        width: 100%;
-    }
-
-    .index {
-        height: 80vh;
-    }
-
-    #bg-img {
-        width: 100%;
-    }
-
-    .img-bg {
-        display: flex;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    .info p {
-        color: #E4E3DF;
-        text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
-    }
-
-    .btn {
-        text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-    }
-
-    .scroll2 {
-        margin-top: 15%;
-    }
-}
-
-@media (max-width: 675px) {
-     .img-bg {
-        display: none;
-    } 
-
-    header {
-        filter: invert(1.0);
-    }
-
-    #search {
-        display: none;
-    }
-
-    #bg-phone {
-        width: 100%;
-    }
-
-    .img-bg-phone {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-        object-fit: cover;
-    }
-
-    .btn {
-        box-shadow: none;
-    }
-
-    .title-col {
-        justify-content: center;
-    }
-
-    .scroll3 {
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .scroll3 img {
-        width: 100%!important;
-    }
-
-    .btn3 {
-        margin-bottom: 10%;
-    }
-
-    .scroll4 {
-        display: none;
-    }
-}
-
 
 .text {
     text-align: center;
@@ -521,21 +413,9 @@ figure {
     pointer-events: none;
 }
 
+/* --- F ----- MAIN ----- */
 
-@media (min-aspect-ratio: 16/9){
-    .videoauto2 {
-        width: 100%;
-        height: 100vh;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .videoauto2 {
-        width: 100%;
-        height: 100vh;
-    }
-}
-
+/* --- I ----- FOOTER ----- */
 footer {
     display: flex;
     align-items: center;
@@ -576,6 +456,134 @@ footer {
     max-width: 100%;
     filter: invert(1);
 }
+/* --- F ----- FOOTER ----- */
+
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
+
+@media (min-width: 1100px){
+    .videoauto {
+        width: 100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .videoauto {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1099px){
+    .videoauto {
+        display: none;
+    }
+
+    header {
+        filter: invert(0);
+        width: 100%;
+    }
+
+    .index {
+        height: 80vh;
+    }
+
+    #bg-img {
+        width: 100%;
+    }
+
+    .img-bg {
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .info p {
+        color: #E4E3DF;
+        text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+    }
+
+    .btn {
+        text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    .scroll2 {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 675px) {
+     .img-bg {
+        display: none;
+    } 
+
+    header {
+        filter: invert(1.0);
+    }
+
+    #search {
+        display: none;
+    }
+
+    #bg-phone {
+        width: 100%;
+    }
+
+    .img-bg-phone {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .btn {
+        box-shadow: none;
+    }
+
+    .title-col {
+        justify-content: center;
+    }
+
+    .scroll3 {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .scroll3 img {
+        width: 100%!important;
+    }
+
+    .btn3 {
+        margin-bottom: 10%;
+    }
+
+    .scroll4 {
+        display: none;
+    }
+}
+
+
+@media (min-aspect-ratio: 16/9){
+    .videoauto2 {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .videoauto2 {
+        width: 100%;
+        height: 100vh;
+    }
+}
 
 @media (max-width: 675px){
     .logo2 {
@@ -586,3 +594,4 @@ footer {
         margin-top: 2%;
     }
 }
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */

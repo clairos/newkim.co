@@ -21,6 +21,7 @@ body {
     min-width: max-content;
 }
 
+/* --- I ----- HEADER ----- */
 header {
     display: flex;
     align-items: center;
@@ -34,48 +35,51 @@ header {
 
 .menu-search {
     display: flex;
-  }
-  
-  #menu {
+}
+
+#menu {
     width: 35px;
     max-width: 100%;
     filter: invert(1);
-  }
-  
-  #search {
+}
+
+#search {
     width: 20px;
     max-width: 100%;
     margin-left: 20%;
     align-self: center;
     filter: invert(1);
-  }
-  
-  #logo {
+}
+
+#logo {
     width: 200px;
     max-width: 100%;
     margin-right: 1%;
     filter: invert(1);
-  }
-  
-  #cart {
+}
+
+#cart {
     width: 31px;
     max-width: 100%;
     filter: invert(1);
-  } 
+}
+/* --- F ----- HEADER ----- */
 
+/* --- I ----- MAIN ----- */
 main {
     font-family: 'Heebo', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-.carrinho{
+.carrinho {
     font-family: 'Heebo', sans-serif;
     text-transform: uppercase;
     margin-left: 10%;
 }
 
-#product1, #product2 {
+#product1,
+#product2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -92,7 +96,8 @@ main {
     margin-top: 0;
 }
 
-.imagem1, .imagem2 {
+.imagem1,
+.imagem2 {
     width: 10vw;
 }
 
@@ -106,7 +111,8 @@ select {
     margin-bottom: 1%;
 }
 
-.preco, .preco2 {
+.preco,
+.preco2 {
     display: flex;
     align-items: flex-end;
 }
@@ -146,6 +152,9 @@ button {
     cursor: pointer;
 }
 
+/* --- F ----- MAIN ----- */
+
+/* --- I ----- FOOTER ----- */
 footer {
     display: flex;
     align-items: center;
@@ -187,81 +196,88 @@ footer {
     filter: invert(1);
 }
 
+/* --- F ----- FOOTER ----- */
+
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
 @media screen and (max-width: 1000px) {
-  header {
-    width: 100vw;
-  }
-  
-  body {
-    width: 100vw;
-  }
-    
- footer {
-   width: 100vw;
-  }
+    header {
+        width: 100vw;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    footer {
+        width: 100vw;
+    }
 }
 
 
 @media screen and (max-width: 875px) {
-  header {
-    max-width: 100%;
-  }
+    header {
+        max-width: 100%;
+    }
 
-  body {
-    width: 100vw;
-  }
+    body {
+        width: 100vw;
+    }
 
-  footer {
-    max-width: 100vw;  
-  }
-  
+    footer {
+        max-width: 100vw;
+    }
+
 }
 
 @media screen and (max-width: 675px) {
-   header {
-    max-width: 100%;
-   }
-    
-   body {
-    width: 100vw;
-   }
-
-   main {
-    width: 100vw;
-   }
-
-   #product1, #product2 {
-    font-size: small;
-    margin-right: 1vw;
-    justify-content: space-around;
-   }
-   
-   .imagem1, .imagem2 {
-    width: 30vw;
-   }
-   
-   select {
-    width: 130px;
-   }
-
-    .form {
-     margin-left: 1vw;
+    header {
+        max-width: 100%;
     }
 
-   .preco, .preco2 {
-     display: flex;
-     align-items: flex-end;
-   }
+    body {
+        width: 100vw;
+    }
 
-   .final {
-    margin-right: 1vw;
-   }
+    main {
+        width: 100vw;
+    }
 
-  footer {
-    max-width: 100vw;  
-  }
+    #product1,
+    #product2 {
+        font-size: small;
+        margin-right: 1vw;
+        justify-content: space-around;
+    }
 
-  .logo2 img {
-    display: none;
-  }
+    .imagem1,
+    .imagem2 {
+        width: 30vw;
+    }
+
+    select {
+        width: 130px;
+    }
+
+    .form {
+        margin-left: 1vw;
+    }
+
+    .preco,
+    .preco2 {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .final {
+        margin-right: 1vw;
+    }
+
+    footer {
+        max-width: 100vw;
+    }
+
+    .logo2 img {
+        display: none;
+    }
 }
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */
