@@ -4,26 +4,26 @@
         "name": "Voluminous Midi Dress",
         "price": 249,
         "image": "dress2.jpg",
-        "image-model": "model-dress2.jpg"
+        "imageModel": "model-dress2.jpg"
     },
     {
         "id": 2,
         "name": "Sailor Collar Blouse",
         "price": 189,
         "image": "blouse.jpg",
-        "image-model": "model-blouse.jpg"
+        "imageModel": "model-blouse.jpg"
     },
     {
         "id": 3,
         "name": "Wide Printed Trousers",
         "price": 199,
         "image": "trousers.jpg",
-        "image-model": "model-trousers.jpg"
+        "imageModel": "model-trousers.jpg"
     },{
         "id": 4,
         "name": "Strappy Midi Dress",
         "price": 219,
         "image": "dress3.jpg",
-        "image-model": "model-dress3.jpg"
+        "imageModel": "model-dress3.jpg"
     }
 ]
