@@ -23,9 +23,11 @@
             <p>Discover dresses and separates, defined by free-flowing feminine silhouettes and<br>adorable details. 
             Each piece of the co-lab collection is a treasure with its own stories to tell.</p>
             <div class="container">
-                <button class="btn btn-tp1">
-                    SHOP NOW
-                </button>
+                <a href="/store">
+                    <button class="btn btn-tp1">
+                        SHOP NOW
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -37,32 +39,20 @@
                 <p id="quote">"My collections are like my diary."</p>
             </div>
             <div class="shop">
+                <% products.forEach(product => { %>
                 <figure>
-                    <img class="model-dress2" src="img/model-dress2.jpg" alt="modelo com vestido de mangas bufantes rosa com estampa">
-                    <img class="dress2" src="img/dress2.jpg" alt="vestido de mangas bufantes rosa com estampa">
-                    <p id="description">Voluminous Midi Dress <span>$249</span></p>
+                    <img class="model-dress2" src="img/<%= product.imageModel %>" alt="modelo com vestido de mangas bufantes rosa com estampa">
+                    <img class="dress2" src="img/<%= product.image %>" alt="vestido de mangas bufantes rosa com estampa">
+                    <p id="description"><%= product.name %>  <span>$<%= product.price %> </span></p>
                 </figure>
-                <figure>
-                    <img class="model-blouse" src="img/model-blouse.jpg" alt="modelo vestindo camisa de botão clara com estampa">
-                    <img class="blouse" src="img/blouse.jpg" alt="camisa de botão clara com estampa">
-                    <p id="description">Sailor Collar Blouse <span>$189</span></p>
-                </figure>
-                <figure>
-                    <img class="model-trousers" src="img/model-trousers.jpg" alt="modelo encostada na parede vestindo uma calça clara com estampa">
-                    <img class="trousers" src="img/trousers.jpg" alt="calça clara com estampa"> 
-                    <p id="description">Wide Printed Trousers <span>$199</span></p>
-                </figure>
-                <figure>
-                    <img class="model-dress3" src="img/model-dress3.jpg" alt="modelo com vestido de alça longo rosa com ponta verde">
-                    <img class="dress3" src="img/dress3.jpg" alt="vestido de alça longo rosa com ponta verde">
-                    <p id="description">Strappy Midi Dress <span>$219</span></p>
-                </figure>
-                <br>
+                <% }) %>
             </div>
             <div class="container">
-                <button class="btn2 btn-tp2">
-                    SEE MORE
-                </button>
+                <a href="/store">
+                    <button class="btn2 btn-tp2">
+                        SEE MORE
+                    </button>
+                </a>
             </div>
         </section>
 
