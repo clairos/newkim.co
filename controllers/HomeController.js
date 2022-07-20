@@ -1,7 +1,10 @@
+const Products = require('../models/Products');
+
 const HomeController = {
     index: (req, res) => {
-        res.render('home');
-    }
+        const products = Products.findAll();
+        res.render('home', { products });
+    }    
 }
 
 module.exports = HomeController;
