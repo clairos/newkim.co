@@ -2,28 +2,145 @@
     {
         "id": 1,
         "name": "Voluminous Midi Dress",
-        "price": 249,
+        "price": "249.00",
+        "displayHome": true,
         "image": "dress2.jpg",
-        "imageModel": "model-dress2.jpg"
+        "imageModel": "model-dress2.jpg",
+        "imageDetail": ""
     },
     {
         "id": 2,
         "name": "Sailor Collar Blouse",
-        "price": 189,
+        "price": "189.00",
+        "displayHome": true,
         "image": "blouse.jpg",
-        "imageModel": "model-blouse.jpg"
+        "imageModel": "model-blouse.jpg",
+        "imageDetail": ""
     },
     {
         "id": 3,
         "name": "Wide Printed Trousers",
-        "price": 199,
+        "price": "199.00",
+        "displayHome": true,
         "image": "trousers.jpg",
-        "imageModel": "model-trousers.jpg"
-    },{
+        "imageModel": "model-trousers.jpg",
+        "imageDetail": ""
+    },
+    {
         "id": 4,
         "name": "Strappy Midi Dress",
-        "price": 219,
+        "price": "219.00",
+        "displayHome": true,
         "image": "dress3.jpg",
-        "imageModel": "model-dress3.jpg"
+        "imageModel": "model-dress3.jpg",
+        "imageDetail": ""
+    },
+    {
+        "id": 5,
+        "name": "Volume Sleeve Jacket",
+        "price": "881.00",
+        "displayHome": false,
+        "image": "model19.png",
+        "imageModel": "model19-2.png",
+        "imageDetail": "model19-3.png"
+    },
+    {
+        "id": 6,
+        "name": "Ruffle Organza Mini Dress",
+        "price": "591.00",
+        "displayHome": false,
+        "image": "model24.png",
+        "imageModel": "model24-2.png",
+        "imageDetail": "model24-3.png"
+    },
+    {
+        "id": 7,
+        "name": "Flag Mini Dress",
+        "price": "746.00",
+        "displayHome": false,
+        "image": "model26.png",
+        "imageModel": "model26-2.png",
+        "imageDetail": "model26-3.png"
+    },
+    {
+        "id": 8,
+        "name": "Puff Sleeve Crop Blouse",
+        "price": "493.60",
+        "displayHome": false,
+        "image": "model21.png",
+        "imageModel": "model21-2.png",
+        "imageDetail": "model21-3.png"
+    },
+    {
+        "id": 9,
+        "name": "Bow Silk Midi Dress",
+        "price": 219,
+        "displayHome": false,
+        "image": "dress4.jpg",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 10,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 11,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 12,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 13,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 14,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 15,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
+    },
+    {
+        "id": 16,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "",
+        "imageModel": "",
+        "imageDetail": ""
     }
 ]

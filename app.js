@@ -36,7 +36,6 @@ app.use('/store', storeRouter);
 app.use('/about', aboutRouter);
 app.use('/details', detailsRouter);
 
-
 // ************ catch 404 and forward to error handler ************
 app.use(function(req, res, next) {
   next(createError(404));

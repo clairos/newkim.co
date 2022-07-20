@@ -73,7 +73,6 @@ div {
   width: 98vw;
   align-items: flex-start;
   justify-content: center;
-  height: 80vh;
   margin-bottom: 5%;
 }
 
@@ -81,8 +80,7 @@ figure {
   position: relative;
   text-align: center;
   margin: 0;
-  width: 20vw;
-  height: 68vh;
+  height: 57vh;
 }
 
 figure img {
@@ -95,6 +93,7 @@ figure img {
 .model {
   height: 60vh;
   position: relative;
+  margin-bottom: 5%;
 }
 
 .model19-2 {
@@ -266,14 +265,12 @@ footer {
   }
 
   #collections {
-    height: fit-content;
     flex-direction: column;
     align-items: center;
   }
 
-  figure {
-    width: 60vw;
-    height: 40vh;
+  figure img {
+    padding: 0;
   }
 
   .model {
