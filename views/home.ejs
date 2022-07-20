@@ -39,13 +39,13 @@
                 <p id="quote">"My collections are like my diary."</p>
             </div>
             <div class="shop">
-                <% products.forEach(product => { %>
+                <% for(let i=0; i<4; i++){ if(products[i].displayHome == true){ %>
                 <figure>
-                    <img class="model-dress2" src="img/<%= product.imageModel %>" alt="modelo com vestido de mangas bufantes rosa com estampa">
-                    <img class="dress2" src="img/<%= product.image %>" alt="vestido de mangas bufantes rosa com estampa">
-                    <p id="description"><%= product.name %>  <span>$<%= product.price %> </span></p>
+                    <img class="model-dress2" src="img/<%= products[i].imageModel %>" alt="modelo com vestido de mangas bufantes rosa com estampa">
+                    <img class="dress2" src="img/<%= products[i].image %>" alt="vestido de mangas bufantes rosa com estampa">
+                    <p id="description"><%= products[i].name %>  <span>$<%= products[i].price %> </span></p>
                 </figure>
-                <% }) %>
+                <% }} %>
             </div>
             <div class="container">
                 <a href="/store">
