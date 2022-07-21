@@ -1,470 +1,717 @@
 [
     {
         "id": 1,
-        "name": "Voluminous Midi Dress",
+        "name": "Voluminous Silk Midi Dress",
         "price": "249.00",
         "displayHome": true,
+        "color": "Pink & Yellow",
         "image": "1-dress.jpeg",
         "imageModel": "1-model-front-dress.jpeg",
-        "imageDetail": ""
+        "imageDetail": "1-model-front-dress-detail.jpeg",
+        "imageAlt": "Voluminous long sleeve midi dress - pink and yellow with little flowers"
     },
     {
         "id": 2,
-        "name": "Sailor Collar Blouse",
+        "name": "Sailor Collar Silk Blouse",
         "price": "189.00",
         "displayHome": true,
+        "color": "Blue & Yellow",
         "image": "2-blouse.jpeg",
         "imageModel": "2-model-front-blouse.jpeg",
-        "imageDetail": ""
+        "imageDetail": "2-model-back-blouse-detail.jpeg",
+        "imageAlt": "Short sleeves sailor collar silk blouse - blue and yellow with little flowers"
     },
     {
         "id": 3,
-        "name": "Wide Printed Trousers",
+        "name": "Wide Printed Silk Trousers",
         "price": "199.00",
         "displayHome": true,
+        "color": "Blue & Yellow",
         "image": "3-trousers.jpeg",
         "imageModel": "3-model-front-trousers.jpeg",
-        "imageDetail": ""
+        "imageDetail": "3-model-side-trousers-detail.jpeg",
+        "imageAlt": "Wide printed silk trousers - blue and yellow print"
     },
     {
         "id": 4,
         "name": "Strappy Midi Dress",
         "price": "219.00",
         "displayHome": true,
+        "color": "Pink",
         "image": "4-dress.jpeg",
         "imageModel": "4-model-front-dress.jpeg",
-        "imageDetail": ""
+        "imageDetail": "4-model-front-dress-detail.jpeg",
+        "imageAlt": "Strappy midi dress - pink and a large green bar at the bottom"
     },
     {
         "id": 5,
-        "name": "",
-        "price": "",
+        "name": "Voluminous Jacquard Mini Dress",
+        "price": "149.00",
         "displayHome": false,
+        "color": "White Print",
         "image": "5-dress.jpeg",
         "imageModel": "5-model-front-dress.jpeg",
-        "imageDetail": ""
+        "imageDetail": "5-model-side-dress.jpeg",
+        "imageAlt": "Voluminous large strap mini dress - white print"
     },
     {
         "id": 6,
-        "name": "",
-        "price": "",
+        "name": "Bow Strap Silk Midi Dress",
+        "price": "219.00",
         "displayHome": false,
+        "color": "Black",
         "image": "6-dress.jpeg",
         "imageModel": "6-model-front-dress.jpeg",
-        "imageDetail": ""
+        "imageDetail": "6-model-side-dress-detail.jpeg",
+        "imageAlt": "Bow strap silk midi dress - black"
     },
     {
         "id": 7,
-        "name": "",
-        "price": "",
+        "name": "Whimsical Hair Clip Set",
+        "price": "15.00",
         "displayHome": false,
+        "color": "Pink & Yellow",
         "image": "7-hairpin.jpeg",
         "imageModel": "7-model-hairpin.jpeg",
-        "imageDetail": ""
+        "imageDetail": "",
+        "imageAlt": "Whimsical hair clip set - pink/green and yellow/white"
     },
     {
         "id": 8,
-        "name": "",
-        "price": "",
+        "name": "Puff Sleeve Crop Blouse",
+        "price": "493.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "8-model-front-cropped.jpeg",
         "imageModel": "8-model-side-cropped.jpeg",
-        "imageDetail": "8-model-back-cropped.jpeg"
+        "imageDetail": "8-model-back-cropped.jpeg",
+        "imageAlt": "Puff sleeve crop blouse - pink"
     },
     {
         "id": 9,
-        "name": "",
-        "price": "",
+        "name": "Volume Sleeve Jacket",
+        "price": "881.00",
         "displayHome": false,
+        "color": "White & Yellow",
         "image": "9-model-side-jacket.jpeg",
         "imageModel": "9-model-front-jacket.jpeg",
-        "imageDetail": "9-model-back-jacket.jpeg"
+        "imageDetail": "9-model-back-jacket.jpeg",
+        "imageAlt": "Volume sleeve jacket - white and yellow print"
     },
     {
         "id": 10,
-        "name": "",
-        "price": 0,
+        "name": "Ruffle Organza Mini Dress",
+        "price": "591.00",
         "displayHome": false,
-        "image": "10-model-back-dress.jpeg",
-        "imageModel": "10-model-side-dress.jpeg",
-        "imageDetail": "10-model-front-dress.jpeg"
+        "color": "Yellow",
+        "image": "10-model-front-dress.jpeg",
+        "imageModel": "10-model-back-dress.jpeg",
+        "imageDetail": "10-model-side-dress.jpeg",
+        "imageAlt": "Ruffle organza mini dress - yellow print"
     },
     {
         "id": 11,
-        "name": "",
-        "price": 0,
+        "name": "Flag Mini Dress",
+        "price": "746.00",
         "displayHome": false,
+        "color": "White",
         "image": "11-model-front-dress.jpeg",
         "imageModel": "11-model-side-dress.jpeg",
-        "imageDetail": "11-model-back-dress.jpeg"
+        "imageDetail": "11-model-back-dress.jpeg",
+        "imageAlt": "Fringe decorations strappy mini dress - white"
     },
     {
         "id": 12,
-        "name": "",
-        "price": 0,
+        "name": "Square Puff Coat",
+        "price": "816.00",
         "displayHome": false,
-        "image": "12-model-side-dress.jpeg",
-        "imageModel": "12-model-back-dress.jpeg",
-        "imageDetail": "12-model-front-dress.jpeg"
+        "color": "Yellow",
+        "image": "12-model-side-coat.jpeg",
+        "imageModel": "12-model-back-coat.jpeg",
+        "imageDetail": "12-model-front-coat.jpeg",
+        "imageAlt": "Puff sleeves long coat with a wide ribbon band behind - yellow"
     },
     {
         "id": 13,
-        "name": "",
-        "price": 0,
+        "name": "Volume Sleeve Jacket",
+        "price": "700.00",
         "displayHome": false,
-        "image": "13-model-back-jacket.jpeg",
-        "imageModel": "13-model-front-jacket.jpeg",
-        "imageDetail": "13-model-side-jacket.jpeg"
+        "color": "Black",
+        "image": "13-model-front-jacket.jpeg",
+        "imageModel": "13-model-side-jacket.jpeg",
+        "imageDetail": "13-model-back-jacket.jpeg",
+        "imageAlt": "Volume sleeve jacket - black"
     },
     {
         "id": 14,
-        "name": "",
-        "price": 0,
+        "name": "Oversized Single-Breasted Jacket",
+        "price": "1,024.00",
         "displayHome": false,
+        "color": "White & Yellow",
         "image": "14-model-front-jacket.jpeg",
         "imageModel": "14-model-side-jacket.jpeg",
-        "imageDetail": "14-model-back-jacket.jpeg"
+        "imageDetail": "14-model-back-jacket.jpeg",
+        "imageAlt": "Oversized single-breasted jacket - white and yellow print"
     },
     {
         "id": 15,
-        "name": "",
-        "price": 0,
+        "name": "Bojagi Collar Shirt Dress",
+        "price": "765.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "15-model-side-dress.jpeg",
-        "imageModel": "15-model-back-dress.jpeg",
-        "imageDetail": "15-model-front-dress.jpeg"
+        "imageModel": "15-model-front-dress.jpeg",
+        "imageDetail": "15-model-back-dress.jpeg",
+        "imageAlt": "Bojagi collar shirt midi dress - pink print"
     },
     {
         "id": 16,
-        "name": "",
-        "price": 0,
+        "name": "Bojagi Collar Shirt Dress",
+        "price": "765.00",
         "displayHome": false,
+        "color": "Yellow",
         "image": "16-model-front-dress.jpeg",
         "imageModel": "16-model-back-dress.jpeg",
-        "imageDetail": "16-model-side-dress.jpeg"
+        "imageDetail": "16-model-side-dress.jpeg",
+        "imageAlt": "Bojagi collar shirt midi dress - yellow print"
     },
     {
         "id": 17,
-        "name": "",
-        "price": 0,
+        "name": "Bojagi Collar Shirt Dress",
+        "price": "765.00",
         "displayHome": false,
+        "color": "Black",
         "image": "17-model-side-dress.jpeg",
-        "imageModel": "17-model-back-dress.jpeg",
-        "imageDetail": "17-model-front-dress.jpeg"
+        "imageModel": "17-model-front-dress.jpeg",
+        "imageDetail": "17-model-back-dress.jpeg",
+        "imageAlt": "Bojagi collar shirt midi dress - black and a blue logo"
     },
     {
         "id": 18,
-        "name": "",
-        "price": 0,
+        "name": "Bojagi Collar Puff Dress",
+        "price": "847.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "18-model-front-dress.jpeg",
-        "imageModel": "18-model-back-dress.jpeg",
-        "imageDetail": "18-model-side-dress.jpeg"
+        "imageModel": "18-model-side-dress.jpeg",
+        "imageDetail": "18-model-back-dress.jpeg",
+        "imageAlt": "Bojagi collar puff sleeves midi dress - pink"
     },
     {
         "id": 19,
-        "name": "",
-        "price": 0,
+        "name": "Bojagi Collar Puff Dress",
+        "price": "847.00",
         "displayHome": false,
+        "color": "White",
         "image": "19-model-side-dress.jpeg",
         "imageModel": "19-model-front-dress.jpeg",
-        "imageDetail": "19-model-back-dress.jpeg"
+        "imageDetail": "19-model-back-dress.jpeg",
+        "imageAlt": "Bojagi collar puff sleeves midi dress - white"
     },
     {
         "id": 20,
-        "name": "",
-        "price": 0,
+        "name": "Sleeveless Tiered Dress",
+        "price": "748.00",
         "displayHome": false,
-        "image": "20-model-back-dress.jpeg",
-        "imageModel": "20-model-front-dress.jpeg",
-        "imageDetail": "20-model-side-dress.jpeg"
+        "color": "Yellow",
+        "image": "20-model-front-dress.jpeg",
+        "imageModel": "20-model-back-dress.jpeg",
+        "imageDetail": "20-model-side-dress.jpeg",
+        "imageAlt": "Sleeveless tiered midi dress - yellow print"
     },
     {
         "id": 21,
-        "name": "",
-        "price": 0,
+        "name": "Sleeveless Tiered Dress",
+        "price": "1,315.00",
         "displayHome": false,
+        "color": "White & Pink",
         "image": "21-model-front-dress.jpeg",
         "imageModel": "21-model-back-dress.jpeg",
-        "imageDetail": "21-model-side-dress.jpeg"
+        "imageDetail": "21-model-side-dress.jpeg",
+        "imageAlt": "Sleeveless tiered midi dress - pink and white print"
     },
     {
         "id": 22,
-        "name": "",
-        "price": 0,
+        "name": "Flag Mini Dress",
+        "price": "746.00",
         "displayHome": false,
+        "color": "Black",
         "image": "22-front-dress.jpeg",
         "imageModel": "22-side-dress.jpeg",
-        "imageDetail": "22-back-dress.jpeg"
+        "imageDetail": "22-back-dress.jpeg",
+        "imageAlt": "Fringe decorations strappy mini dress - black"
     },
     {
         "id": 23,
-        "name": "",
-        "price": 0,
+        "name": "Slim-Fit Mini Dress",
+        "price": "698.00",
         "displayHome": false,
+        "color": "White & Yellow",
         "image": "23-model-side-dress.jpeg",
         "imageModel": "23-model-back-dress.jpeg",
-        "imageDetail": "23-model-front-dress.jpeg"
+        "imageDetail": "23-model-front-dress.jpeg",
+        "imageAlt": "Slim-fit strappy mini dress - white and yellow print"
     },
     {
         "id": 24,
-        "name": "",
-        "price": 0,
+        "name": "Slim-Fit Mini Dress",
+        "price": "572.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "24-model-front-dress.jpeg",
         "imageModel": "24-model-side-dress.jpeg",
-        "imageDetail": "24-model-back-dress.jpeg"
+        "imageDetail": "24-model-back-dress.jpeg",
+        "imageAlt": "Slim-fit strappy mini dress - pink"
     },
     {
         "id": 25,
-        "name": "",
-        "price": 0,
+        "name": "Slim-Fit Mini Dress",
+        "price": "572.00",
         "displayHome": false,
-        "image": "25-model-back-dress.jpeg",
-        "imageModel": "25-model-side-dress.jpeg",
-        "imageDetail": "25-model-front-dress.jpeg"
+        "color": "Black",
+        "image": "25-model-side-dress.jpeg",
+        "imageModel": "25-model-front-dress.jpeg",
+        "imageDetail": "25-model-back-dress.jpeg",
+        "imageAlt": "Slim-fit fringe decorations strappy mini dress - black"
     },
     {
         "id": 26,
-        "name": "",
-        "price": 0,
+        "name": "Ruffle Organza Mini Dress",
+        "price": "591.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "26-model-front-dress.jpeg",
         "imageModel": "26-model-side-dress.jpeg",
-        "imageDetail": "26-dress.jpeg"
+        "imageDetail": "26-dress.jpeg",
+        "imageAlt": "Ruffle organza mini dress - pink print"
     },
     {
         "id": 27,
-        "name": "",
-        "price": 0,
+        "name": "Square Puff Shirt",
+        "price": "671.00",
         "displayHome": false,
-        "image": "27-model-back-shirt.jpeg",
+        "color": "White",
+        "image": "27-model-side-shirt.jpeg",
         "imageModel": "27-model-front-shirt.jpeg",
-        "imageDetail": "27-model-side-shirt.jpeg"
+        "imageDetail": "27-model-back-shirt.jpeg",
+        "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - white"
     },
     {
         "id": 28,
-        "name": "",
-        "price": 0,
+        "name": "Square Puff Shirt",
+        "price": "671.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "28-model-front-shirt.jpeg",
         "imageModel": "28-model-side-shirt.jpeg",
-        "imageDetail": "28-model-back-shirt.jpeg"
+        "imageDetail": "28-model-back-shirt.jpeg",
+        "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - pink"
     },
     {
         "id": 29,
-        "name": "",
-        "price": 0,
+        "name": "Flower Collar Slim Shirt",
+        "price": "514.00",
         "displayHome": false,
+        "color": "Yellow",
         "image": "29-model-side-shirt.jpeg",
         "imageModel": "29-model-front-shirt.jpeg",
-        "imageDetail": "29-model-back-shirt.jpeg"
+        "imageDetail": "29-model-back-shirt.jpeg",
+        "imageAlt": "Flower collar slim shirt - yellow"
     },
     {
         "id": 30,
-        "name": "",
-        "price": 0,
+        "name": "Puff Sleeve Crop Blouse",
+        "price": "493.00",
         "displayHome": false,
-        "image": "30-model-back-cropped.jpeg",
-        "imageModel": "30-model-front-cropped.jpeg",
-        "imageDetail": "30-model-side-cropped.jpeg"
+        "color": "Black",
+        "image": "30-model-front-cropped.jpeg",
+        "imageModel": "30-model-back-cropped.jpeg",
+        "imageDetail": "30-model-side-cropped.jpeg",
+        "imageAlt": "Puff sleeve crop blouse - black"
     },
     {
         "id": 31,
-        "name": "",
-        "price": 0,
+        "name": "Bogaji Collar Hawaiian Shirt",
+        "price": "392.00",
         "displayHome": false,
+        "color": "Yellow",
         "image": "31-model-side-shirt.jpeg",
         "imageModel": "31-model-back-shirt.jpeg",
-        "imageDetail": "31-model-front-shirt.jpeg"
+        "imageDetail": "31-model-front-shirt.jpeg",
+        "imageAlt": "Bogaji collar hawaiian shirt - yellow print"
     },
     {
         "id": 32,
-        "name": "",
-        "price": 0,
+        "name": "Bogaji Collar Hawaiian Shirt",
+        "price": "392.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "32-model-front-shirt.jpeg",
         "imageModel": "32-model-side-shirt.jpeg",
-        "imageDetail": "32-model-back-shirt.jpeg"
+        "imageDetail": "32-model-back-shirt.jpeg",
+        "imageAlt": "Bogaji collar hawaiian shirt - pink print"
     },
     {
         "id": 33,
-        "name": "",
-        "price": 0,
+        "name": "Bojagi Collar Hawaiian Shirt",
+        "price": "392.00",
         "displayHome": false,
-        "image": "33-model-back-shirt.jpeg",
-        "imageModel": "33-model-front-shirt.jpeg",
-        "imageDetail": "33-model-side-shirt.jpeg"
+        "color": "White",
+        "image": "33-model-side-shirt.jpeg",
+        "imageModel": "33-model-back-shirt.jpeg",
+        "imageDetail": "33-model-front-shirt.jpeg",
+        "imageAlt": "Bogaji collar hawaiian shirt - white and a blue logo"
     },
     {
         "id": 34,
-        "name": "",
-        "price": 0,
+        "name": "Square Neck Jersey Top",
+        "price": "280.00",
         "displayHome": false,
+        "color": "Sky Blue",
         "image": "34-model-front-top.jpeg",
         "imageModel": "34-model-side-top.jpeg",
-        "imageDetail": "34-top-back.jpeg"
+        "imageDetail": "34-top-back.jpeg",
+        "imageAlt": "Square neck stripped top - sky blue"
     },
     {
         "id": 35,
-        "name": "",
-        "price": 0,
+        "name": "Tuck Volume Long Skirt",
+        "price": "857.00",
         "displayHome": false,
+        "color": "Black",
         "image": "35-model-side-skirt.jpeg",
         "imageModel": "35-skirt-front-detail.jpeg",
-        "imageDetail": "35-skirt-back.jpeg"
+        "imageDetail": "35-skirt-back.jpeg",
+        "imageAlt":"Tuck volume long skirt - black"
     },
     {
         "id": 36,
-        "name": "",
-        "price": 0,
+        "name": "Tuck Volume Long Skirt",
+        "price": "923.00",
         "displayHome": false,
+        "color": "White & Yellow",
         "image": "36-model-front-skirt.jpeg",
         "imageModel": "36-model-side-skirt.jpeg",
-        "imageDetail": "36-model-back-skirt.jpeg"
+        "imageDetail": "36-model-back-skirt.jpeg",
+        "imageAlt": "Tuck volume long skirt - white and yellow print"
     },
     {
         "id": 37,
-        "name": "",
-        "price": 0,
+        "name": "Bow Pocket Mini Skirt",
+        "price": "488.00",
         "displayHome": false,
+        "color": "White & Yellow",
         "image": "37-model-side-skirt.jpeg",
         "imageModel": "37-model-back-skirt.jpeg",
-        "imageDetail": "37-model-front-skirt.jpeg"
+        "imageDetail": "37-model-front-skirt.jpeg",
+        "imageAlt": "Bow pocket mini skirt - white and yellow print"
     },
     {
         "id": 38,
-        "name": "",
-        "price": 0,
+        "name": "Wide Leg Pants",
+        "price": "405.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "38-model-front-pants.jpeg",
         "imageModel": "38-model-back-pants.jpeg",
-        "imageDetail": "38-model-side-pants.jpeg"
+        "imageDetail": "38-model-side-pants.jpeg",
+        "imageAlt": "Baggy shorts - pink print"
     },
     {
         "id": 39,
-        "name": "",
-        "price": 0,
+        "name": "Bow Pocket Mini Skirt",
+        "price": "430.00",
         "displayHome": false,
+        "color": "Black",
         "image": "39-model-side-skirt.jpeg",
         "imageModel": "39-model-front-skirt.jpeg",
-        "imageDetail": "39-model-back-skirt.jpeg"
+        "imageDetail": "39-model-back-skirt.jpeg",
+        "imageAlt": "Bow pocket mini skirt - black"
     },
     {
         "id": 40,
-        "name": "",
-        "price": 0,
+        "name": "Wide Leg Pants",
+        "price": "405.00",
         "displayHome": false,
+        "color": "Yellow",
         "image": "40-model-front-pants.jpeg",
         "imageModel": "40-model-side-pants.jpeg",
-        "imageDetail": "40-model-back-pants.jpeg"
+        "imageDetail": "40-model-back-pants.jpeg",
+        "imageAlt": "Baggy shorts - pink print"
     },
     {
         "id": 41,
-        "name": "",
-        "price": 0,
+        "name": "V Line Band Pull Skirt",
+        "price": "623.00",
         "displayHome": false,
+        "color": "Black",
         "image": "41-model-side-skirt.jpeg",
         "imageModel": "41-skirt-front-detail.jpeg",
-        "imageDetail": "41-skirt-back.jpeg"
+        "imageDetail": "41-skirt-back.jpeg",
+        "imageAlt": "V line band midi skirt - black"
     },
     {
         "id": 42,
-        "name": "",
-        "price": 0,
+        "name": "V Line Band Pull Skirt",
+        "price": "623.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "42-model-front-skirt.jpeg",
         "imageModel": "42-model-back-skirt.jpeg",
-        "imageDetail": "42-model-side-skirt.jpeg"
+        "imageDetail": "42-model-side-skirt.jpeg",
+        "imageAlt": "V line band midi skirt - pink"
     },
     {
         "id": 43,
-        "name": "",
-        "price": 0,
+        "name": "Logo-Print T-Shirt",
+        "price": "161.00",
         "displayHome": false,
+        "color": "Blue",
         "image": "43-model-side-tshirt.jpeg",
         "imageModel": "43-tshirt-front-detail.jpeg",
-        "imageDetail": "43-tshirt-back.jpeg"
+        "imageDetail": "43-tshirt-back.jpeg",
+        "imageAlt": "Logo-print oversized T-shirt - blue and white logo"
     },
     {
         "id": 44,
-        "name": "",
-        "price": 0,
+        "name": "Bari-Print T-Shirt",
+        "price": "161.00",
         "displayHome": false,
+        "color": "White",
         "image": "44-model-front-tshirt.jpeg",
         "imageModel": "44-model-side-tshirt.jpeg",
-        "imageDetail": "44-tshirt-back.jpeg"
+        "imageDetail": "44-tshirt-back.jpeg",
+        "imageAlt": "Logo and bari print oversized T-shirt - white and green details"
     },
     {
         "id": 45,
-        "name": "",
-        "price": 0,
+        "name": "Bari Togheter-Print T-Shirt",
+        "price": "161.00",
         "displayHome": false,
+        "color": "Pink",
         "image": "45-model-side-tshirt.jpeg",
         "imageModel": "45-tshirt-back.jpeg",
-        "imageDetail": "45-tshirt-front-detail.jpeg"
+        "imageDetail": "45-tshirt-front-detail.jpeg",
+        "imageAlt": "Bari togheter and logo print oversized T-shirt - pink and red details"
     },
     {
         "id": 46,
-        "name": "",
-        "price": 0,
+        "name": "Logo-Print T-Shirt",
+        "price": "140.00",
         "displayHome": false,
+        "color": "White",
         "image": "46-model-front-tshirt.jpeg",
         "imageModel": "46-tshirt-back.jpeg",
-        "imageDetail": "46-tshirt-front-detail.jpeg"
+        "imageDetail": "46-tshirt-front-detail.jpeg",
+        "imageAlt": "Logo-print slim T-shirt - white and black logo"
     },
     {
         "id": 47,
-        "name": "",
-        "price": 0,
+        "name": "Bari Bow-Print T-Shirt",
+        "price": "159.00",
         "displayHome": false,
+        "color": "White",
         "image": "47-model-front-tshirt-detail.jpeg",
         "imageModel": "47-model-side-tshirt-detail.jpeg",
-        "imageDetail": "47-tshirt-front.jpeg"
+        "imageDetail": "47-tshirt-front.jpeg",
+        "imageAlt": "Bari bow and logo print slim T-shirt - white and pink details"
     },
     {
         "id": 48,
-        "name": "",
-        "price": 0,
+        "name": "Bari Bow-Print T-Shirt",
+        "price": "159.00",
         "displayHome": false,
+        "color": "Black",
         "image": "48-model-front-tshirt.jpeg",
         "imageModel": "48-tshirt-front.jpeg",
-        "imageDetail": "48-model-side-tshirt-detail.jpeg"
+        "imageDetail": "48-model-side-tshirt-detail.jpeg",
+        "imageAlt": "Bari bow and logo print slim T-shirt - black and blue details"
     },
     {
         "id": 49,
-        "name": "",
-        "price": 0,
+        "name": "Bari Flower-Print T-Shirt",
+        "price": "159.00",
         "displayHome": false,
-        "image": "49-model-front-tshirt.jpeg",
+        "color": "White",
+        "image": "49-model-front-tshirt-detail.jpeg",
         "imageModel": "49-tshirt-back.jpeg",
-        "imageDetail": "49-tshirt-front-detail.jpeg"
+        "imageDetail": "49-tshirt-front-detail.jpeg",
+        "imageAlt": "Bari flower-print slim T-shirt - white and colorful details"
     },
     {
         "id": 50,
-        "name": "",
-        "price": 0,
+        "name": "Voluminous Scallop Mini Dress",
+        "price": "99.00",
         "displayHome": false,
+        "color": "Cream",
         "image": "50-model-side-dress.jpeg",
         "imageModel": "50-model-front-dress-detail.jpeg",
-        "imageDetail": "50-model-front-dress-details.jpeg"
+        "imageDetail": "50-model-front-dress-details.jpeg",
+        "imageAlt": "Voluminous scallop long sleeves mini dress - cream"
     },
     {
         "id": 51,
-        "name": "",
-        "price": 0,
+        "name": "Voluminous Silk Midi Skirt",
+        "price": "179.00",
         "displayHome": false,
+        "color": "Black",
         "image": "51-model-front-skirt.jpeg",
         "imageModel": "51-model-front-skirt-detail.jpeg",
-        "imageDetail": "51-skirt-front.jpeg"
+        "imageDetail": "51-skirt-front.jpeg",
+        "imageAlt": "Voluminous silk midi skirt - black"
     },
     {
         "id": 52,
+        "name": "Tulle Tiered Mini Dress",
+        "price": "100.00",
+        "displayHome": false,
+        "color": "Green",
+        "image": "52-model-front-dress.jpeg",
+        "imageModel": "52-model-front-dress-detail.jpeg",
+        "imageDetail": "52-model-side-dress-detail.jpeg",
+        "imageAlt": "Tulle tiered mini dress - green"
+    },
+    {
+        "id": 53,
+        "name": "Cropped Jacquard Knit Top",
+        "price": "69.00",
+        "displayHome": false,
+        "color": "Green",
+        "image": "53-model front-cropped.jpeg",
+        "imageModel": "53-cropped-front.jpeg",
+        "imageDetail": "53-model-side-cropped.jpeg",
+        "imageAlt": "Cropped knit top - green"
+    },
+    {
+        "id": 54,
+        "name": "Voluminous Printed Midi Skirt",
+        "price": "119.00",
+        "displayHome": false,
+        "color": "Pink & Yellow",
+        "image": "54-model-front-skirt.jpeg",
+        "imageModel": "54-model-side-skirt.jpeg",
+        "imageDetail": "54-model-front-skirt-detail.jpeg",
+        "imageAlt": "Voluminous printed midi skirt - pink and yellow"
+    },
+    {
+        "id": 55,
+        "name": "Retro Cat Eye Sunglasses",
+        "price": "59.00",
+        "displayHome": false,
+        "color": "Cream",
+        "image": "55-sunglass-front.jpeg",
+        "imageModel": "55-sunglass-side.jpeg",
+        "imageDetail": "55-model-front-sunglass.jpeg",
+        "imageAlt": "Retro cat eye sunglasses - cream"
+    },
+    {
+        "id": 56,
+        "name": "Retro Cat Eye Sunglasses",
+        "price": "59.00",
+        "displayHome": false,
+        "color": "Pink Transparent",
+        "image": "56-sunglass-front.jpeg",
+        "imageModel": "56-sunglass-side-detail.jpeg",
+        "imageDetail": "56-sunglass-side.jpeg",
+        "imageAlt": "Retro cat eye sunglasses - pink transparent"
+    },
+    {
+        "id": 57,
+        "name": "Floral Jacquard Socks",
+        "price": "15.00",
+        "displayHome": false,
+        "color": "Cream",
+        "image": "57-socks-side.jpeg",
+        "imageModel": "",
+        "imageDetail": "",
+        "imageAlt": "Floral stamps socks - cream"
+    },
+    {
+        "id": 58,
+        "name": "Floral Jacquard Socks",
+        "price": "15.00",
+        "displayHome": false,
+        "color": "White",
+        "image": "58-socks-side.jpeg",
+        "imageModel": "58-model-side-socks.jpeg",
+        "imageDetail": "",
+        "imageAlt": "Floral stamps socks - white"
+    },
+    {
+        "id": 59,
+        "name": "Floral Jacquard Socks",
+        "price": "15.00",
+        "displayHome": false,
+        "color": "Green",
+        "image": "59-socks-side.jpeg",
+        "imageModel": "59-model-front-socks.jpeg",
+        "imageDetail": "",
+        "imageAlt": "Floral stamps socks - green"
+    },
+    {
+        "id": 60,
+        "name": "Silk Bow Scrunchie",
+        "price": "29.00",
+        "displayHome": false,
+        "color": "Pink Print",
+        "image": "60-scrunchie.jpeg",
+        "imageModel": "",
+        "imageDetail": "",
+        "imageAlt": "Silk bow scrunchie - pink and yellow print"
+    },
+    {
+        "id": 61,
+        "name": "Silk Bow Scrunchie",
+        "price": "26.00",
+        "displayHome": false,
+        "color": "Black",
+        "image": "61-scrunchie.jpeg",
+        "imageModel": "",
+        "imageDetail": "",
+        "imageAlt": "Silk bow scrunchie - black"
+    },
+    {
+        "id": 62,
+        "name": "Embellished Hair Clip Set",
+        "price": 0,
+        "displayHome": false,
+        "color": "Red & Green",
+        "image": "62-hairpin-front.jpeg",
+        "imageModel": "",
+        "imageDetail": "",
+        "imageAlt": "Embellished hair clip set - red and green"
+    },
+    {
+        "id": 63,
+        "name": "Embossed Hair Clip",
+        "price": "9.00",
+        "displayHome": false,
+        "color": "Pink",
+        "image": "63-hairpin-front.jpeg",
+        "imageModel": "63-hairpin-back.jpeg",
+        "imageDetail": "",
+        "imageAlt": "Embossed hair clip - pink"
+    },
+    {
+        "id": 64,
+        "name": "Floral Hair Clip",
+        "price": "9.00",
+        "displayHome": false,
+        "color": "Blue & White",
+        "image": "64-hairpin-front.jpeg",
+        "imageModel": "",
+        "imageDetail": "",
+        "imageAlt": "Floral hair clip - blue and white"
+    },
+    {
+        "id": 65,
         "name": "",
         "price": 0,
         "displayHome": false,
+        "color": "",
         "image": "",
         "imageModel": "",
-        "imageDetail": ""
+        "imageDetail": "",
+        "imageAlt": ""
     }
 ]
