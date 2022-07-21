@@ -4,8 +4,8 @@
         "name": "Voluminous Midi Dress",
         "price": "249.00",
         "displayHome": true,
-        "image": "dress2.jpg",
-        "imageModel": "model-dress2.jpg",
+        "image": "1-dress.jpeg",
+        "imageModel": "1-model-front-dress.jpeg",
         "imageDetail": ""
     },
     {
@@ -13,8 +13,8 @@
         "name": "Sailor Collar Blouse",
         "price": "189.00",
         "displayHome": true,
-        "image": "blouse.jpg",
-        "imageModel": "model-blouse.jpg",
+        "image": "2-blouse.jpeg",
+        "imageModel": "2-model-front-blouse.jpeg",
         "imageDetail": ""
     },
     {
@@ -22,8 +22,8 @@
         "name": "Wide Printed Trousers",
         "price": "199.00",
         "displayHome": true,
-        "image": "trousers.jpg",
-        "imageModel": "model-trousers.jpg",
+        "image": "3-trousers.jpeg",
+        "imageModel": "3-model-front-trousers.jpeg",
         "imageDetail": ""
     },
     {
@@ -31,111 +31,435 @@
         "name": "Strappy Midi Dress",
         "price": "219.00",
         "displayHome": true,
-        "image": "dress3.jpg",
-        "imageModel": "model-dress3.jpg",
+        "image": "4-dress.jpeg",
+        "imageModel": "4-model-front-dress.jpeg",
         "imageDetail": ""
     },
     {
         "id": 5,
-        "name": "Volume Sleeve Jacket",
-        "price": "881.00",
+        "name": "",
+        "price": "",
         "displayHome": false,
-        "image": "model19.png",
-        "imageModel": "model19-2.png",
-        "imageDetail": "model19-3.png"
+        "image": "5-dress.jpeg",
+        "imageModel": "5-model-front-dress.jpeg",
+        "imageDetail": ""
     },
     {
         "id": 6,
-        "name": "Ruffle Organza Mini Dress",
-        "price": "591.00",
+        "name": "",
+        "price": "",
         "displayHome": false,
-        "image": "model24.png",
-        "imageModel": "model24-2.png",
-        "imageDetail": "model24-3.png"
+        "image": "6-dress.jpeg",
+        "imageModel": "6-model-front-dress.jpeg",
+        "imageDetail": ""
     },
     {
         "id": 7,
-        "name": "Flag Mini Dress",
-        "price": "746.00",
+        "name": "",
+        "price": "",
         "displayHome": false,
-        "image": "model26.png",
-        "imageModel": "model26-2.png",
-        "imageDetail": "model26-3.png"
+        "image": "7-hairpin.jpeg",
+        "imageModel": "7-model-hairpin.jpeg",
+        "imageDetail": ""
     },
     {
         "id": 8,
-        "name": "Puff Sleeve Crop Blouse",
-        "price": "493.60",
+        "name": "",
+        "price": "",
         "displayHome": false,
-        "image": "model21.png",
-        "imageModel": "model21-2.png",
-        "imageDetail": "model21-3.png"
+        "image": "8-model-front-cropped.jpeg",
+        "imageModel": "8-model-side-cropped.jpeg",
+        "imageDetail": "8-model-back-cropped.jpeg"
     },
     {
         "id": 9,
-        "name": "Bow Silk Midi Dress",
-        "price": 219,
+        "name": "",
+        "price": "",
         "displayHome": false,
-        "image": "dress4.jpg",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "9-model-side-jacket.jpeg",
+        "imageModel": "9-model-front-jacket.jpeg",
+        "imageDetail": "9-model-back-jacket.jpeg"
     },
     {
         "id": 10,
         "name": "",
         "price": 0,
         "displayHome": false,
-        "image": "",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "10-model-back-dress.jpeg",
+        "imageModel": "10-model-side-dress.jpeg",
+        "imageDetail": "10-model-front-dress.jpeg"
     },
     {
         "id": 11,
         "name": "",
         "price": 0,
         "displayHome": false,
-        "image": "",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "11-model-front-dress.jpeg",
+        "imageModel": "11-model-side-dress.jpeg",
+        "imageDetail": "11-model-back-dress.jpeg"
     },
     {
         "id": 12,
         "name": "",
         "price": 0,
         "displayHome": false,
-        "image": "",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "12-model-side-dress.jpeg",
+        "imageModel": "12-model-back-dress.jpeg",
+        "imageDetail": "12-model-front-dress.jpeg"
     },
     {
         "id": 13,
         "name": "",
         "price": 0,
         "displayHome": false,
-        "image": "",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "13-model-back-jacket.jpeg",
+        "imageModel": "13-model-front-jacket.jpeg",
+        "imageDetail": "13-model-side-jacket.jpeg"
     },
     {
         "id": 14,
         "name": "",
         "price": 0,
         "displayHome": false,
-        "image": "",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "14-model-front-jacket.jpeg",
+        "imageModel": "14-model-side-jacket.jpeg",
+        "imageDetail": "14-model-back-jacket.jpeg"
     },
     {
         "id": 15,
         "name": "",
         "price": 0,
         "displayHome": false,
-        "image": "",
-        "imageModel": "",
-        "imageDetail": ""
+        "image": "15-model-side-dress.jpeg",
+        "imageModel": "15-model-back-dress.jpeg",
+        "imageDetail": "15-model-front-dress.jpeg"
     },
     {
         "id": 16,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "16-model-front-dress.jpeg",
+        "imageModel": "16-model-back-dress.jpeg",
+        "imageDetail": "16-model-side-dress.jpeg"
+    },
+    {
+        "id": 17,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "17-model-side-dress.jpeg",
+        "imageModel": "17-model-back-dress.jpeg",
+        "imageDetail": "17-model-front-dress.jpeg"
+    },
+    {
+        "id": 18,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "18-model-front-dress.jpeg",
+        "imageModel": "18-model-back-dress.jpeg",
+        "imageDetail": "18-model-side-dress.jpeg"
+    },
+    {
+        "id": 19,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "19-model-side-dress.jpeg",
+        "imageModel": "19-model-front-dress.jpeg",
+        "imageDetail": "19-model-back-dress.jpeg"
+    },
+    {
+        "id": 20,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "20-model-back-dress.jpeg",
+        "imageModel": "20-model-front-dress.jpeg",
+        "imageDetail": "20-model-side-dress.jpeg"
+    },
+    {
+        "id": 21,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "21-model-front-dress.jpeg",
+        "imageModel": "21-model-back-dress.jpeg",
+        "imageDetail": "21-model-side-dress.jpeg"
+    },
+    {
+        "id": 22,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "22-front-dress.jpeg",
+        "imageModel": "22-side-dress.jpeg",
+        "imageDetail": "22-back-dress.jpeg"
+    },
+    {
+        "id": 23,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "23-model-side-dress.jpeg",
+        "imageModel": "23-model-back-dress.jpeg",
+        "imageDetail": "23-model-front-dress.jpeg"
+    },
+    {
+        "id": 24,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "24-model-front-dress.jpeg",
+        "imageModel": "24-model-side-dress.jpeg",
+        "imageDetail": "24-model-back-dress.jpeg"
+    },
+    {
+        "id": 25,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "25-model-back-dress.jpeg",
+        "imageModel": "25-model-side-dress.jpeg",
+        "imageDetail": "25-model-front-dress.jpeg"
+    },
+    {
+        "id": 26,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "26-model-front-dress.jpeg",
+        "imageModel": "26-model-side-dress.jpeg",
+        "imageDetail": "26-dress.jpeg"
+    },
+    {
+        "id": 27,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "27-model-back-shirt.jpeg",
+        "imageModel": "27-model-front-shirt.jpeg",
+        "imageDetail": "27-model-side-shirt.jpeg"
+    },
+    {
+        "id": 28,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "28-model-front-shirt.jpeg",
+        "imageModel": "28-model-side-shirt.jpeg",
+        "imageDetail": "28-model-back-shirt.jpeg"
+    },
+    {
+        "id": 29,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "29-model-side-shirt.jpeg",
+        "imageModel": "29-model-front-shirt.jpeg",
+        "imageDetail": "29-model-back-shirt.jpeg"
+    },
+    {
+        "id": 30,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "30-model-back-cropped.jpeg",
+        "imageModel": "30-model-front-cropped.jpeg",
+        "imageDetail": "30-model-side-cropped.jpeg"
+    },
+    {
+        "id": 31,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "31-model-side-shirt.jpeg",
+        "imageModel": "31-model-back-shirt.jpeg",
+        "imageDetail": "31-model-front-shirt.jpeg"
+    },
+    {
+        "id": 32,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "32-model-front-shirt.jpeg",
+        "imageModel": "32-model-side-shirt.jpeg",
+        "imageDetail": "32-model-back-shirt.jpeg"
+    },
+    {
+        "id": 33,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "33-model-back-shirt.jpeg",
+        "imageModel": "33-model-front-shirt.jpeg",
+        "imageDetail": "33-model-side-shirt.jpeg"
+    },
+    {
+        "id": 34,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "34-model-front-top.jpeg",
+        "imageModel": "34-model-side-top.jpeg",
+        "imageDetail": "34-top-back.jpeg"
+    },
+    {
+        "id": 35,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "35-model-side-skirt.jpeg",
+        "imageModel": "35-skirt-front-detail.jpeg",
+        "imageDetail": "35-skirt-back.jpeg"
+    },
+    {
+        "id": 36,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "36-model-front-skirt.jpeg",
+        "imageModel": "36-model-side-skirt.jpeg",
+        "imageDetail": "36-model-back-skirt.jpeg"
+    },
+    {
+        "id": 37,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "37-model-side-skirt.jpeg",
+        "imageModel": "37-model-back-skirt.jpeg",
+        "imageDetail": "37-model-front-skirt.jpeg"
+    },
+    {
+        "id": 38,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "38-model-front-pants.jpeg",
+        "imageModel": "38-model-back-pants.jpeg",
+        "imageDetail": "38-model-side-pants.jpeg"
+    },
+    {
+        "id": 39,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "39-model-side-skirt.jpeg",
+        "imageModel": "39-model-front-skirt.jpeg",
+        "imageDetail": "39-model-back-skirt.jpeg"
+    },
+    {
+        "id": 40,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "40-model-front-pants.jpeg",
+        "imageModel": "40-model-side-pants.jpeg",
+        "imageDetail": "40-model-back-pants.jpeg"
+    },
+    {
+        "id": 41,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "41-model-side-skirt.jpeg",
+        "imageModel": "41-skirt-front-detail.jpeg",
+        "imageDetail": "41-skirt-back.jpeg"
+    },
+    {
+        "id": 42,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "42-model-front-skirt.jpeg",
+        "imageModel": "42-model-back-skirt.jpeg",
+        "imageDetail": "42-model-side-skirt.jpeg"
+    },
+    {
+        "id": 43,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "43-model-side-tshirt.jpeg",
+        "imageModel": "43-tshirt-front-detail.jpeg",
+        "imageDetail": "43-tshirt-back.jpeg"
+    },
+    {
+        "id": 44,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "44-model-front-tshirt.jpeg",
+        "imageModel": "44-model-side-tshirt.jpeg",
+        "imageDetail": "44-tshirt-back.jpeg"
+    },
+    {
+        "id": 45,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "45-model-side-tshirt.jpeg",
+        "imageModel": "45-tshirt-back.jpeg",
+        "imageDetail": "45-tshirt-front-detail.jpeg"
+    },
+    {
+        "id": 46,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "46-model-front-tshirt.jpeg",
+        "imageModel": "46-tshirt-back.jpeg",
+        "imageDetail": "46-tshirt-front-detail.jpeg"
+    },
+    {
+        "id": 47,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "47-model-front-tshirt-detail.jpeg",
+        "imageModel": "47-model-side-tshirt-detail.jpeg",
+        "imageDetail": "47-tshirt-front.jpeg"
+    },
+    {
+        "id": 48,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "48-model-front-tshirt.jpeg",
+        "imageModel": "48-tshirt-front.jpeg",
+        "imageDetail": "48-model-side-tshirt-detail.jpeg"
+    },
+    {
+        "id": 49,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "49-model-front-tshirt.jpeg",
+        "imageModel": "49-tshirt-back.jpeg",
+        "imageDetail": "49-tshirt-front-detail.jpeg"
+    },
+    {
+        "id": 50,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "50-model-side-dress.jpeg",
+        "imageModel": "50-model-front-dress-detail.jpeg",
+        "imageDetail": "50-model-front-dress-details.jpeg"
+    },
+    {
+        "id": 51,
+        "name": "",
+        "price": 0,
+        "displayHome": false,
+        "image": "51-model-front-skirt.jpeg",
+        "imageModel": "51-model-front-skirt-detail.jpeg",
+        "imageDetail": "51-skirt-front.jpeg"
+    },
+    {
+        "id": 52,
         "name": "",
         "price": 0,
         "displayHome": false,
