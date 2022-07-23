@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+/*-- CORES --
+Branco #E4E3DF
+Cinza #B8C2B9
+Preto #020B0F */
+
+* {
+ box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #E4E3DF;
+  margin: 0 auto;
+  width: 100%;
+  min-width: max-content;
+}
+
+/* --- I ----- HEADER ----- */
+/* --- F ----- HEADER ----- */
+
+/* --- I ----- MAIN ----- */
+/* --- F ----- MAIN ----- */
+
+/* --- I ----- FOOTER ----- */
+/* --- F ----- FOOTER ----- */
+
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */
