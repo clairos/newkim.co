@@ -1,0 +1,24 @@
+- inicializar o .git no projeto
+git init
+
+- inicializar o npm no projeto
+npm init -y
+
+- intalar o express no projeto
+npm i express --save
+
+- intalar o ejs no projeto
+npm i ejs
+
+- instalar o nodemon no projeto (como dependência de desenvolvimento)
+npm i nodemon -D 
+
+- method-override
+ex: post vira put, get vira delete, get vira put
+npm i method-override
+
+- instalar Multer no projeto
+npm i multer
+
+- instalar biblioteca de validação 'express-validator'
+npm i express-validator
