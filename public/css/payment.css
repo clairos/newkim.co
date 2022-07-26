@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    padding: 0 50px;
+    padding: 0 3vh;
     max-width: 100%;
     background-color: #020B0F;
 }
@@ -73,7 +73,8 @@ main {
     justify-content: space-around;
     font-size: 17px;
     color: #020B0F;
-    height: 75vh;
+    height: 98vh;
+    width: 98vw;
 }
 
 .item {
@@ -270,7 +271,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #020B0F;
-    height: 15vh;
 }
 
 .contact {
@@ -317,6 +317,7 @@ footer {
 
     main {
         width: 100vw;
+        height: 100vh;
     }
 
     footer {
@@ -335,6 +336,47 @@ footer {
 }
 
 @media screen and (max-width: 675px) {
+    header {
+        width: 100vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+    }    
+
+    .cart-details {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        padding-top: 2rem;
+        border-bottom: 1px solid #B8C2B9;
+        border-right: none;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    .total {
+        display: flex;
+        align-self: center;
+        justify-content: space-evenly;
+        border-top: none;
+    }
+
+    .checkout {
+        width: 90vw;
+        margin-bottom: 2rem;
+    }
+
+
     .logo2 img {
         display: none;
     }
