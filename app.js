@@ -28,6 +28,7 @@ const aboutRouter = require('./routes/about');
 const formRouter = require('./routes/form');
 const storeRouter = require('./routes/store');
 const detailsRouter = require('./routes/details');
+const paymentRouter = require('./routes/payment');
 
 app.use('/', homeRouter);
 app.use('/cart', cartRouter);
@@ -35,6 +36,7 @@ app.use('/form', formRouter);
 app.use('/store', storeRouter);
 app.use('/about', aboutRouter);
 app.use('/details', detailsRouter);
+app.use('/payment', paymentRouter);
 
 // ************ catch 404 and forward to error handler ************
 app.use(function(req, res, next) {
