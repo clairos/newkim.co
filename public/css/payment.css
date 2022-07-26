@@ -142,7 +142,7 @@ main {
 }
 
 .paypal {
-    width: 70px!important;
+    width: 70px!important; /* imagem png do paypal é menor que as outras */
 }
 
 .payment-options button {
@@ -157,7 +157,6 @@ main {
 }
 
 .payment-options button:hover {
-    /* opacity: 0.70; */
     filter: contrast(0.75);
 }
 
