@@ -27,7 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 10vh;
-    padding: 0 50px;
+    padding: 0 3vh;
     max-width: 100%;
     background-color: #020B0F;
 }
@@ -67,6 +67,7 @@ header {
 /* --- I ----- MAIN ----- */
 main {
     display: flex;
+    width: 98vw;
     align-items: center;
     justify-content: center;
     font-size: 17px;
@@ -82,7 +83,7 @@ form {
 
 .bg {
     background-color: #E4E3DF;
-    padding: 50px 100px;
+    padding: 4% 0;
 }
 
 .shippingInfo, .contactInfo {
@@ -223,6 +224,14 @@ footer {
 @media screen and (max-width: 675px) {
     .logo2 img {
       display: none;
+    }
+
+    .contactInfo {
+        width: 70vw;
+    }
+
+    .shippingInfo {
+        width: 70vw;
     }
 }
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */
