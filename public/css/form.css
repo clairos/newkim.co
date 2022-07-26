@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Heebo', sans-serif;
-    background-color: #B8C2B9;
+    background-color: #E4E3DF;
     margin: 0 auto;
     width: 100%;
     min-width: max-content;
@@ -91,7 +91,7 @@ form {
 
 .flex {
     display: flex;
-    gap: 3px;
+    gap: 6px;
 }
 
 .itens-center {
@@ -107,17 +107,19 @@ form {
 }
 
 .col-4 {
-    width: 33%;
+    width: 33.3%;
 }
 
 input, select {
-    color: #6d6d6d;
-    border: solid 1px #B8C2B9;
+    color: #020B0F;
+    border: solid 1px #020B0F;
     border-radius: 0%;
-    border-color: #B8C2B9;
-    height: 27px;
-    padding: 5px;
-    margin: 2px 0;
+    height: 40px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #E4E3DF;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
 }
 
 main a {
@@ -125,19 +127,20 @@ main a {
     color: #020B0F;
 }
 
-.button {
+
+.button-a {
+    margin-right: 3%;
+} 
+
+.buttons {
     display: flex;
     align-items: center;
     justify-content: end;
 }
 
-.button a {
-    margin-right: 3%;
-}
-
 .btn {
     position: relative;
-    width: 145px;
+    width: 175px;
     height: 40px;
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
