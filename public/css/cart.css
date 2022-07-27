@@ -129,6 +129,11 @@ select {
     text-transform: uppercase;
 }
 
+.a-button {
+    color: white;
+    text-decoration: none;
+}
+
 .final {
     display: flex;
     flex-direction: column;
@@ -138,6 +143,7 @@ select {
 }
 
 .final a {
+    font-weight: bold;
     color: #020B0F;
 }
 
