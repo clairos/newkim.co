@@ -232,17 +232,6 @@
     },
     {
         "id": 22,
-        "name": "Flag Mini Dress",
-        "price": "746.00",
-        "displayHome": false,
-        "color": "Black",
-        "image": "22-front-dress.jpeg",
-        "imageModel": "22-side-dress.jpeg",
-        "imageDetail": "22-back-dress.jpeg",
-        "imageAlt": "Fringe decorations strappy mini dress - black"
-    },
-    {
-        "id": 23,
         "name": "Slim-Fit Mini Dress",
         "price": "698.00",
         "displayHome": false,
@@ -253,7 +242,7 @@
         "imageAlt": "Slim-fit strappy mini dress - white and yellow print"
     },
     {
-        "id": 24,
+        "id": 23,
         "name": "Slim-Fit Mini Dress",
         "price": "572.00",
         "displayHome": false,
@@ -264,7 +253,7 @@
         "imageAlt": "Slim-fit strappy mini dress - pink"
     },
     {
-        "id": 25,
+        "id": 24,
         "name": "Slim-Fit Mini Dress",
         "price": "572.00",
         "displayHome": false,
@@ -275,7 +264,7 @@
         "imageAlt": "Slim-fit fringe decorations strappy mini dress - black"
     },
     {
-        "id": 26,
+        "id": 25,
         "name": "Ruffle Organza Mini Dress",
         "price": "591.00",
         "displayHome": false,
@@ -286,7 +275,7 @@
         "imageAlt": "Ruffle organza mini dress - pink print"
     },
     {
-        "id": 27,
+        "id": 26,
         "name": "Square Puff Shirt",
         "price": "671.00",
         "displayHome": false,
@@ -297,7 +286,7 @@
         "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - white"
     },
     {
-        "id": 28,
+        "id": 27,
         "name": "Square Puff Shirt",
         "price": "671.00",
         "displayHome": false,
@@ -308,7 +297,7 @@
         "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - pink"
     },
     {
-        "id": 29,
+        "id": 28,
         "name": "Flower Collar Slim Shirt",
         "price": "514.00",
         "displayHome": false,
@@ -319,7 +308,7 @@
         "imageAlt": "Flower collar slim shirt - yellow"
     },
     {
-        "id": 30,
+        "id": 29,
         "name": "Puff Sleeve Crop Blouse",
         "price": "493.00",
         "displayHome": false,
@@ -330,7 +319,7 @@
         "imageAlt": "Puff sleeve crop blouse - black"
     },
     {
-        "id": 31,
+        "id": 30,
         "name": "Bogaji Collar Hawaiian Shirt",
         "price": "392.00",
         "displayHome": false,
@@ -341,7 +330,7 @@
         "imageAlt": "Bogaji collar hawaiian shirt - yellow print"
     },
     {
-        "id": 32,
+        "id": 31,
         "name": "Bogaji Collar Hawaiian Shirt",
         "price": "392.00",
         "displayHome": false,
@@ -352,7 +341,7 @@
         "imageAlt": "Bogaji collar hawaiian shirt - pink print"
     },
     {
-        "id": 33,
+        "id": 32,
         "name": "Bojagi Collar Hawaiian Shirt",
         "price": "392.00",
         "displayHome": false,
@@ -363,7 +352,7 @@
         "imageAlt": "Bogaji collar hawaiian shirt - white and a blue logo"
     },
     {
-        "id": 34,
+        "id": 33,
         "name": "Square Neck Jersey Top",
         "price": "280.00",
         "displayHome": false,
@@ -374,7 +363,7 @@
         "imageAlt": "Square neck stripped top - sky blue"
     },
     {
-        "id": 35,
+        "id": 34,
         "name": "Tuck Volume Long Skirt",
         "price": "857.00",
         "displayHome": false,
@@ -385,7 +374,7 @@
         "imageAlt":"Tuck volume long skirt - black"
     },
     {
-        "id": 36,
+        "id": 35,
         "name": "Tuck Volume Long Skirt",
         "price": "923.00",
         "displayHome": false,
@@ -396,7 +385,7 @@
         "imageAlt": "Tuck volume long skirt - white and yellow print"
     },
     {
-        "id": 37,
+        "id": 36,
         "name": "Bow Pocket Mini Skirt",
         "price": "488.00",
         "displayHome": false,
@@ -407,7 +396,7 @@
         "imageAlt": "Bow pocket mini skirt - white and yellow print"
     },
     {
-        "id": 38,
+        "id": 37,
         "name": "Wide Leg Pants",
         "price": "405.00",
         "displayHome": false,
@@ -418,7 +407,7 @@
         "imageAlt": "Baggy shorts - pink print"
     },
     {
-        "id": 39,
+        "id": 38,
         "name": "Bow Pocket Mini Skirt",
         "price": "430.00",
         "displayHome": false,
@@ -429,7 +418,7 @@
         "imageAlt": "Bow pocket mini skirt - black"
     },
     {
-        "id": 40,
+        "id": 39,
         "name": "Wide Leg Pants",
         "price": "405.00",
         "displayHome": false,
@@ -440,7 +429,7 @@
         "imageAlt": "Baggy shorts - pink print"
     },
     {
-        "id": 41,
+        "id": 40,
         "name": "V Line Band Pull Skirt",
         "price": "623.00",
         "displayHome": false,
@@ -451,7 +440,7 @@
         "imageAlt": "V line band midi skirt - black"
     },
     {
-        "id": 42,
+        "id": 41,
         "name": "V Line Band Pull Skirt",
         "price": "623.00",
         "displayHome": false,
@@ -462,7 +451,7 @@
         "imageAlt": "V line band midi skirt - pink"
     },
     {
-        "id": 43,
+        "id": 42,
         "name": "Logo-Print T-Shirt",
         "price": "161.00",
         "displayHome": false,
@@ -473,7 +462,7 @@
         "imageAlt": "Logo-print oversized T-shirt - blue and white logo"
     },
     {
-        "id": 44,
+        "id": 43,
         "name": "Bari-Print T-Shirt",
         "price": "161.00",
         "displayHome": false,
@@ -484,7 +473,7 @@
         "imageAlt": "Logo and bari print oversized T-shirt - white and green details"
     },
     {
-        "id": 45,
+        "id": 44,
         "name": "Bari Togheter-Print T-Shirt",
         "price": "161.00",
         "displayHome": false,
@@ -495,7 +484,7 @@
         "imageAlt": "Bari togheter and logo print oversized T-shirt - pink and red details"
     },
     {
-        "id": 46,
+        "id": 45,
         "name": "Logo-Print T-Shirt",
         "price": "140.00",
         "displayHome": false,
@@ -506,7 +495,7 @@
         "imageAlt": "Logo-print slim T-shirt - white and black logo"
     },
     {
-        "id": 47,
+        "id": 46,
         "name": "Bari Bow-Print T-Shirt",
         "price": "159.00",
         "displayHome": false,
@@ -517,7 +506,7 @@
         "imageAlt": "Bari bow and logo print slim T-shirt - white and pink details"
     },
     {
-        "id": 48,
+        "id": 47,
         "name": "Bari Bow-Print T-Shirt",
         "price": "159.00",
         "displayHome": false,
@@ -528,7 +517,7 @@
         "imageAlt": "Bari bow and logo print slim T-shirt - black and blue details"
     },
     {
-        "id": 49,
+        "id": 48,
         "name": "Bari Flower-Print T-Shirt",
         "price": "159.00",
         "displayHome": false,
@@ -539,7 +528,7 @@
         "imageAlt": "Bari flower-print slim T-shirt - white and colorful details"
     },
     {
-        "id": 50,
+        "id": 49,
         "name": "Voluminous Scallop Mini Dress",
         "price": "99.00",
         "displayHome": false,
@@ -550,7 +539,7 @@
         "imageAlt": "Voluminous scallop long sleeves mini dress - cream"
     },
     {
-        "id": 51,
+        "id": 50,
         "name": "Voluminous Silk Midi Skirt",
         "price": "179.00",
         "displayHome": false,
@@ -561,7 +550,7 @@
         "imageAlt": "Voluminous silk midi skirt - black"
     },
     {
-        "id": 52,
+        "id": 51,
         "name": "Tulle Tiered Mini Dress",
         "price": "100.00",
         "displayHome": false,
@@ -572,7 +561,7 @@
         "imageAlt": "Tulle tiered mini dress - green"
     },
     {
-        "id": 53,
+        "id": 52,
         "name": "Cropped Jacquard Knit Top",
         "price": "69.00",
         "displayHome": false,
@@ -583,7 +572,7 @@
         "imageAlt": "Cropped knit top - green"
     },
     {
-        "id": 54,
+        "id": 53,
         "name": "Voluminous Printed Midi Skirt",
         "price": "119.00",
         "displayHome": false,
@@ -594,7 +583,7 @@
         "imageAlt": "Voluminous printed midi skirt - pink and yellow"
     },
     {
-        "id": 55,
+        "id": 54,
         "name": "Retro Cat Eye Sunglasses",
         "price": "59.00",
         "displayHome": false,
@@ -605,7 +594,7 @@
         "imageAlt": "Retro cat eye sunglasses - cream"
     },
     {
-        "id": 56,
+        "id": 55,
         "name": "Retro Cat Eye Sunglasses",
         "price": "59.00",
         "displayHome": false,
@@ -616,18 +605,7 @@
         "imageAlt": "Retro cat eye sunglasses - pink transparent"
     },
     {
-        "id": 57,
-        "name": "Floral Jacquard Socks",
-        "price": "15.00",
-        "displayHome": false,
-        "color": "Cream",
-        "image": "57-socks-side.jpeg",
-        "imageModel": "",
-        "imageDetail": "",
-        "imageAlt": "Floral stamps socks - cream"
-    },
-    {
-        "id": 58,
+        "id": 56,
         "name": "Floral Jacquard Socks",
         "price": "15.00",
         "displayHome": false,
@@ -638,7 +616,7 @@
         "imageAlt": "Floral stamps socks - white"
     },
     {
-        "id": 59,
+        "id": 57,
         "name": "Floral Jacquard Socks",
         "price": "15.00",
         "displayHome": false,
@@ -649,40 +627,7 @@
         "imageAlt": "Floral stamps socks - green"
     },
     {
-        "id": 60,
-        "name": "Silk Bow Scrunchie",
-        "price": "29.00",
-        "displayHome": false,
-        "color": "Pink Print",
-        "image": "60-scrunchie.jpeg",
-        "imageModel": "",
-        "imageDetail": "",
-        "imageAlt": "Silk bow scrunchie - pink and yellow print"
-    },
-    {
-        "id": 61,
-        "name": "Silk Bow Scrunchie",
-        "price": "26.00",
-        "displayHome": false,
-        "color": "Black",
-        "image": "61-scrunchie.jpeg",
-        "imageModel": "",
-        "imageDetail": "",
-        "imageAlt": "Silk bow scrunchie - black"
-    },
-    {
-        "id": 62,
-        "name": "Embellished Hair Clip Set",
-        "price": 0,
-        "displayHome": false,
-        "color": "Red & Green",
-        "image": "62-hairpin-front.jpeg",
-        "imageModel": "",
-        "imageDetail": "",
-        "imageAlt": "Embellished hair clip set - red and green"
-    },
-    {
-        "id": 63,
+        "id": 58,
         "name": "Embossed Hair Clip",
         "price": "9.00",
         "displayHome": false,
@@ -691,27 +636,5 @@
         "imageModel": "63-hairpin-back.jpeg",
         "imageDetail": "",
         "imageAlt": "Embossed hair clip - pink"
-    },
-    {
-        "id": 64,
-        "name": "Floral Hair Clip",
-        "price": "9.00",
-        "displayHome": false,
-        "color": "Blue & White",
-        "image": "64-hairpin-front.jpeg",
-        "imageModel": "",
-        "imageDetail": "",
-        "imageAlt": "Floral hair clip - blue and white"
-    },
-    {
-        "id": 65,
-        "name": "",
-        "price": 0,
-        "displayHome": false,
-        "color": "",
-        "image": "",
-        "imageModel": "",
-        "imageDetail": "",
-        "imageAlt": ""
     }
 ]

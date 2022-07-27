@@ -185,6 +185,11 @@ header:hover {
     color: #020B0F;
 }
 
+.shop a {
+    text-decoration: none;
+    color: #020B0F;
+}
+
 figure {
     display: inline-block;
     text-align: center;

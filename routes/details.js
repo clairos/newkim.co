@@ -6,6 +6,6 @@ var router = express.Router();
 const DetailsController = require('../controllers/DetailsController')
 
 /* GET details page. */
-router.get('/', DetailsController.index);
+router.get('/:id', DetailsController.index);
 
 module.exports = router;

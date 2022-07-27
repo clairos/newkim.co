@@ -88,6 +88,11 @@ figure img {
   padding: 6% 3% 0 0; 
 }
 
+.model a {
+  text-decoration: none;
+  color: #020B0F;
+}
+
 .model {
   height: 60vh;
   position: relative;
