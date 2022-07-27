@@ -16,8 +16,7 @@ html {
 body {
   font-family: 'Heebo', sans-serif;
   background-color: #E4E3DF;
-  margin: 0 auto;
-  width: 100%;
+  width: 98vw;
   min-width: max-content;
 }
 
@@ -27,9 +26,8 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  padding: 0 50px;
+  padding: 0 3vh;
   max-width: 100vw;
-  margin-top: 1%;
 }
 
 .menu-search {
@@ -87,7 +85,7 @@ figure img {
   width: 100%;
   height: 100%;
   align-items: center;
-  padding: 30px 10px 0px;
+  padding: 6% 3% 0 0; 
 }
 
 .model {
@@ -96,58 +94,16 @@ figure img {
   margin-bottom: 5%;
 }
 
-.model19-2 {
+.model2 {
   position: absolute;
 }
 
-.model19 {
+.model1 {
   position: relative;
   transition: opacity 0.3s ease-in-out;
 }
 
-figure img.model19:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.model24-2 {
-  position: absolute;
-}
-
-.model24 {
-  position: relative;
-  transition: opacity 0.3s ease-in-out;
-}
-
-figure img.model24:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.model26-2 {
-  position: absolute;
-}
-
-.model26 {
-  position: relative;
-  transition: opacity 0.3s ease-in-out;
-}
-
-figure img.model26:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.model21-2 {
-  position: absolute;
-}
-
-.model21 {
-  position: relative;
-  transition: opacity 0.3s ease-in-out;
-}
-
-figure img.model21:hover {
+figure img.model1:hover {
   opacity: 0;
   cursor: pointer;
 }
@@ -222,8 +178,11 @@ footer {
     width: 100vw;
   }
 
+ 
+
   figure img {
-    height: 45vh;
+    width: 20vw;
+    height: 50vh;
  }
 
  footer {
@@ -260,21 +219,37 @@ footer {
 }
 
 @media screen and (max-width: 675px) {
+  body {
+    margin: 0;
+  }
+
+  main {
+    width: 98vw;
+  }
+
+  #collections {
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
   .logo2 img {
     display: none;
   }
 
-  #collections {
-    flex-direction: column;
-    align-items: center;
-  }
-
   figure img {
-    padding: 0;
+    width: 200px;
+    height: 250px;
   }
 
-  .model {
-    justify-self: center;
+
+  footer {
+    width: 100vw;
   }
 }
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */
