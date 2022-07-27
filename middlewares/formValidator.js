@@ -12,4 +12,5 @@ const validator = [
     check('phone').notEmpty().withMessage('Phone required').isLength({ min: 11, max: 11 }).withMessage("Phone incorret")
     
 ];    
-    module.exports = validator;
+
+module.exports = validator;

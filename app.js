@@ -23,20 +23,20 @@ app.set('views', path.join(__dirname, 'views')); // define localização da past
 
 // ************ Route System require and use() ************
 const homeRouter = require('./routes/home');
-const cartRouter = require('./routes/cart');
-const aboutRouter = require('./routes/about');
-const formRouter = require('./routes/form');
 const storeRouter = require('./routes/store');
 const detailsRouter = require('./routes/details');
+const cartRouter = require('./routes/cart');
+const formRouter = require('./routes/form');
 const paymentRouter = require('./routes/payment');
+const aboutRouter = require('./routes/about');
 
 app.use('/', homeRouter);
+app.use('/store', storeRouter);
+app.use('/details', detailsRouter);
 app.use('/cart', cartRouter);
 app.use('/form', formRouter);
-app.use('/store', storeRouter);
-app.use('/about', aboutRouter);
-app.use('/details', detailsRouter);
 app.use('/payment', paymentRouter);
+app.use('/about', aboutRouter);
 
 // ************ catch 404 and forward to error handler ************
 app.use(function(req, res, next) {

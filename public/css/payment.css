@@ -63,7 +63,6 @@ header {
     max-width: 100%;
     filter: invert(1);
 }
-
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
@@ -143,7 +142,7 @@ main {
 }
 
 .paypal {
-    width: 70px!important;
+    width: 70px!important; /* imagem png do paypal é menor que as outras */
 }
 
 .payment-options button {
@@ -158,7 +157,6 @@ main {
 }
 
 .payment-options button:hover {
-    /* opacity: 0.70; */
     filter: contrast(0.75);
 }
 
