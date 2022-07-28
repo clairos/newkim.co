@@ -1,11 +1,11 @@
 // ************ Require's ************
 const express = require('express');
 const upload = require('../middlewares/multer');
-const formValidator = require('../middlewares/formValidator');
+const formValidator = require('../middlewares/registerValidator');
 const router = express.Router();
 
 // ************ Controller Require ************
-const FormController = require('../controllers/FormController');
+const FormController = require('../controllers/RegisterController');
 
 /* GET form page. */
 router.get('/', FormController.index);

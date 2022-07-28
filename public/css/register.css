@@ -162,6 +162,7 @@ main a {
     border: solid 1px #020B0F;
     cursor: pointer;
     z-index: 1;
+    margin-top: 20px;
 }
 
 .btn-tp1::before {

@@ -1,7 +1,8 @@
 const {validationResult} = require('express-validator')
-const FormController = {
+
+const RegisterController = {
     index: (req, res) => {
-        res.render('form');
+        res.render('register');
     },
     // Create - form to create
     // Pag para criar um item
@@ -31,4 +32,4 @@ const FormController = {
     }
 }
 
-module.exports = FormController;
+module.exports = RegisterController;
