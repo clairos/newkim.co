@@ -28,6 +28,9 @@ const detailsRouter = require('./routes/details');
 const cartRouter = require('./routes/cart');
 const formRouter = require('./routes/form');
 const paymentRouter = require('./routes/payment');
+const orderSuccessRouter = require('./routes/orderSuccess');
+const trackCodeRouter = require('./routes/trackCode');
+const trackOrderRouter = require('./routes/trackOrder');
 const aboutRouter = require('./routes/about');
 
 app.use('/', homeRouter);
@@ -36,6 +39,9 @@ app.use('/details', detailsRouter);
 app.use('/cart', cartRouter);
 app.use('/form', formRouter);
 app.use('/payment', paymentRouter);
+app.use('/order-success', orderSuccessRouter);
+app.use('/track-code', trackCodeRouter);
+app.use('/track-order', trackOrderRouter);
 app.use('/about', aboutRouter);
 
 // ************ catch 404 and forward to error handler ************
