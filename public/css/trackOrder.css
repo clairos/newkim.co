@@ -79,160 +79,56 @@ header {
 /* --- I ----- MAIN ----- */
 main {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
-    font-size: 17px;
-    color: #020B0F;
-    height: 98vh;
+    flex-direction: column;
+    height: 75vh;
     width: 98vw;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress img {
+    width: 50px;
+}
+
+.shopping-bag {
+    width: 45px!important;
+}
+
+.box {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #aaa;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
+}
+
+.box img {
+    width: 70px;
+    border-radius: 3px;
 }
 
 .item {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 2rem;
-}
-
-.item img {
-    width: 150px;
-    padding-right: 15px;
-}
-
-.cart-details {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 40vw;
-    height: 100%;
-    border-right: 1px solid #B8C2B9;
-}
-
-.total {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding-top: 1rem;
-    border-top: 1px solid #B8C2B9;
-}
-
-.checkout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 60vw;
-    padding-top: 3rem;
-}
-
-.express-checkout {
-    border: 1px solid #B8C2B9;
-    border-radius: 7px;
-    width: 75%;
-}
-
-.options-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
-
-.payment-options {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 10px;
-    padding-bottom: 1rem;
+    margin-bottom: 8px;
 }
 
-.payment-options img {
-    width: 50px;
-}
-
-.paypal {
-    width: 70px!important; /* imagem png do paypal é menor que as outras */
-}
-
-.payment-options button {
-    width: 150px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.payment-options button:hover {
-    filter: contrast(0.75);
-}
-
-.payment-separator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-}
-
-.payment-form {
-    width: 75%;
-}
-
-.flex {
-    display: flex;
-    gap: 6px;
-    width: 100%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-input {
-    color: #020B0F;
-    border: solid 1px #020B0F;
-    border-radius: 0%;
-    height: 40px;
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #E4E3DF;
-    font-family: 'Heebo', sans-serif;
-    font-weight: bold;
-}
-
-.col-12 {
-    width: 100%;
-    font-family: 'Heebo', sans-serif;
-}
-
-.col-6 {
-    width: 50%;
-    font-family: 'Heebo', sans-serif;
-}
-
-main a {
-    font-weight: bold;
-    color: #020B0F;
-}
-
-.buttons {
+.buttons-box {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-top: 15px;
-    width: 75%;
-    margin-top: 5rem;
-}
-
-.buttons a {
-    margin-right: 3%;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .btn {
@@ -257,7 +153,7 @@ main a {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #E4E3DF;
+    background-color: #aaa;
     z-index: -1;
 }
 
@@ -270,6 +166,66 @@ main a {
 
 .btn-tp1:hover::before {
     width: 100%;
+}
+
+.btn-tp2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: #aaa;
+    z-index: -1;
+}
+
+.btn-tp2:hover {
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-tp2:hover::before {
+    width: 100%;
+}
+
+.btn-tp3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: #E4E3DF;
+    z-index: -1;
+}
+
+.btn-tp3:hover {
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-tp3:hover::before {
+    width: 100%;
+}
+
+.btn3 {
+    position: relative;
+    width: 175px;
+    height: 50px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #E4E3DF;
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    cursor: pointer;
+    z-index: 1;
 }
 
 /* --- F ----- MAIN ----- */
@@ -315,7 +271,6 @@ footer {
     max-width: 100%;
     filter: invert(1);
 }
-
 /* --- F ----- FOOTER ----- */
 
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
@@ -391,4 +346,17 @@ footer {
     }
 }
 
+@media screen and (max-width: 360px){
+    header {
+        justify-content: space-around;
+    }
+
+    #search {
+        display: none;
+    }
+
+    .cart-acc {
+        display: none;
+    }
+}
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

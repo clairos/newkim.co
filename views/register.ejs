@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%- include('partials/head') %>
-        <link rel="stylesheet" href="/css/form.css">
+        <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
     <%- include('partials/header') %>
@@ -11,16 +11,18 @@
             <div class="bg">
                 <form action="/form" method="POST">
                     <div class="contactInfo">
-                        <h2>Contact Information</h2>
+                        <h2>Create new account</h2>
 
                         <input class="col-12" type="email" id="email" name="email" placeholder="E-mail">
+                        <input class="col-12" type="text" id="name" name="name" placeholder="Full name">
+                        <input class="col-12" type="password" id="password" name="password" placeholder="Password">
                         <div class="flex itens-center">
                             <input type="checkbox" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
                         </div>
                     </div>
                     <div class="shippingInfo">
 
-                        <h2>Shipping Adress</h2>
+                        <h2>Address Information</h2>
                         <div class="flex">
                             <select class="col-12" name="country" id="country">
                                 <option>Country/region</option>
@@ -47,23 +49,18 @@
                                 placeholder="Adress Line 2 (optional)">
                         </div>
                         <div class="flex">
-                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb">
+                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City">
                             <input class="col-4" type="text" id="state" name="state" placeholder="State/territory">
                             <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode">
                         </div>
                         <div class="flex">
                             <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone">
                         </div>
-                        <div class="flex itens-center">
-                            <input type="checkbox" name="saveInfo" id="saveInfo"><label for="saveInfo">Save this
-                                information for next time</label>
-                        </div>
                     </div>
                 </form>
                 <div class="buttons">
-                    <a href="/cart" class="button-a">Return to cart</a>
-                    <a href="/payment">
-                        <button type="submit" class="btn btn-tp1">CONTINUE</button>
+                    <a href="/login">
+                        <button type="submit" class="btn btn-tp1">CREATE ACCOUNT</button>
                     </a>
                 </div>
             </div>
