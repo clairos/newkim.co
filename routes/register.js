@@ -7,7 +7,7 @@ const router = express.Router();
 // ************ Controller Require ************
 const RegisterController = require('../controllers/RegisterController');
 
-/* GET form page. */
+/* GET register page. */
 router.get('/', RegisterController.index);
 /* POST form page. */
 router.post('/registrar', registerValidator, RegisterController.store)

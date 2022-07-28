@@ -3,9 +3,9 @@ var express = require('express');
 var router = express.Router();
 
 // ************ Controller Require ************
-const EditUserController = require('../controllers/EditUserController')
+const ProfileController = require('../controllers/ProfileController')
 
-/* GET edit user page. */
-router.get('/', EditUserController.index);
+/* GET profile page. */
+router.get('/', ProfileController.index);
 
 module.exports = router;
