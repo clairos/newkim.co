@@ -121,6 +121,11 @@ input {
     font-weight: bold;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+    border: solid 2px #020B0F;
+}
+
 .btn {
     position: relative;
     width: 175px;
