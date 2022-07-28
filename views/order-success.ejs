@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/order-success.css">
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        
+        <div class="box">
+            <div class="msg">
+                <h1>Order Placed Successfully!</h1>
+                <h3>Your order is confirmed. You will receive an order confirmation e-mail shortly with the tracking code.</h3>
+                <div>
+                    <h2>Order Tracking Code: XXXXXX</h2>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <a href="/">
+                    <button>HOME</button>
+                </a>
+                <a href="/track-order">
+                    <button>TRACK ORDER</button>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
