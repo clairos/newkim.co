@@ -58,7 +58,18 @@ header {
     filter: invert(1);
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
+    width: 31px;
+    max-width: 100%;
+    filter: invert(1);
+}
+
+#account {
     width: 31px;
     max-width: 100%;
     filter: invert(1);
@@ -109,7 +120,7 @@ main {
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
     font-size: 15px;
-    color: #E4E3DF;
+    color: #ececec;
     background-color: #020B0F;
     border: solid 1px #020B0F;
     cursor: pointer;
@@ -124,7 +135,7 @@ main {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #E4E3DF;
+    background-color: #ececec;
     z-index: -1;
 }
 
@@ -146,7 +157,7 @@ main {
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
     font-size: 15px;
-    color: #E4E3DF;
+    color: #ececec;
     background-color: #020B0F;
     border: solid 1px #020B0F;
     cursor: pointer;
@@ -161,7 +172,7 @@ main {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #E4E3DF;
+    background-color: #ececec;
     z-index: -1;
 }
 

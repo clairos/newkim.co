@@ -58,7 +58,18 @@ header {
     filter: invert(1);
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
+    width: 31px;
+    max-width: 100%;
+    filter: invert(1);
+}
+
+#account {
     width: 31px;
     max-width: 100%;
     filter: invert(1);

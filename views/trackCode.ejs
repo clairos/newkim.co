@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/css/track-code.css">
+    <link rel="stylesheet" href="/css/trackCode.css">
     <%- include('partials/head') %>
 </head>
 <body>
     <%- include('partials/header') %>
 
     <main>
-        
+        <div class="box">
+            <div class="title">
+                <h2>TRACK YOUR ORDER</h2>
+            </div>
+            <div class="track">
+                <form action="">
+                    <label for="tracking">Enter your tracking code: </label><br>
+                    <input class="col-6" type="number" id="tracking" name="tracking" placeholder="Insert tracking code">
+                </form>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-tp1" type="submit">SUBMIT</button>
+                <a href="/">Go back</a>
+            </div>
+        </div>
     </main>
 
     <%- include('partials/footer') %>

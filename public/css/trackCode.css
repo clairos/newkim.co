@@ -58,7 +58,18 @@ header {
     filter: invert(1);
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
+    width: 31px;
+    max-width: 100%;
+    filter: invert(1);
+}
+
+#account {
     width: 31px;
     max-width: 100%;
     filter: invert(1);
@@ -66,6 +77,101 @@ header {
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
+main {
+    height: 76vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    background-color: #ececec;
+}
+
+.title {
+    border-bottom: 1px solid #020B0F;
+    width: 100%;
+}
+
+.track {
+    width: 100%;
+}
+
+input {
+    color: #020B0F;
+    border: solid 1px #020B0F;
+    border-radius: 0%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #ececec;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+}
+
+.buttons a {
+    color: #020B0F;
+}
+
+.btn {
+    position: relative;
+    width: 145px;
+    height: 40px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ececec;
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-tp1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: #ececec;
+    z-index: -1;
+}
+
+.btn-tp1:hover {
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-tp1:hover::before {
+    width: 100%;
+}
 
 /* --- F ----- MAIN ----- */
 

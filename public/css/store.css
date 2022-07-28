@@ -52,10 +52,20 @@ header {
   margin-right: 1%;
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
-  width: 31px;
-  max-width: 100%;
-} 
+    width: 31px;
+    max-width: 100%;
+}
+
+#account {
+    width: 31px;
+    max-width: 100%;
+}
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */

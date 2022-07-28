@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="/css/track-order.css">
+    <link rel="stylesheet" href="/css/trackOrder.css">
     <%- include('partials/head') %>
 </head>
+
 <body>
     <%- include('partials/header') %>
 
-    <main>
-        
-    </main>
+        <main>
+            <div class="progress">
+                <img class="shopping-bag" src="/img/shopping-bag2.png" alt="shopping bag icon">
+                <img src="/img/line.png" alt="line">
+                <img class="credit-card" src="/img/payment-success.png" alt="credit card icon">
+                <img src="/img/line.png" alt="line">
+                <img src="/img/order-packed.png" alt="box icon">
+                <img src="/img/line.png" alt="line">
+                <img src="/img/tracking.png" alt="truck icon">
+                <img src="/img/line.png" alt="line">
+                <img src="/img/package-on-the-way.png" alt="little map icon">
+            </div>
+            <div class="box">
+                <div class="details">
+                    <div class="item">
+                        <img src="/img/55-sunglass-front.jpeg" alt="">
+                        <span>Retro Cat Eye Sunglasses</span>
+                    </div>
+                    <div class="item">
+                        <img src="/img/56-sunglass-front.jpeg" alt="">
+                        <span>Retro Cat Eye Sunglasses</span>
+                    </div>
+                </div>
+                <div class="buttons-box">
+                    <button class="btn btn-tp1">CANCEL ORDER</button>
+                    <a href="/store">
+                        <button class="btn btn-tp2">BUY AGAIN</button>
+                    </a>
+                </div>
+            </div>
+            <a href="/">
+                <button class="btn3 btn-tp3">GO BACK</button>
+            </a>
+        </main>
 
-    <%- include('partials/footer') %>
+        <%- include('partials/footer') %>
 </body>
+
 </html>
