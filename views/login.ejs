@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/login.css">
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <div class="box">
+            <img src="/img/account.png" alt="account icon">
+            <div class="login">
+                <form action="">
+                    <label for="email">E-mail:</label><br>
+                    <input class="col-4" type="email" id="email" name="email"><br>
+                    <label for="password">Password:</label><br>
+                    <input class="col-4" type="password" id="password" name="password">
+                </form>
+            </div>
+            <button class="btn btn-tp1" type="submit">LOGIN</button>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
