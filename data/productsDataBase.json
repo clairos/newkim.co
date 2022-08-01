@@ -549,7 +549,7 @@
         "imageModel": "47-model-side-tshirt-detail.jpeg",
         "imageDetail": "47-tshirt-front.jpeg",
         "imageAlt": "Bari bow and logo print slim T-shirt - white and pink details",
-        "collection": "otherstories"
+        "collection": "bari"
     },
     {
         "id": 47,
@@ -561,7 +561,7 @@
         "imageModel": "48-tshirt-front.jpeg",
         "imageDetail": "48-model-side-tshirt-detail.jpeg",
         "imageAlt": "Bari bow and logo print slim T-shirt - black and blue details",
-        "collection": "otherstories"
+        "collection": "bari"
     },
     {
         "id": 48,
@@ -573,7 +573,7 @@
         "imageModel": "49-tshirt-back.jpeg",
         "imageDetail": "49-tshirt-front-detail.jpeg",
         "imageAlt": "Bari flower-print slim T-shirt - white and colorful details",
-        "collection": "otherstories"
+        "collection": "bari"
     },
     {
         "id": 49,

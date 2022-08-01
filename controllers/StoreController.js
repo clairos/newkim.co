@@ -6,7 +6,9 @@ const StoreController = {
         res.render('store', { products });
     },
     collection: (req, res) => {
-        const products = Products.findOne();
+        const { collection } = req.params;
+        const products = Products.findCollection(collection);
+        console.log(products);
         res.render('store', { products });
     }, 
 }

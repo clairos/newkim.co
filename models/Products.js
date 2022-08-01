@@ -10,6 +10,10 @@ const Products = {
 
     findOne(id) {
         return this.findAll().find(item => item.id == id);
+    },
+    
+    findCollection(coll){
+        return this.findAll().filter(item => item.collection == coll);
     }
 }
 
