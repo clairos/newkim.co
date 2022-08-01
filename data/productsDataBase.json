@@ -8,7 +8,8 @@
         "image": "1-dress.jpeg",
         "imageModel": "1-model-front-dress.jpeg",
         "imageDetail": "1-model-front-dress-detail.jpeg",
-        "imageAlt": "Voluminous long sleeve midi dress - pink and yellow with little flowers"
+        "imageAlt": "Voluminous long sleeve midi dress - pink and yellow with little flowers",
+        "collection": "otherstories"
     },
     {
         "id": 2,
@@ -19,7 +20,8 @@
         "image": "2-blouse.jpeg",
         "imageModel": "2-model-front-blouse.jpeg",
         "imageDetail": "2-model-back-blouse-detail.jpeg",
-        "imageAlt": "Short sleeves sailor collar silk blouse - blue and yellow with little flowers"
+        "imageAlt": "Short sleeves sailor collar silk blouse - blue and yellow with little flowers",
+        "collection": "otherstories"
     },
     {
         "id": 3,
@@ -30,7 +32,8 @@
         "image": "3-trousers.jpeg",
         "imageModel": "3-model-front-trousers.jpeg",
         "imageDetail": "3-model-side-trousers-detail.jpeg",
-        "imageAlt": "Wide printed silk trousers - blue and yellow print"
+        "imageAlt": "Wide printed silk trousers - blue and yellow print",
+        "collection": "otherstories"
     },
     {
         "id": 4,
@@ -41,7 +44,8 @@
         "image": "4-dress.jpeg",
         "imageModel": "4-model-front-dress.jpeg",
         "imageDetail": "4-model-front-dress-detail.jpeg",
-        "imageAlt": "Strappy midi dress - pink and a large green bar at the bottom"
+        "imageAlt": "Strappy midi dress - pink and a large green bar at the bottom",
+        "collection": "otherstories"
     },
     {
         "id": 5,
@@ -52,7 +56,8 @@
         "image": "5-dress.jpeg",
         "imageModel": "5-model-front-dress.jpeg",
         "imageDetail": "5-model-side-dress.jpeg",
-        "imageAlt": "Voluminous large strap mini dress - white print"
+        "imageAlt": "Voluminous large strap mini dress - white print",
+        "collection": "otherstories"
     },
     {
         "id": 6,
@@ -63,7 +68,8 @@
         "image": "6-dress.jpeg",
         "imageModel": "6-model-front-dress.jpeg",
         "imageDetail": "6-model-side-dress-detail.jpeg",
-        "imageAlt": "Bow strap silk midi dress - black"
+        "imageAlt": "Bow strap silk midi dress - black",
+        "collection": "otherstories"
     },
     {
         "id": 7,
@@ -74,7 +80,8 @@
         "image": "7-hairpin.jpeg",
         "imageModel": "7-model-hairpin.jpeg",
         "imageDetail": "",
-        "imageAlt": "Whimsical hair clip set - pink/green and yellow/white"
+        "imageAlt": "Whimsical hair clip set - pink/green and yellow/white",
+        "collection": "otherstories"
     },
     {
         "id": 8,
@@ -85,7 +92,8 @@
         "image": "8-model-front-cropped.jpeg",
         "imageModel": "8-model-side-cropped.jpeg",
         "imageDetail": "8-model-back-cropped.jpeg",
-        "imageAlt": "Puff sleeve crop blouse - pink"
+        "imageAlt": "Puff sleeve crop blouse - pink",
+        "collection": "bari"
     },
     {
         "id": 9,
@@ -96,7 +104,8 @@
         "image": "9-model-side-jacket.jpeg",
         "imageModel": "9-model-front-jacket.jpeg",
         "imageDetail": "9-model-back-jacket.jpeg",
-        "imageAlt": "Volume sleeve jacket - white and yellow print"
+        "imageAlt": "Volume sleeve jacket - white and yellow print",
+        "collection": "bari"
     },
     {
         "id": 10,
@@ -107,7 +116,8 @@
         "image": "10-model-front-dress.jpeg",
         "imageModel": "10-model-back-dress.jpeg",
         "imageDetail": "10-model-side-dress.jpeg",
-        "imageAlt": "Ruffle organza mini dress - yellow print"
+        "imageAlt": "Ruffle organza mini dress - yellow print",
+        "collection": "bari"
     },
     {
         "id": 11,
@@ -118,7 +128,8 @@
         "image": "11-model-front-dress.jpeg",
         "imageModel": "11-model-side-dress.jpeg",
         "imageDetail": "11-model-back-dress.jpeg",
-        "imageAlt": "Fringe decorations strappy mini dress - white"
+        "imageAlt": "Fringe decorations strappy mini dress - white",
+        "collection": "bari"
     },
     {
         "id": 12,
@@ -129,7 +140,8 @@
         "image": "12-model-side-coat.jpeg",
         "imageModel": "12-model-back-coat.jpeg",
         "imageDetail": "12-model-front-coat.jpeg",
-        "imageAlt": "Puff sleeves long coat with a wide ribbon band behind - yellow"
+        "imageAlt": "Puff sleeves long coat with a wide ribbon band behind - yellow",
+        "collection": "bari"
     },
     {
         "id": 13,
@@ -140,7 +152,8 @@
         "image": "13-model-front-jacket.jpeg",
         "imageModel": "13-model-side-jacket.jpeg",
         "imageDetail": "13-model-back-jacket.jpeg",
-        "imageAlt": "Volume sleeve jacket - black"
+        "imageAlt": "Volume sleeve jacket - black",
+        "collection": "bari"
     },
     {
         "id": 14,
@@ -151,7 +164,8 @@
         "image": "14-model-front-jacket.jpeg",
         "imageModel": "14-model-side-jacket.jpeg",
         "imageDetail": "14-model-back-jacket.jpeg",
-        "imageAlt": "Oversized single-breasted jacket - white and yellow print"
+        "imageAlt": "Oversized single-breasted jacket - white and yellow print",
+        "collection": "bari"
     },
     {
         "id": 15,
@@ -162,7 +176,8 @@
         "image": "15-model-side-dress.jpeg",
         "imageModel": "15-model-front-dress.jpeg",
         "imageDetail": "15-model-back-dress.jpeg",
-        "imageAlt": "Bojagi collar shirt midi dress - pink print"
+        "imageAlt": "Bojagi collar shirt midi dress - pink print",
+        "collection": "bari"
     },
     {
         "id": 16,
@@ -173,7 +188,8 @@
         "image": "16-model-front-dress.jpeg",
         "imageModel": "16-model-back-dress.jpeg",
         "imageDetail": "16-model-side-dress.jpeg",
-        "imageAlt": "Bojagi collar shirt midi dress - yellow print"
+        "imageAlt": "Bojagi collar shirt midi dress - yellow print",
+        "collection": "bari"
     },
     {
         "id": 17,
@@ -184,7 +200,8 @@
         "image": "17-model-side-dress.jpeg",
         "imageModel": "17-model-front-dress.jpeg",
         "imageDetail": "17-model-back-dress.jpeg",
-        "imageAlt": "Bojagi collar shirt midi dress - black and a blue logo"
+        "imageAlt": "Bojagi collar shirt midi dress - black and a blue logo",
+        "collection": "bari"
     },
     {
         "id": 18,
@@ -195,7 +212,8 @@
         "image": "18-model-front-dress.jpeg",
         "imageModel": "18-model-side-dress.jpeg",
         "imageDetail": "18-model-back-dress.jpeg",
-        "imageAlt": "Bojagi collar puff sleeves midi dress - pink"
+        "imageAlt": "Bojagi collar puff sleeves midi dress - pink",
+        "collection": "bari"
     },
     {
         "id": 19,
@@ -206,7 +224,8 @@
         "image": "19-model-side-dress.jpeg",
         "imageModel": "19-model-front-dress.jpeg",
         "imageDetail": "19-model-back-dress.jpeg",
-        "imageAlt": "Bojagi collar puff sleeves midi dress - white"
+        "imageAlt": "Bojagi collar puff sleeves midi dress - white",
+        "collection": "bari"
     },
     {
         "id": 20,
@@ -217,7 +236,8 @@
         "image": "20-model-front-dress.jpeg",
         "imageModel": "20-model-back-dress.jpeg",
         "imageDetail": "20-model-side-dress.jpeg",
-        "imageAlt": "Sleeveless tiered midi dress - yellow print"
+        "imageAlt": "Sleeveless tiered midi dress - yellow print",
+        "collection": "bari"
     },
     {
         "id": 21,
@@ -228,7 +248,8 @@
         "image": "21-model-front-dress.jpeg",
         "imageModel": "21-model-back-dress.jpeg",
         "imageDetail": "21-model-side-dress.jpeg",
-        "imageAlt": "Sleeveless tiered midi dress - pink and white print"
+        "imageAlt": "Sleeveless tiered midi dress - pink and white print",
+        "collection": "bari"
     },
     {
         "id": 22,
@@ -239,7 +260,8 @@
         "image": "23-model-side-dress.jpeg",
         "imageModel": "23-model-back-dress.jpeg",
         "imageDetail": "23-model-front-dress.jpeg",
-        "imageAlt": "Slim-fit strappy mini dress - white and yellow print"
+        "imageAlt": "Slim-fit strappy mini dress - white and yellow print",
+        "collection": "bari"
     },
     {
         "id": 23,
@@ -250,7 +272,8 @@
         "image": "24-model-front-dress.jpeg",
         "imageModel": "24-model-side-dress.jpeg",
         "imageDetail": "24-model-back-dress.jpeg",
-        "imageAlt": "Slim-fit strappy mini dress - pink"
+        "imageAlt": "Slim-fit strappy mini dress - pink",
+        "collection": "bari"
     },
     {
         "id": 24,
@@ -261,7 +284,8 @@
         "image": "25-model-side-dress.jpeg",
         "imageModel": "25-model-front-dress.jpeg",
         "imageDetail": "25-model-back-dress.jpeg",
-        "imageAlt": "Slim-fit fringe decorations strappy mini dress - black"
+        "imageAlt": "Slim-fit fringe decorations strappy mini dress - black",
+        "collection": "bari"
     },
     {
         "id": 25,
@@ -272,7 +296,8 @@
         "image": "26-model-front-dress.jpeg",
         "imageModel": "26-model-side-dress.jpeg",
         "imageDetail": "26-dress.jpeg",
-        "imageAlt": "Ruffle organza mini dress - pink print"
+        "imageAlt": "Ruffle organza mini dress - pink print",
+        "collection": "bari"
     },
     {
         "id": 26,
@@ -283,7 +308,8 @@
         "image": "27-model-side-shirt.jpeg",
         "imageModel": "27-model-front-shirt.jpeg",
         "imageDetail": "27-model-back-shirt.jpeg",
-        "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - white"
+        "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - white",
+        "collection": "bari"
     },
     {
         "id": 27,
@@ -294,7 +320,8 @@
         "image": "28-model-front-shirt.jpeg",
         "imageModel": "28-model-side-shirt.jpeg",
         "imageDetail": "28-model-back-shirt.jpeg",
-        "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - pink"
+        "imageAlt": "Square puff sleeves shirt with a wide ribbon band behind - pink",
+        "collection": "bari"
     },
     {
         "id": 28,
@@ -305,7 +332,8 @@
         "image": "29-model-side-shirt.jpeg",
         "imageModel": "29-model-front-shirt.jpeg",
         "imageDetail": "29-model-back-shirt.jpeg",
-        "imageAlt": "Flower collar slim shirt - yellow"
+        "imageAlt": "Flower collar slim shirt - yellow",
+        "collection": "bari"
     },
     {
         "id": 29,
@@ -316,7 +344,8 @@
         "image": "30-model-front-cropped.jpeg",
         "imageModel": "30-model-back-cropped.jpeg",
         "imageDetail": "30-model-side-cropped.jpeg",
-        "imageAlt": "Puff sleeve crop blouse - black"
+        "imageAlt": "Puff sleeve crop blouse - black",
+        "collection": "bari"
     },
     {
         "id": 30,
@@ -327,7 +356,8 @@
         "image": "31-model-side-shirt.jpeg",
         "imageModel": "31-model-back-shirt.jpeg",
         "imageDetail": "31-model-front-shirt.jpeg",
-        "imageAlt": "Bogaji collar hawaiian shirt - yellow print"
+        "imageAlt": "Bogaji collar hawaiian shirt - yellow print",
+        "collection": "bari"
     },
     {
         "id": 31,
@@ -338,7 +368,8 @@
         "image": "32-model-front-shirt.jpeg",
         "imageModel": "32-model-side-shirt.jpeg",
         "imageDetail": "32-model-back-shirt.jpeg",
-        "imageAlt": "Bogaji collar hawaiian shirt - pink print"
+        "imageAlt": "Bogaji collar hawaiian shirt - pink print",
+        "collection": "bari"
     },
     {
         "id": 32,
@@ -349,7 +380,8 @@
         "image": "33-model-side-shirt.jpeg",
         "imageModel": "33-model-back-shirt.jpeg",
         "imageDetail": "33-model-front-shirt.jpeg",
-        "imageAlt": "Bogaji collar hawaiian shirt - white and a blue logo"
+        "imageAlt": "Bogaji collar hawaiian shirt - white and a blue logo",
+        "collection": "bari"
     },
     {
         "id": 33,
@@ -360,7 +392,8 @@
         "image": "34-model-front-top.jpeg",
         "imageModel": "34-model-side-top.jpeg",
         "imageDetail": "34-top-back.jpeg",
-        "imageAlt": "Square neck stripped top - sky blue"
+        "imageAlt": "Square neck stripped top - sky blue",
+        "collection": "bari"
     },
     {
         "id": 34,
@@ -371,7 +404,8 @@
         "image": "35-model-side-skirt.jpeg",
         "imageModel": "35-skirt-front-detail.jpeg",
         "imageDetail": "35-skirt-back.jpeg",
-        "imageAlt":"Tuck volume long skirt - black"
+        "imageAlt":"Tuck volume long skirt - black",
+        "collection": "bari"
     },
     {
         "id": 35,
@@ -382,7 +416,8 @@
         "image": "36-model-front-skirt.jpeg",
         "imageModel": "36-model-side-skirt.jpeg",
         "imageDetail": "36-model-back-skirt.jpeg",
-        "imageAlt": "Tuck volume long skirt - white and yellow print"
+        "imageAlt": "Tuck volume long skirt - white and yellow print",
+        "collection": "bari"
     },
     {
         "id": 36,
@@ -393,7 +428,8 @@
         "image": "37-model-side-skirt.jpeg",
         "imageModel": "37-model-back-skirt.jpeg",
         "imageDetail": "37-model-front-skirt.jpeg",
-        "imageAlt": "Bow pocket mini skirt - white and yellow print"
+        "imageAlt": "Bow pocket mini skirt - white and yellow print",
+        "collection": "bari"
     },
     {
         "id": 37,
@@ -404,7 +440,8 @@
         "image": "38-model-front-pants.jpeg",
         "imageModel": "38-model-back-pants.jpeg",
         "imageDetail": "38-model-side-pants.jpeg",
-        "imageAlt": "Baggy shorts - pink print"
+        "imageAlt": "Baggy shorts - pink print",
+        "collection": "bari"
     },
     {
         "id": 38,
@@ -415,7 +452,8 @@
         "image": "39-model-side-skirt.jpeg",
         "imageModel": "39-model-front-skirt.jpeg",
         "imageDetail": "39-model-back-skirt.jpeg",
-        "imageAlt": "Bow pocket mini skirt - black"
+        "imageAlt": "Bow pocket mini skirt - black",
+        "collection": "bari"
     },
     {
         "id": 39,
@@ -426,7 +464,8 @@
         "image": "40-model-front-pants.jpeg",
         "imageModel": "40-model-side-pants.jpeg",
         "imageDetail": "40-model-back-pants.jpeg",
-        "imageAlt": "Baggy shorts - pink print"
+        "imageAlt": "Baggy shorts - pink print",
+        "collection": "bari"
     },
     {
         "id": 40,
@@ -437,7 +476,8 @@
         "image": "41-model-side-skirt.jpeg",
         "imageModel": "41-skirt-front-detail.jpeg",
         "imageDetail": "41-skirt-back.jpeg",
-        "imageAlt": "V line band midi skirt - black"
+        "imageAlt": "V line band midi skirt - black",
+        "collection": "bari"
     },
     {
         "id": 41,
@@ -448,7 +488,8 @@
         "image": "42-model-front-skirt.jpeg",
         "imageModel": "42-model-back-skirt.jpeg",
         "imageDetail": "42-model-side-skirt.jpeg",
-        "imageAlt": "V line band midi skirt - pink"
+        "imageAlt": "V line band midi skirt - pink",
+        "collection": "bari"
     },
     {
         "id": 42,
@@ -459,7 +500,8 @@
         "image": "43-model-side-tshirt.jpeg",
         "imageModel": "43-tshirt-front-detail.jpeg",
         "imageDetail": "43-tshirt-back.jpeg",
-        "imageAlt": "Logo-print oversized T-shirt - blue and white logo"
+        "imageAlt": "Logo-print oversized T-shirt - blue and white logo",
+        "collection": "bari"
     },
     {
         "id": 43,
@@ -470,7 +512,8 @@
         "image": "44-model-front-tshirt.jpeg",
         "imageModel": "44-model-side-tshirt.jpeg",
         "imageDetail": "44-tshirt-back.jpeg",
-        "imageAlt": "Logo and bari print oversized T-shirt - white and green details"
+        "imageAlt": "Logo and bari print oversized T-shirt - white and green details",
+        "collection": "bari"
     },
     {
         "id": 44,
@@ -481,7 +524,8 @@
         "image": "45-model-side-tshirt.jpeg",
         "imageModel": "45-tshirt-back.jpeg",
         "imageDetail": "45-tshirt-front-detail.jpeg",
-        "imageAlt": "Bari togheter and logo print oversized T-shirt - pink and red details"
+        "imageAlt": "Bari togheter and logo print oversized T-shirt - pink and red details",
+        "collection": "bari"
     },
     {
         "id": 45,
@@ -492,7 +536,8 @@
         "image": "46-model-front-tshirt.jpeg",
         "imageModel": "46-tshirt-back.jpeg",
         "imageDetail": "46-tshirt-front-detail.jpeg",
-        "imageAlt": "Logo-print slim T-shirt - white and black logo"
+        "imageAlt": "Logo-print slim T-shirt - white and black logo",
+        "collection": "bari"
     },
     {
         "id": 46,
@@ -503,7 +548,8 @@
         "image": "47-model-front-tshirt-detail.jpeg",
         "imageModel": "47-model-side-tshirt-detail.jpeg",
         "imageDetail": "47-tshirt-front.jpeg",
-        "imageAlt": "Bari bow and logo print slim T-shirt - white and pink details"
+        "imageAlt": "Bari bow and logo print slim T-shirt - white and pink details",
+        "collection": "otherstories"
     },
     {
         "id": 47,
@@ -514,7 +560,8 @@
         "image": "48-model-front-tshirt.jpeg",
         "imageModel": "48-tshirt-front.jpeg",
         "imageDetail": "48-model-side-tshirt-detail.jpeg",
-        "imageAlt": "Bari bow and logo print slim T-shirt - black and blue details"
+        "imageAlt": "Bari bow and logo print slim T-shirt - black and blue details",
+        "collection": "otherstories"
     },
     {
         "id": 48,
@@ -525,7 +572,8 @@
         "image": "49-model-front-tshirt-detail.jpeg",
         "imageModel": "49-tshirt-back.jpeg",
         "imageDetail": "49-tshirt-front-detail.jpeg",
-        "imageAlt": "Bari flower-print slim T-shirt - white and colorful details"
+        "imageAlt": "Bari flower-print slim T-shirt - white and colorful details",
+        "collection": "otherstories"
     },
     {
         "id": 49,
@@ -536,7 +584,8 @@
         "image": "50-model-side-dress.jpeg",
         "imageModel": "50-model-front-dress-detail.jpeg",
         "imageDetail": "50-model-front-dress-details.jpeg",
-        "imageAlt": "Voluminous scallop long sleeves mini dress - cream"
+        "imageAlt": "Voluminous scallop long sleeves mini dress - cream",
+        "collection": "otherstories"
     },
     {
         "id": 50,
@@ -547,7 +596,8 @@
         "image": "51-model-front-skirt.jpeg",
         "imageModel": "51-model-front-skirt-detail.jpeg",
         "imageDetail": "51-skirt-front.jpeg",
-        "imageAlt": "Voluminous silk midi skirt - black"
+        "imageAlt": "Voluminous silk midi skirt - black",
+        "collection": "otherstories"
     },
     {
         "id": 51,
@@ -558,7 +608,8 @@
         "image": "52-model-front-dress.jpeg",
         "imageModel": "52-model-front-dress-detail.jpeg",
         "imageDetail": "52-model-side-dress-detail.jpeg",
-        "imageAlt": "Tulle tiered mini dress - green"
+        "imageAlt": "Tulle tiered mini dress - green",
+        "collection": "otherstories"
     },
     {
         "id": 52,
@@ -569,7 +620,8 @@
         "image": "53-model front-cropped.jpeg",
         "imageModel": "53-cropped-front.jpeg",
         "imageDetail": "53-model-side-cropped.jpeg",
-        "imageAlt": "Cropped knit top - green"
+        "imageAlt": "Cropped knit top - green",
+        "collection": "otherstories"
     },
     {
         "id": 53,
@@ -580,7 +632,8 @@
         "image": "54-model-front-skirt.jpeg",
         "imageModel": "54-model-side-skirt.jpeg",
         "imageDetail": "54-model-front-skirt-detail.jpeg",
-        "imageAlt": "Voluminous printed midi skirt - pink and yellow"
+        "imageAlt": "Voluminous printed midi skirt - pink and yellow",
+        "collection": "otherstories"
     },
     {
         "id": 54,
@@ -591,7 +644,8 @@
         "image": "55-sunglass-front.jpeg",
         "imageModel": "55-sunglass-side.jpeg",
         "imageDetail": "55-model-front-sunglass.jpeg",
-        "imageAlt": "Retro cat eye sunglasses - cream"
+        "imageAlt": "Retro cat eye sunglasses - cream",
+        "collection": "otherstories"
     },
     {
         "id": 55,
@@ -602,7 +656,8 @@
         "image": "56-sunglass-front.jpeg",
         "imageModel": "56-sunglass-side-detail.jpeg",
         "imageDetail": "56-sunglass-side.jpeg",
-        "imageAlt": "Retro cat eye sunglasses - pink transparent"
+        "imageAlt": "Retro cat eye sunglasses - pink transparent",
+        "collection": "otherstories"
     },
     {
         "id": 56,
@@ -613,7 +668,8 @@
         "image": "58-socks-side.jpeg",
         "imageModel": "58-model-side-socks.jpeg",
         "imageDetail": "",
-        "imageAlt": "Floral stamps socks - white"
+        "imageAlt": "Floral stamps socks - white",
+        "collection": "otherstories"
     },
     {
         "id": 57,
@@ -624,7 +680,8 @@
         "image": "59-socks-side.jpeg",
         "imageModel": "59-model-front-socks.jpeg",
         "imageDetail": "",
-        "imageAlt": "Floral stamps socks - green"
+        "imageAlt": "Floral stamps socks - green",
+        "collection": "otherstories"
     },
     {
         "id": 58,
@@ -635,6 +692,7 @@
         "image": "63-hairpin-front.jpeg",
         "imageModel": "63-hairpin-back.jpeg",
         "imageDetail": "",
-        "imageAlt": "Embossed hair clip - pink"
+        "imageAlt": "Embossed hair clip - pink",
+        "collection": "otherstories"
     }
 ]
