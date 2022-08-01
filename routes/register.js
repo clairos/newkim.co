@@ -10,6 +10,6 @@ const RegisterController = require('../controllers/RegisterController');
 /* GET register page. */
 router.get('/', RegisterController.index);
 /* POST form page. */
-router.post('/registrar', registerValidator, RegisterController.store)
+router.post('/', registerValidator, RegisterController.store);
 
 module.exports = router;

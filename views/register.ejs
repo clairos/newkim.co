@@ -9,12 +9,14 @@
 
         <main>
             <div class="bg">
-                <form action="/form" method="POST">
+                <form action="/register" method="POST">
                     <div class="contactInfo">
                         <h2>Create new account</h2>
-
+                        <% errors.forEach(error => { %>
+                            <h3 class="error"><%= error.msg %></h3>                         
+                        <% }) %>
                         <input class="col-12" type="email" id="email" name="email" placeholder="E-mail">
-                        <input class="col-12" type="text" id="name" name="name" placeholder="Full name">
+                        <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name">
                         <input class="col-12" type="password" id="password" name="password" placeholder="Password">
                         <div class="flex itens-center">
                             <input type="checkbox" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
@@ -42,10 +44,10 @@
                             <input class="col-6" type="text" id="surname" name="surname" placeholder="Last Name">
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress" name="adress" placeholder="Adress Line 1">
+                            <input class="col-12" type="text" id="adress" name="address" placeholder="Adress Line 1">
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress" name="adress"
+                            <input class="col-12" type="text" id="adress" name="adress2"
                                 placeholder="Adress Line 2 (optional)">
                         </div>
                         <div class="flex">
@@ -57,12 +59,10 @@
                             <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone">
                         </div>
                     </div>
-                </form>
-                <div class="buttons">
-                    <a href="/login">
+                    <div class="buttons">                    
                         <button type="submit" class="btn btn-tp1">CREATE ACCOUNT</button>
-                    </a>
-                </div>
+                    </div>
+                </form>
             </div>
         </main>
         <%- include('partials/footer') %>
