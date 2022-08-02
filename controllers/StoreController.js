@@ -8,7 +8,6 @@ const StoreController = {
     collection: (req, res) => {
         const { collection } = req.params;
         const products = Products.findCollection(collection);
-        console.log(products);
         res.render('store', { products });
     }, 
 }
