@@ -16,16 +16,18 @@
         </div>
         <div class="video">
             <video autoplay loop muted plays-inline class="videoauto">
-                <source src="img/&otherstories.mp4" type="video/mp4">
+                <source src="/img/&otherstories.mp4" type="video/mp4">
             </video>
         </div>
         <div class="info">
             <p>Discover dresses and separates, defined by free-flowing feminine silhouettes and<br>adorable details. 
             Each piece of the co-lab collection is a treasure with its own stories to tell.</p>
             <div class="container">
-                <button class="btn btn-tp1">
-                    SHOP NOW
-                </button>
+                <a href="/store/otherstories">
+                    <button class="btn btn-tp1">
+                        SHOP NOW
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -37,32 +39,22 @@
                 <p id="quote">"My collections are like my diary."</p>
             </div>
             <div class="shop">
-                <figure>
-                    <img class="model-dress2" src="img/model-dress2.jpg" alt="modelo com vestido de mangas bufantes rosa com estampa">
-                    <img class="dress2" src="img/dress2.jpg" alt="vestido de mangas bufantes rosa com estampa">
-                    <p id="description">Voluminous Midi Dress <span>$249</span></p>
-                </figure>
-                <figure>
-                    <img class="model-blouse" src="img/model-blouse.jpg" alt="modelo vestindo camisa de botão clara com estampa">
-                    <img class="blouse" src="img/blouse.jpg" alt="camisa de botão clara com estampa">
-                    <p id="description">Sailor Collar Blouse <span>$189</span></p>
-                </figure>
-                <figure>
-                    <img class="model-trousers" src="img/model-trousers.jpg" alt="modelo encostada na parede vestindo uma calça clara com estampa">
-                    <img class="trousers" src="img/trousers.jpg" alt="calça clara com estampa"> 
-                    <p id="description">Wide Printed Trousers <span>$199</span></p>
-                </figure>
-                <figure>
-                    <img class="model-dress3" src="img/model-dress3.jpg" alt="modelo com vestido de alça longo rosa com ponta verde">
-                    <img class="dress3" src="img/dress3.jpg" alt="vestido de alça longo rosa com ponta verde">
-                    <p id="description">Strappy Midi Dress <span>$219</span></p>
-                </figure>
-                <br>
+                <% for(let i=0; i<4; i++){ if(products[i].displayHome == true){ %>
+                    <a href="/details/<%= products[i].id %>">
+                        <figure>
+                            <img class="model-dress2" src="/img/<%= products[i].imageModel %>" alt="<%= products[i].imageAlt %>">
+                            <img class="dress2" src="/img/<%= products[i].image %>" alt="<%= products[i].imageAlt %>">
+                            <p id="description"><%= products[i].name %>  <span>$<%= products[i].price %> </span></p>
+                        </figure>
+                    </a>
+                <% }} %>
             </div>
             <div class="container">
-                <button class="btn2 btn-tp2">
-                    SEE MORE
-                </button>
+                <a href="/store/otherstories">
+                    <button class="btn2 btn-tp2">
+                        SEE MORE
+                    </button>
+                </a>
             </div>
         </section>
 
@@ -74,7 +66,7 @@
         </section>
         
         <section class="scroll3">
-            <img src="img/bari-collection.jpg" alt="modelo com vestido amarelo volumoso com estampas brancas com o braço inclinado na parede de um quarto">
+            <img src="/img/bari-collection.jpg" alt="Ruffle organza mini dress - yellow print">
             <div class="description">
                 <div>
                     <h3>MINJUKIM SS22 BARI</h3>
@@ -85,7 +77,7 @@
                         the underworld and this world.
                     </p>
                 </div>
-                <a href="/store">
+                <a href="/store/bari">
                     <button class="btn3 btn-tp3">
                         BUY NOW
                     </button>
@@ -96,7 +88,7 @@
         <section class="scroll4">
             <div class="video2">
                 <video autoplay loop muted>
-                    <source src="img/knight-of-the-knight.mp4" type="video/mp4">
+                    <source src="/img/knight-of-the-knight.mp4" type="video/mp4">
                 </video>
             </div>
         </section>

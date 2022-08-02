@@ -1,7 +1,17 @@
+const Products = require('../models/Products');
+
 const StoreController = {
     index: (req, res) => {
-        res.render('store');
-    }
+        const products = Products.findAll();
+        res.render('store', { products });
+    },
+    collection: (req, res) => {
+        const { collection } = req.params;
+        const products = Products.findCollection(collection);
+        console.log(products);
+        res.render('store', { products });
+    }, 
 }
+
 
 module.exports = StoreController;

@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <%- include('partials/head')  %> 
-  <link rel="stylesheet" href="css/store.css">
+    <%- include('partials/head') %>
+        <link rel="stylesheet" href="/css/store.css">
 </head>
+
 <body>
-  <%- include('partials/header')  %> 
-  
-  <main>
-   <div id="relBar">
-     <select name="" id="selectBar">
-       <option value="alphabet">Alphabetically</option>
-       <option value="popular">Most popular</option>
-       <option value="price">Priceless</option>
-       <option value="Date">Date</option>
-     </select>
-   </div>
-    <div id="collections">
-      <div class="model">
-        <figure>
-          <img class="model19-2" src="img/model19-2.png" alt="">
-          <img class="model19" src="img/model19.png" alt="modelo com conjunto casaco e saia cor bege e detalhes em verde">
-          <h2>Volume Sleeve Jacket</h2>
-          <h3>$881.00</h3>
-        </figure>
-      </div>
-      <div class="model"> 
-        <figure>
-          <img class="model24-2" src="img/model24-2.png" alt="">
-          <img class="model24" src="img/model24.png" alt="modelo com vestido amarelo">
-          <h2>Ruffle Organza Mini Dress</h2>
-          <h3>$591.00</h3>
-        </figure>
-      </div>  
-      <div class="model">
-        <figure>
-          <img class="model26-2" src="img/model26-2.png" alt="">
-          <img class="model26" src="img/model26.png" alt="modelo com blusa azul e vestido branco">
-          <h2>Flag Mini Dress</h2>
-          <h3>$746.00</h3>
-        </figure>
-      </div>
-      <div class="model">
-        <figure>
-          <img class="model21-2" src="img/model21-2.png" alt="">
-          <img class="model21" src="img/model21.png" alt="modelo com conjunto cropped e saia longa rosa">
-          <h2>Puff Sleeve Crop Blouse</h2>
-          <h3>$493.60</h3>
-        </figure>
-      </div>
-    </div>
-  </main>
-  <%- include('partials/footer') %>
+    <%- include('partials/header') %>
+
+        <main>
+            <div id="relBar">
+                <select name="" id="selectBar">
+                    <option value="alphabet">Alphabetically</option>
+                    <option value="popular">Most popular</option>
+                    <option value="price">Priceless</option>
+                    <option value="otherstories">&OtherStories</option>
+                    <option value="bari">Bari</option>
+
+                </select>
+            </div>
+            <div id="collections">
+                <% for( let i=0; i < products.length; i++ ) { %>
+                <div class="model">
+                        <a href="/details/<%= products[i].id %>">
+                            <figure>
+                                <img class="model2" src="/img/<%= products[i].imageModel %>" alt="">
+                                <img class="model1" src="/img/<%= products[i].image %>" alt="">
+                                <h2><%= products[i].name %></h2>
+                                <h3>$<%= products[i].price %></h3>
+                            </figure>
+                        </a>
+                </div>
+                <% } %>
+            </div>
+            <br>
+        </main>
+        <%- include('partials/footer') %>
 </body>
 </html>

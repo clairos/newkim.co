@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     min-width: max-content;
     height: 10vh;
-    padding: 0 50px;
+    padding: 0 3vh;
     filter: invert(1.0);
     background-color: transparent;
     transition: 0.6s;
@@ -62,10 +62,20 @@ header:hover {
     margin-right: 1%;
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
     width: 31px;
     max-width: 100%;
-} 
+}
+
+#account {
+    width: 31px;
+    max-width: 100%;
+}
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
@@ -182,6 +192,11 @@ header:hover {
 
 .shop {
     text-align: center;
+    color: #020B0F;
+}
+
+.shop a {
+    text-decoration: none;
     color: #020B0F;
 }
 

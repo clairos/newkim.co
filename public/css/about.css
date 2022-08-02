@@ -57,7 +57,18 @@ header {
     filter: invert(1);
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
+    width: 31px;
+    max-width: 100%;
+    filter: invert(1);
+}
+
+#account {
     width: 31px;
     max-width: 100%;
     filter: invert(1);
@@ -166,6 +177,12 @@ footer {
 /* --- F ----- FOOTER ----- */
 
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
+@media screen and (min-width: 1001px) {
+    main {
+        height: 76vh;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .background {
         display: flex;
@@ -219,6 +236,7 @@ footer {
 
     .background {
         left: 15vw;
+        
     }
 }
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

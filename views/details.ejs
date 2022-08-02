@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <%- include('partials/head')  %> 
-  <link rel="stylesheet" href="css/details.css">
+    <%- include('partials/head') %>
+        <link rel="stylesheet" href="/css/details.css">
 </head>
 <body>
-  <%- include('partials/header')  %> 
-  <main>
-    <div class="product">
-      <div class="prod">
-        <img id="model2" src="img/model21-2.png" alt="modelo com conjunto cropped e saia longa rosa">
-        <img id="model3" src="img/model21-3.png" alt="modelo com conjunto cropped e saia longa rosa">
-      </div>
-      <div class="prodp">
-        <img id="model1" src="img/model21.png" alt="modelo com conjunto cropped e saia longa rosa">
-      </div>
-      <div class="info">
-        <h1>Bow Crop Top</h1>
-        <h2>$420.60</h2>
-        <div class="firstBar">
-          <h3>Color:</h3>
-          <select name="" id="colorBar">
-            <option value="yellow">Yellow</option>
-            <option value="blue">Blue</option>
-            <option value="red">Red</option>
-          </select>
-        </div>
-        <div class="secondBar">
-          <h3>Size:</h3>
-          <select name="" id="sizeBar">
-            <option value="small">S</option>
-            <option value="medium">M</option>
-            <option value="large">L</option>
-          </select>
-        </div>
-        <p>Size Chart</p>
-        <a href="/cart">
-          <button id="addcart">ADD TO CART</button>
-        </a>
-        <a href="">
-          <button id="buynow">BUY NOW</button>
-        </a>
-      </div>
-    </div>
-  </main>
-  <%- include('partials/footer') %>
+    <%- include('partials/header') %>
+        <main>
+            <div class="product">
+                <div class="prod">
+                    <img id="model2" src="/img/<%= product.imageModel %>" alt="<%= product.imageAlt %> ">
+                    <img id="model3" src="/img/<%= product.imageDetail %>" alt="<%= product.imageAlt %> ">
+                </div>
+                <div class="prodp">
+                    <img id="model1" src="/img/<%= product.image %> " alt="<%= product.imageAlt %> ">
+                </div>
+                <div class="info">
+                    <h1><%= product.name %> </h1>
+                    <h2>$<%= product.price %> </h2>
+                    <div class="firstBar">
+                        <h3>Color:</h3>
+                        <select name="" id="colorBar">
+                            <option value="color"><%= product.color %> </option>
+                        </select>
+                    </div>
+                    <div class="secondBar">
+                        <h3>Size:</h3>
+                        <select name="" id="sizeBar">
+                            <option value="small">S</option>
+                            <option value="medium">M</option>
+                            <option value="large">L</option>
+                        </select>
+                    </div>
+                    <p>Size Chart</p>
+                    <a href="/cart">
+                        <button class="btn btn-tp1" id="addcart">ADD TO CART</button>
+                    </a>
+                    <a href="/cart">
+                        <button class="btn2 btn-tp2" id="buynow">BUY NOW</button>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <%- include('partials/footer') %>
 </body>
 </html>

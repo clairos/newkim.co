@@ -16,8 +16,7 @@ html {
 body {
   font-family: 'Heebo', sans-serif;
   background-color: #E4E3DF;
-  margin: 0 auto;
-  width: 100%;
+  width: 98vw;
   min-width: max-content;
 }
 
@@ -27,9 +26,9 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  padding: 0 50px;
+  padding: 0 3vh;
   max-width: 100vw;
-  margin-top: 1%;
+  box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.15);
 }
 
 .menu-search {
@@ -54,10 +53,20 @@ header {
   margin-right: 1%;
 }
 
+.cart-acc {
+    display: flex;
+    gap: 20px;
+}
+
 #cart {
-  width: 31px;
-  max-width: 100%;
-} 
+    width: 31px;
+    max-width: 100%;
+}
+
+#account {
+    width: 31px;
+    max-width: 100%;
+}
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
@@ -73,7 +82,6 @@ div {
   width: 98vw;
   align-items: flex-start;
   justify-content: center;
-  height: 80vh;
   margin-bottom: 5%;
 }
 
@@ -81,74 +89,37 @@ figure {
   position: relative;
   text-align: center;
   margin: 0;
-  width: 20vw;
-  height: 68vh;
+  height: 57vh;
 }
 
 figure img {
   width: 100%;
   height: 100%;
   align-items: center;
-  padding: 30px 10px 0px;
+  padding: 6% 3% 0 0; 
+}
+
+.model a {
+  text-decoration: none;
+  color: #020B0F;
 }
 
 .model {
   height: 60vh;
   position: relative;
+  margin-bottom: 5%;
 }
 
-.model19-2 {
+.model2 {
   position: absolute;
 }
 
-.model19 {
+.model1 {
   position: relative;
   transition: opacity 0.3s ease-in-out;
 }
 
-figure img.model19:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.model24-2 {
-  position: absolute;
-}
-
-.model24 {
-  position: relative;
-  transition: opacity 0.3s ease-in-out;
-}
-
-figure img.model24:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.model26-2 {
-  position: absolute;
-}
-
-.model26 {
-  position: relative;
-  transition: opacity 0.3s ease-in-out;
-}
-
-figure img.model26:hover {
-  opacity: 0;
-  cursor: pointer;
-}
-
-.model21-2 {
-  position: absolute;
-}
-
-.model21 {
-  position: relative;
-  transition: opacity 0.3s ease-in-out;
-}
-
-figure img.model21:hover {
+figure img.model1:hover {
   opacity: 0;
   cursor: pointer;
 }
@@ -223,8 +194,11 @@ footer {
     width: 100vw;
   }
 
+ 
+
   figure img {
-    height: 45vh;
+    width: 20vw;
+    height: 50vh;
  }
 
  footer {
@@ -261,23 +235,37 @@ footer {
 }
 
 @media screen and (max-width: 675px) {
+  body {
+    margin: 0;
+  }
+
+  main {
+    width: 98vw;
+  }
+
+  #collections {
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+
   .logo2 img {
     display: none;
   }
 
-  #collections {
-    height: fit-content;
-    flex-direction: column;
-    align-items: center;
+  figure img {
+    width: 200px;
+    height: 250px;
   }
 
-  figure {
-    width: 60vw;
-    height: 40vh;
-  }
 
-  .model {
-    justify-self: center;
+  footer {
+    width: 100vw;
   }
 }
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */
