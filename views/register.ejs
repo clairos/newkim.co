@@ -12,11 +12,11 @@
                 <form action="/register" method="POST">
                     <div class="contactInfo">
                         <h2>Create new account</h2>
-                        <% errors.forEach(error => { %>
-                            <h3 class="error"><%= error.msg %></h3>                         
-                        <% }) %>
-                        <input class="col-12" type="email" id="email" name="email" placeholder="E-mail">
-                        <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name">
+                        <% if (errors.length) { %>
+                            <li class="error"> <%= errors[0].msg %> </li>
+                           <% } %>                           
+                        <input class="col-12" type="email" id="email" name="email" placeholder="E-mail"> 
+                        <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name"> 
                         <input class="col-12" type="password" id="password" name="password" placeholder="Password">
                         <div class="flex itens-center">
                             <input type="checkbox" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
@@ -40,14 +40,14 @@
                             </select>
                         </div>
                         <div class="flex">
-                            <input class="col-6" type="text" id="name" name="name" placeholder="First Name">
-                            <input class="col-6" type="text" id="surname" name="surname" placeholder="Last Name">
+                            <input class="col-6" type="text" id="firstname" name="firstname" placeholder="First Name">
+                            <input class="col-6" type="text" id="surname" name="lastname" placeholder="Last Name">
                         </div>
                         <div class="flex">
                             <input class="col-12" type="text" id="adress" name="address" placeholder="Adress Line 1">
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress" name="adress2"
+                            <input class="col-12" type="text" id="adress2" name="adress2"
                                 placeholder="Adress Line 2 (optional)">
                         </div>
                         <div class="flex">

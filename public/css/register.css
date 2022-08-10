@@ -122,6 +122,10 @@ form {
     width: 33.3%;
 }
 
+.error {
+    color: #ff0000;
+}
+
 input, select {
     color: #020B0F;
     border: solid 1px #020B0F;
