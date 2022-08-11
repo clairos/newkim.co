@@ -85,7 +85,7 @@ main {
 }
 
 .box {
-    background-color: #aaa;
+    background-color: #ffffff;
     width: 27%;
     height: 75vh;
     display: flex;
@@ -94,7 +94,7 @@ main {
     flex-direction: column;
     gap: 30px;
     border-radius: 5px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.35);
 }
 
 .box img {
@@ -116,7 +116,7 @@ input {
     height: 40px;
     padding: 10px;
     margin: 5px 0;
-    background-color: #aaa;
+    background-color: #ffffff;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -168,7 +168,7 @@ textarea:focus, input:focus{
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #aaa;
+    background-color: #ffffff;
     z-index: -1;
 }
 
