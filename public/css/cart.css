@@ -158,15 +158,41 @@ select {
     color: #020B0F;
 }
 
-button {
+.btn {
+    position: relative;
     width: 250px;
     height: 50px;
-    border: 1px solid #020B0F;
-    background-color: #020B0F;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
     color: #E4E3DF;
-    text-transform: uppercase;
-    font-size: 18px;
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
     cursor: pointer;
+    z-index: 1;
+}
+
+.btn-tp1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: #E4E3DF;
+    z-index: -1;
+}
+
+.btn-tp1:hover {
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-tp1:hover::before {
+    width: 100%;
 }
 
 /* --- F ----- MAIN ----- */
@@ -202,9 +228,9 @@ footer {
 }
 
 .aboutFooter {
-    text-decoration: none;
     color: #E4E3DF;
     margin-right: 20px;
+    font-size: 16px;
 }
 
 .ig img {

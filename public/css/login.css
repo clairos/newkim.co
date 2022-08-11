@@ -81,13 +81,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 76vh;
+    height: 86vh;
 }
 
 .box {
     background-color: #aaa;
-    width: 25%;
-    height: 60vh;
+    width: 27%;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +98,7 @@ main {
 }
 
 .box img {
-    width: 130px;
+    width: 110px;
 }
 
 .login {
@@ -148,8 +148,8 @@ textarea:focus, input:focus{
 
 .btn {
     position: relative;
-    width: 175px;
-    height: 40px;
+    width: 215px;
+    height: 50px;
     font-family: 'Heebo', sans-serif;
     font-weight: bold;
     font-size: 15px;
@@ -181,6 +181,17 @@ textarea:focus, input:focus{
 
 .btn-tp1:hover::before {
     width: 100%;
+}
+
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.register a {
+    color: #020B0F;
 }
 /* --- F ----- MAIN ----- */
 

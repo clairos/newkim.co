@@ -45,7 +45,7 @@ app.use('/register', registerRouter);
 app.use('/login', loginRouter);
 app.use('/forgot-password', forgotPasswordRouter);
 app.use('/profile', profileRouter);
-app.use('/edit', editUserRouter);
+app.use('/edit-user', editUserRouter);
 app.use('/payment', paymentRouter);
 app.use('/order-success', orderSuccessRouter);
 app.use('/track-code', trackCodeRouter);

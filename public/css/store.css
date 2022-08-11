@@ -16,7 +16,8 @@ html {
 body {
   font-family: 'Heebo', sans-serif;
   background-color: #E4E3DF;
-  width: 98vw;
+  margin: 0 auto;
+  width: 100%;
   min-width: max-content;
 }
 
@@ -54,18 +55,18 @@ header {
 }
 
 .cart-acc {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 #cart {
-    width: 31px;
-    max-width: 100%;
+  width: 31px;
+  max-width: 100%;
 }
 
 #account {
-    width: 31px;
-    max-width: 100%;
+  width: 31px;
+  max-width: 100%;
 }
 /* --- F ----- HEADER ----- */
 
@@ -172,9 +173,9 @@ footer {
 }
 
 .aboutFooter {
-  text-decoration: none;
   color: #E4E3DF;
   margin-right: 20px;
+  font-size: 16px;
 }
 
 .ig img {
