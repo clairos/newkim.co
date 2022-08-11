@@ -11,15 +11,15 @@
             <div class="bg">
                 <form action="/register" method="POST">
                     <div class="contactInfo">
-                        <h2>Create new account</h2>
-                        <% if (errors.length) { %>
-                            <li class="error"> <%= errors[0].msg %> </li>
-                           <% } %>                           
-                        <input class="col-12" type="email" id="email" name="email" placeholder="E-mail"> 
+                        <h2>Create new account</h2>                         
+                        <input class="col-12" value="<%= locals.old && old.email %>" type="email" id="email" name="email" placeholder="E-mail"> 
+                        <% if (locals.errors && errors.email) { %>
+                            <span class="error"> <%= errors.email.msg %> </span>
+                           <% } %>
                         <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name"> 
                         <input class="col-12" type="password" id="password" name="password" placeholder="Password">
                         <div class="flex itens-center">
-                            <input type="checkbox" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
+                            <input type="checkbox" value="true" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
                         </div>
                     </div>
                     <div class="shippingInfo">
@@ -47,8 +47,7 @@
                             <input class="col-12" type="text" id="adress" name="address" placeholder="Adress Line 1">
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress2" name="adress2"
-                                placeholder="Adress Line 2 (optional)">
+                            <input class="col-12" type="text" id="adress2" name="adress2" placeholder="Adress Line 2 (optional)">
                         </div>
                         <div class="flex">
                             <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City">

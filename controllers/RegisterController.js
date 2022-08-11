@@ -3,7 +3,7 @@ const path = require('path');
 const { name } = require('ejs');
 const {validationResult} = require('express-validator');
 const Register = require('../models/Register');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('../helpers/bcrypt');
 
 const RegisterController = {
     index: (req, res) => {
@@ -26,20 +26,38 @@ const RegisterController = {
                 old: req.body,
             });
         } else {
-            const { FullName, email, password, country, adressLine, suburb, state, postcode, phone } = req.body;
-            let hash = bcrypt.hashSync(password, 10);
-            // let usuarioCadastrado = await Register.store({
-                
-            //     FullName: FullName, 
-            //     email: email, 
-            //     password: hash, 
-            //     country: country, 
-            //     adressLine: adressLine, 
-            //     suburb: suburb, 
-            //     state: state,
-            //     postcode: postcode,
-            //     phone: phone
-            // });
+            //caminho para data
+            const userJson = fs.readFileSync(
+                path.join(__dirname, "..", "data", "register.json"),
+                "utf-8"
+                );
+            //converter o arquivo de cima    
+            const users = JSON.parse(userJson)    
+
+            const { FullName, email, password, country, adressLine, suburb, state, postcode, phone, emailOption } = req.body;
+            const newId = users[users.length -1].id +1
+
+            let newUser = {
+                id: newId, //vai somar o ultimo id com +1
+                FullName, 
+                email, 
+                password: bcrypt.generateHash(password), //cripto.. senha
+                country, 
+                adressLine, 
+                suburb, 
+                state,
+                postcode,
+                phone,
+                emailOption,
+                creadoEm: new Date(),
+                modificadoEm: new Date()
+            };
+            users.push(newUser)
+            fs.writeFileSync(                
+                path.join(__dirname, "..", "data", "register.json"),
+                JSON.stringify(users)
+            )
+
             res.redirect('login')
         }
     }

@@ -1,5 +1,6 @@
 const { validationResult } = require('express-validator');
 const Products = require('../models/Login');
+const Register = require('../models/Register');
 
 const LoginController = {
     index: (req, res) => {
@@ -29,22 +30,22 @@ const LoginController = {
         const loginReceived = req.body;
         const errors = [];
 
-        const loginFound = User.find(userReceived.email);
+        const loginFound = Register.find(registerReceived.email);
 
-        console.log(userFound);
-        if(!userFound) {
+        console.log(registerFound);
+        if(!registerFound) {
             errors.push({ msg: 'Login inválido' });
-            return res.render('store', { errors, user: userReceived });
+            return res.render('store', { errors, register: registerrReceived });
         }
 
-        const samePassword = User.comparePassword(loginReceived.password, loginFound.re_password);
+        const samePassword = registerr.comparePassword(loginReceived.password, loginFound.re_password);
 
         if (!samePassword) {
             errors.push({ msg: 'Login inválido' });
-            return res.render('store', { errors, user: userReceived });
+            return res.render('store', { errors, register: registerReceived });
         }
 
-        req.session.user = userReceived;
+        req.session.register = registerReceived;
 
         return res.redirect('store');
     },
