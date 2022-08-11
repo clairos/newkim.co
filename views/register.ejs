@@ -17,7 +17,13 @@
                             <span class="error"> <%= errors.email.msg %> </span>
                            <% } %>
                         <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name"> 
+                        <% if (locals.errors && errors.FullName) { %>
+                            <span class="error"> <%= errors.name.msg %> </span>
+                           <% } %>
                         <input class="col-12" type="password" id="password" name="password" placeholder="Password">
+                        <% if (locals.errors && errors.password) { %>
+                            <span class="error"> <%= errors.password.msg %> </span>
+                           <% } %>
                         <div class="flex itens-center">
                             <input type="checkbox" value="true" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
                         </div>
@@ -37,25 +43,49 @@
                                 <option value="PT">Portugal</option>
                                 <option value="UK">United Kingdom</option>
                                 <option value="US">United States</option>
+                                <% if (locals.errors && errors.country) { %>
+                                    <span class="error"> <%= errors.country.msg %> </span>
+                                   <% } %>
                             </select>
                         </div>
                         <div class="flex">
                             <input class="col-6" type="text" id="firstname" name="firstname" placeholder="First Name">
+                            <% if (locals.errors && errors.firstname) { %>
+                                <span class="error"> <%= errors.fistname.msg %> </span>
+                               <% } %>
                             <input class="col-6" type="text" id="surname" name="lastname" placeholder="Last Name">
+                            <% if (locals.errors && errors.lastname) { %>
+                                <span class="error"> <%= errors.lastname.msg %> </span>
+                               <% } %>
                         </div>
                         <div class="flex">
                             <input class="col-12" type="text" id="adress" name="address" placeholder="Adress Line 1">
+                            <% if (locals.errors && errors.address) { %>
+                                <span class="error"> <%= errors.address.msg %> </span>
+                               <% } %>
                         </div>
                         <div class="flex">
                             <input class="col-12" type="text" id="adress2" name="adress2" placeholder="Adress Line 2 (optional)">
                         </div>
                         <div class="flex">
                             <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City">
+                            <% if (locals.errors && errors.suburd) { %>
+                                <span class="error"> <%= errors.suburb.msg %> </span>
+                               <% } %>
                             <input class="col-4" type="text" id="state" name="state" placeholder="State/territory">
+                            <% if (locals.errors && errors.state) { %>
+                                <span class="error"> <%= errors.state.msg %> </span>
+                               <% } %>
                             <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode">
+                            <% if (locals.errors && errors.postcode) { %>
+                                <span class="error"> <%= errors.postcode.msg %> </span>
+                               <% } %>
                         </div>
                         <div class="flex">
                             <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone">
+                            <% if (locals.errors && errors.phone) { %>
+                                <span class="error"> <%= errors.phone.msg %> </span>
+                               <% } %>
                         </div>
                     </div>
                     <div class="buttons">                    

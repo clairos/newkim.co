@@ -51,5 +51,18 @@
     "emailOption": "true",
     "creadoEm": "2022-08-11T03:35:38.604Z",
     "modificadoEm": "2022-08-11T03:35:38.604Z"
+  },
+  {
+    "id": 5,
+    "FullName": "Suane Oliveira",
+    "email": "oliveiraanara25@gmail.com",
+    "password": "$2b$10$Rw8KAl07mHlANMnf1HaKcutGztiOtaE7jJ0F1mL21Kb2er.00eRt6",
+    "country": "BR",
+    "suburb": "Blumenau",
+    "state": "SC",
+    "postcode": "89025060",
+    "phone": "47992876264",
+    "creadoEm": "2022-08-11T04:34:47.638Z",
+    "modificadoEm": "2022-08-11T04:34:47.638Z"
   }
 ]

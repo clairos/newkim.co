@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs');
-const logado = require('../data/login.json');
 
 
 module.exports =  {
