@@ -7,7 +7,7 @@ The purpose is to recreate its looks, giving it a more minimalistic and modern s
   <img width="400px" src="https://images.squarespace-cdn.com/content/v1/5c5886f38d97401ca529db8a/1601291594234-DF90CASFQYHCQ0Y9XSS6/minju-kim-clutser-illustration-london-2020-exhibition">
 </a><br>
 
-Colour palette: Platinum #E4E4DF, Rich Black FOGRA29 #020B0F, Ash Gray #B8C2B9<br>
+Colour palette: Platinum #E4E4DF, Rich Black FOGRA29 #020B0F, Silver Chalice #AAAAAA<br>
 Typography: Heebo ExtraLight 200 on Google Fonts
 
 It is part of the Integrative Project for the 2022 Fullstack Web Developer class at Digital House Brasil. <br>

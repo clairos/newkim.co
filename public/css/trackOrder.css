@@ -2,7 +2,7 @@
 
 /*-- CORES --
 Branco #E4E3DF
-Cinza #B8C2B9
+Cinza #AAAAAA
 Preto #020B0F */
 
 * {
@@ -104,7 +104,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #aaa;
+    background-color: #AAAAAA;
     padding: 25px;
     border-radius: 7px;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
@@ -153,7 +153,7 @@ main {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #aaa;
+    background-color: #AAAAAA;
     z-index: -1;
 }
 
@@ -176,7 +176,7 @@ main {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #aaa;
+    background-color: #AAAAAA;
     z-index: -1;
 }
 
