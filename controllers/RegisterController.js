@@ -6,13 +6,20 @@ const Register = require('../models/Register');
 const bcrypt = require('../helpers/bcrypt');
 
 const RegisterController = {
-    index: (req, res) => {
+    register: (req, res) => {
         res.render('register', { errors: [] });
+    },
+
+    save (req, res) {
+        const user = req.body;
+        const errors = [];
+
+        
     },
     // Create - form to create
     // Pag para criar um item
-    creat: (req, res) => {
-        res.render('create-form', {errors: []});
+    create: (req, res) => {
+        res.render('register', {errors: []});
     },
     // Create - Method store
     // Cria o item
