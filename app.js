@@ -5,6 +5,7 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // para os métodos PUT e DELETE
+const session = require('express-session');
 
 // ************ express() ************
 const app = express();
@@ -16,6 +17,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method')); // para passar PUT e DELETE no method="POST" no form
+app.use(session({ secret: 'meu secret secreto' }));
 
 // ************ Template Engine ************
 app.set('view engine', 'ejs');
