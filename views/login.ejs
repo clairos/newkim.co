@@ -11,15 +11,16 @@
         <div class="box">
             <img src="/img/account.png" alt="account icon">
             <div class="login">
-                <form action="">
+                <form action="/" method="POST">
                     <input class="col-4" type="email" id="email" name="email" placeholder="E-mail Address"><br>
                     <input class="col-4" type="password" id="password" name="password" placeholder="Password">
+                    <% if(locals.errors){ %>
+                        <span class="error"> <%= errors.messege %> </span>
+                   <% } %> 
                     <div class="flex itens-center">
                         <input type="checkbox" name="remember" id="remember"><label for="remember">Remember me</label>
                         <a href="/forgot-password">Forgot your password?</a>
                     </div>
-                </form>
-            </div>
             <button class="btn btn-tp1" type="submit">LOGIN</button>
             <div class="register" >
                 <a href="/register">Don't have an account?</a>
