@@ -74,6 +74,9 @@ header {
     max-width: 100%;
     filter: invert(1);
 }
+.error {
+    color: #ff0000;
+}
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
