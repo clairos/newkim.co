@@ -17,11 +17,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method')); // para passar PUT e DELETE no method="POST" no form
+
 app.use(session({
   secret: 'newkim.co',
   resave: true,
   saveUninitialized: true
-}))
+}));
 // ************ Template Engine ************
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views')); // define localização da pasta das views

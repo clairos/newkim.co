@@ -8,7 +8,7 @@ const router = express.Router();
 const RegisterController = require('../controllers/RegisterController');
 
 /* GET register page. */
-router.get('/', RegisterController.index);
+router.get('/', RegisterController.register);
 /* POST form page. */
 router.post('/', registerValidator, RegisterController.store);
 

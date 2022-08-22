@@ -61,6 +61,7 @@ req.session.destroy();
 res.clearCookie("user");
 // res.clearCookie("admin");
 res.redirect("/home");
+
 }
 }
 
