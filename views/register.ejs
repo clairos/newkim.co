@@ -18,7 +18,7 @@
                            <% } %>
                         <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name"> 
                         <% if (locals.errors && errors.FullName) { %>
-                            <span class="error"> <%= errors.name.msg %> </span>
+                            <span class="error"> <%= errors.FullName.msg %> </span>
                            <% } %>
                         <input class="col-12" type="password" id="password" name="password" placeholder="Password">
                         <% if (locals.errors && errors.password) { %>
@@ -51,7 +51,6 @@
                         <div class="flex">
                             <input class="col-6" type="text" id="firstname" name="firstname" placeholder="First Name">
                             <% if (locals.errors && errors.firstname) { %>
-                                <span class="error"> <%= errors.fistname.msg %> </span>
                                <% } %>
                             <input class="col-6" type="text" id="surname" name="lastname" placeholder="Last Name">
                             <% if (locals.errors && errors.lastname) { %>
@@ -76,7 +75,7 @@
                             <% if (locals.errors && errors.state) { %>
                                 <span class="error"> <%= errors.state.msg %> </span>
                                <% } %>
-                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode">
+                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode"> <br>
                             <% if (locals.errors && errors.postcode) { %>
                                 <span class="error"> <%= errors.postcode.msg %> </span>
                                <% } %>

@@ -2,10 +2,10 @@
 const createError = require('http-errors');
 const cookieParser = require('cookie-parser');
 const express = require('express');
+const session = require('express-session');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // para os métodos PUT e DELETE
-const session = require('express-session');
 
 // ************ express() ************
 const app = express();
@@ -17,8 +17,12 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(cookieParser());
 app.use(methodOverride('_method')); // para passar PUT e DELETE no method="POST" no form
-app.use(session({ secret: 'meu secret secreto' }));
 
+app.use(session({
+  secret: 'newkim.co',
+  resave: true,
+  saveUninitialized: true
+}));
 // ************ Template Engine ************
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views')); // define localização da pasta das views
@@ -55,9 +59,9 @@ app.use('/track-order', trackOrderRouter);
 app.use('/about', aboutRouter);
 
 // ************ catch 404 and forward to error handler ************
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use('*', (req, res) =>{
+//   res.send('Error 404')
+// });
 
 // ************ error handler ************
 app.use(function(err, req, res, next) {
@@ -67,7 +71,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error');
+  res.render('error 404');
 });
 
 // ************ exports app - dont'touch ************

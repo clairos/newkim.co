@@ -7,9 +7,9 @@ const loginValidator = require('../middlewares/loginValidator');
 const LoginController = require('../controllers/LoginController');
 
 /* GET login page. */
-router.get('/', LoginController.index);
+router.get('/', LoginController.loginIndex);
 /* POST login page. */
-router.post('/', loginValidator, LoginController.auth);
+router.post('/', LoginController.auth);
 
 
 module.exports = router;
