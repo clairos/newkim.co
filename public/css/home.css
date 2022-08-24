@@ -609,4 +609,19 @@ footer {
         margin-top: 2%;
     }
 }
+
+@media screen and (max-width: 470px) {
+    #search {
+        display: none;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    #account {
+        display: none;
+    }
+
+}
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */
