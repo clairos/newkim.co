@@ -84,12 +84,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 86vh;
+    height: 90vh;
 }
 
 .box {
     background-color: #ffffff;
-    width: 27%;
+    width: 30%;
     height: 75vh;
     display: flex;
     align-items: center;
@@ -142,11 +142,24 @@ textarea:focus, input:focus{
 
 .itens-center {
     align-items: center;
+    justify-content: space-between;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3px;
 }
 
 .flex a {
     color: #020B0F;
     margin-left: 26px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
 }
 
 .btn {
@@ -247,9 +260,9 @@ footer {
         width: 100vw;
     }
 
-    main {
-        width: 100vw;
-        height: 100vh;
+    .box {
+        width: 40vw;
+        height: 50vh;
     }
 
     footer {
@@ -259,7 +272,12 @@ footer {
 
 @media screen and (max-width: 875px) {
     header {
-        max-width: 100%;
+        max-width: 100vw;
+    }
+
+    .box {
+        width: 40vw;
+        height: 50vh;
     }
 
     footer {
@@ -272,59 +290,49 @@ footer {
         width: 100vw;
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100%;
-    }    
-
-    .cart-details {
-        display: flex;
-        flex-direction: column;
-        width: 70vw;
-        padding-top: 2rem;
-        border-bottom: 1px solid #B8C2B9;
-        border-right: none;
+    .box {
+        width: 40vw;
+        height: 50vh;
     }
-
-    .item {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0;
-    }
-
-    .total {
-        display: flex;
-        align-self: center;
-        justify-content: space-evenly;
-        border-top: none;
-    }
-
-    .checkout {
-        width: 90vw;
-        margin-bottom: 2rem;
-    }
-
 
     .logo2 img {
         display: none;
     }
 }
 
-@media screen and (max-width: 360px){
-    header {
-        justify-content: space-around;
-    }
-
+@media screen and (max-width: 470px) {
     #search {
         display: none;
     }
 
-    .cart-acc {
+    #cart {
         display: none;
     }
+
+    #account {
+        display: none;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+    .box {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .itens-center {
+        font-size: 12px;
+    }
+
 }
+
+@media screen and (max-width: 375px){
+   .box {
+        width: 86vw;
+        height: 50vh;
+   }
+}
+
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

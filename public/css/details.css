@@ -279,6 +279,10 @@ footer {
         width: 100vw;
     }
 
+    .product {
+        width: 100%;
+    }
+
     footer {
         width: 100vw;
     }
@@ -286,7 +290,7 @@ footer {
 
 @media screen and (max-width: 875px) {
     header {
-        max-width: 100%;
+        max-width: 100vw;
     }
 
     footer {
@@ -321,4 +325,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 470px) {
+    #search {
+        display: none;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    #account {
+        display: none;
+    }
+
+}
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */
