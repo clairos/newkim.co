@@ -195,8 +195,6 @@ footer {
     width: 100vw;
   }
 
- 
-
   figure img {
     width: 20vw;
     height: 50vh;
@@ -268,5 +266,20 @@ footer {
   footer {
     width: 100vw;
   }
+}
+
+@media screen and (max-width: 470px) {
+  #search {
+      display: none;
+  }
+
+  #cart {
+      display: none;
+  }
+
+  #account {
+      display: none;
+  }
+
 }
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

@@ -304,59 +304,53 @@ footer {
         width: 100vw;
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100%;
-    }    
-
-    .cart-details {
-        display: flex;
-        flex-direction: column;
-        width: 70vw;
-        padding-top: 2rem;
-        border-bottom: 1px solid #B8C2B9;
-        border-right: none;
+    .box {
+        width: 80%;
     }
-
-    .item {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0;
-    }
-
-    .total {
-        display: flex;
-        align-self: center;
-        justify-content: space-evenly;
-        border-top: none;
-    }
-
-    .checkout {
-        width: 90vw;
-        margin-bottom: 2rem;
-    }
-
 
     .logo2 img {
         display: none;
     }
 }
 
-@media screen and (max-width: 360px){
-    header {
-        justify-content: space-around;
-    }
 
+@media screen and (max-width: 470px) {
     #search {
         display: none;
     }
-
-    .cart-acc {
+    
+    #cart {
         display: none;
     }
+    
+    #account {
+        display: none;
+    }
+
+    .progress img {
+        width: 40px;
+    }
+    
+    .shopping-bag {
+        width: 35px!important;
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .buttons-box {
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+    }
+
+    .btn {
+        width: 38vw;
+    }
+    
 }
+
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

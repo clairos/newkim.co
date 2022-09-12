@@ -4,6 +4,7 @@ const { name } = require('ejs');
 const {validationResult} = require('express-validator');
 const Register = require('../models/Register');
 const bcrypt = require('../helpers/bcrypt');
+const { json } = require('express');
 
 const LoginController = {
     // VALIDAÇÃO LOGIN //

@@ -249,45 +249,27 @@ footer {
         width: 100vw;
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-        height: 100%;
-    }    
-
-    .cart-details {
-        display: flex;
-        flex-direction: column;
-        width: 70vw;
-        padding-top: 2rem;
-        border-bottom: 1px solid #B8C2B9;
-        border-right: none;
+    .col-6 {
+        width: 40vw;
     }
-
-    .item {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0;
-    }
-
-    .total {
-        display: flex;
-        align-self: center;
-        justify-content: space-evenly;
-        border-top: none;
-    }
-
-    .checkout {
-        width: 90vw;
-        margin-bottom: 2rem;
-    }
-
 
     .logo2 img {
         display: none;
     }
+}
+
+@media screen and (max-width: 470px) {
+    #search {
+        display: none;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    #account {
+        display: none;
+    }
+
 }
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

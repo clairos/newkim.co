@@ -75,7 +75,7 @@
                             <% if (locals.errors && errors.state) { %>
                                 <span class="error"> <%= errors.state.msg %> </span>
                                <% } %>
-                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode"> <br>
+                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode">
                             <% if (locals.errors && errors.postcode) { %>
                                 <span class="error"> <%= errors.postcode.msg %> </span>
                                <% } %>
@@ -87,8 +87,10 @@
                                <% } %>
                         </div>
                     </div>
-                    <div class="buttons">                    
-                        <button type="submit" class="btn btn-tp1">CREATE ACCOUNT</button>
+                    <div class="buttons">
+                        <a href="/login">
+                            <button type="submit" class="btn btn-tp1">CREATE ACCOUNT</button>
+                        </a>                  
                     </div>
                 </form>
             </div>
