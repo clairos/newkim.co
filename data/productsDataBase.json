@@ -389,7 +389,7 @@
         "price": "280.00",
         "displayHome": false,
         "color": "Sky Blue",
-        "image": "33model-front-top.jpeg",
+        "image": "33-model-front-top.jpeg",
         "imageModel": "33-model-side-top.jpeg",
         "imageDetail": "33-top-back.jpeg",
         "imageAlt": "Square neck stripped top - sky blue",
@@ -464,7 +464,7 @@
         "image": "39-model-front-pants.jpeg",
         "imageModel": "39-model-side-pants.jpeg",
         "imageDetail": "39-model-back-pants.jpeg",
-        "imageAlt": "Baggy shorts - pink print",
+        "imageAlt": "Baggy shorts - black print",
         "collection": "bari"
     },
     {
@@ -517,14 +517,14 @@
     },
     {
         "id": 44,
-        "name": "Bari Togheter-Print T-Shirt",
+        "name": "Bari Togeter-Print T-Shirt",
         "price": "161.00",
         "displayHome": false,
         "color": "Pink",
         "image": "44-model-side-tshirt.jpeg",
         "imageModel": "44-tshirt-back.jpeg",
         "imageDetail": "44-tshirt-front-detail.jpeg",
-        "imageAlt": "Bari togheter and logo print oversized T-shirt - pink and red details",
+        "imageAlt": "Bari togeter and logo print oversized T-shirt - pink and red details",
         "collection": "bari"
     },
     {
