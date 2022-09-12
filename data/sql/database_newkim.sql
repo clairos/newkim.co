@@ -48,3 +48,7 @@ CREATE TABLE order_products(
     id_order INT UNSIGNED NOT NULL, 
     FOREIGN KEY (id_order) REFERENCES orders(id_order)
 );
+
+ALTER TABLE products ADD COLUMN category VARCHAR(20) NOT NULL;
+ALTER TABLE products MODIFY COLUMN image_detail VARCHAR(30);
+ALTER TABLE products MODIFY COLUMN display_home TINYINT UNSIGNED NOT NULL DEFAULT 0;
