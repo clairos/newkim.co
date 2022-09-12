@@ -1,5 +1,6 @@
 INSERT INTO products (product_name, price, color, image, image_model, image_detail, image_alt, collection, display_home, category)
 VALUES 
+/* PRODUTOS DO ID-1 AO ID-19 */
 	  ('Voluminous Silk Midi Dress', 249.00, 'Pink & Yellow','1-dress.jpeg', '1-model-front-dress.jpeg', '1-model-front-dress-detail.jpeg','Voluminous long sleeve midi dress - pink and yellow with flowers', 'otherstories', 1, 'Dress'),
     ('Sailor Collar Silk Blouse', 189.00, 'Blue & Yellow','2-blouse.jpeg', '2-model-front-blouse.jpeg', '2-model-back-blouse-detail.jpeg','Short sleeves sailor collar silk blouse - blue and yellow with little flowers', 'otherstories', 1, 'Top'),
     ('Wide Printed Silk Trousers', 199.00, 'Blue & Yellow','3-trousers.jpeg', '3-model-front-trousers.jpeg', '3-model-side-trousers-detail.jpeg','Wide printed silk trousers - blue and yellow print', 'otherstories', 1, 'Bottom'),
