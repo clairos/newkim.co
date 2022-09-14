@@ -65,7 +65,7 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     }
 
-    const Login = sequelize.define('Login', cols, config);
+    const Register = sequelize.define('Register', cols, config);
 
-    return Login;
+    return Register;
 }
