@@ -25,7 +25,7 @@ app.use(session({
 }));
 // ************ Template Engine ************
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'src', 'views')); // define localização da pasta das views
+app.set('views', path.resolve(__dirname, 'src', 'views')); // define localização da pasta das views
 
 // ************ Route System require and use() ************
 const homeRouter = require('./src/routes/home');
@@ -71,7 +71,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render('error 404');
+  res.render('error');
 });
 
 // ************ exports app - dont'touch ************

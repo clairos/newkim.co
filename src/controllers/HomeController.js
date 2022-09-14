@@ -1,8 +1,9 @@
-const Products = require('../models/Products');
+const { Product } = require('../models');
 
 const HomeController = {
-    index: (req, res) => {
-        const products = Products.findAll();
+    index: async (req, res) => {
+        const products = await Product.findAll();
+        console.log(products)
         res.render('home', { products });
     }    
 }

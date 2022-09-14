@@ -23,11 +23,11 @@
             <div id="collections">
                 <% for( let i=0; i < products.length; i++ ) { %>
                 <div class="model">
-                        <a href="/details/<%= products[i].id %>">
+                        <a href="/details/<%= products[i].id_product %>">
                             <figure>
-                                <img class="model2" src="/img/<%= products[i].imageModel %>" alt="">
+                                <img class="model2" src="/img/<%= products[i].image_model %>" alt="">
                                 <img class="model1" src="/img/<%= products[i].image %>" alt="">
-                                <h2><%= products[i].name %></h2>
+                                <h2><%= products[i].product_name %></h2>
                                 <h3>$<%= products[i].price %></h3>
                             </figure>
                         </a>
