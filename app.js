@@ -25,23 +25,23 @@ app.use(session({
 }));
 // ************ Template Engine ************
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views')); // define localização da pasta das views
+app.set('views', path.join(__dirname, 'src', 'views')); // define localização da pasta das views
 
 // ************ Route System require and use() ************
-const homeRouter = require('./routes/home');
-const storeRouter = require('./routes/store');
-const detailsRouter = require('./routes/details');
-const cartRouter = require('./routes/cart');
-const registerRouter = require('./routes/register');
-const loginRouter = require('./routes/login');
-const forgotPasswordRouter = require('./routes/forgotPassword');
-const profileRouter = require('./routes/profile');
-const editUserRouter = require('./routes/editUser');
-const paymentRouter = require('./routes/payment');
-const orderSuccessRouter = require('./routes/orderSuccess');
-const trackCodeRouter = require('./routes/trackCode');
-const trackOrderRouter = require('./routes/trackOrder');
-const aboutRouter = require('./routes/about');
+const homeRouter = require('./src/routes/home');
+const storeRouter = require('./src/routes/store');
+const detailsRouter = require('./src/routes/details');
+const cartRouter = require('./src/routes/cart');
+const registerRouter = require('./src/routes/register');
+const loginRouter = require('./src/routes/login');
+const forgotPasswordRouter = require('./src/routes/forgotPassword');
+const profileRouter = require('./src/routes/profile');
+const editUserRouter = require('./src/routes/editUser');
+const paymentRouter = require('./src/routes/payment');
+const orderSuccessRouter = require('./src/routes/orderSuccess');
+const trackCodeRouter = require('./src/routes/trackCode');
+const trackOrderRouter = require('./src/routes/trackOrder');
+const aboutRouter = require('./src/routes/about');
 
 app.use('/', homeRouter);
 app.use('/store', storeRouter);
