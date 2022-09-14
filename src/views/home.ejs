@@ -39,12 +39,12 @@
                 <p id="quote">"My collections are like my diary."</p>
             </div>
             <div class="shop">
-                <% for(let i=0; i<4; i++){ if(products[i].displayHome == true){ %>
-                    <a href="/details/<%= products[i].id %>">
+                <% for(let i=0; i<4; i++){ if(products[i]?.display_home == 1){ %>
+                    <a href="/details/<%= products[i]?.id_product %>">
                         <figure>
-                            <img class="model-dress2" src="/img/<%= products[i].imageModel %>" alt="<%= products[i].imageAlt %>">
-                            <img class="dress2" src="/img/<%= products[i].image %>" alt="<%= products[i].imageAlt %>">
-                            <p id="description"><%= products[i].name %>  <span>$<%= products[i].price %> </span></p>
+                            <img class="model-dress2" src="/img/<%= products[i]?.image_model %>" alt="<%= products[i].image_alt %>">
+                            <img class="dress2" src="/img/<%= products[i]?.image %>" alt="<%= products[i]?.image_alt %>">
+                            <p id="description"><%= products[i]?.product_name %>  <span>$<%= products[i]?.price %> </span></p>
                         </figure>
                     </a>
                 <% }} %>
