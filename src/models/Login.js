@@ -1,15 +1,3 @@
-const fs = require('fs');
-const path = require('path');
-const bcryptjs = require('bcryptjs');
-
-
-module.exports =  {
-        find (receivedEmail) {
-            return usersData.find(user => user.email == receivedEmail);
-        },
+module.exports = (sequelize, DataTypes) => {
     
-        comparePassword (password1, password2) {
-            return bcryptjs.compareSync(password1, password2);
-        }
-
 }
