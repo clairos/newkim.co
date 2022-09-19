@@ -58,12 +58,12 @@ auth: (req, res) => {
 },
 // Processamento do deslogar
 logout: (req, res) => {
-req.session.destroy();
-res.clearCookie("user");
-// res.clearCookie("admin");
-res.redirect("/home");
+    req.session.destroy();
+    res.clearCookie("user");
+    // res.clearCookie("admin");
+    res.redirect("/home");
 
-}
+    }
 }
 
 module.exports = LoginController;
