@@ -1,10 +1,9 @@
-const Products = require('../models/Products');
+const { Products } = require('../models');
 
 const DetailsController = {
-    index: (req, res) => {
+    index: async (req, res) => {
         const { id } = req.params;
-        const product = Products.findOne(id);
-        console.log(product)
+        const product = await Products.findByPk(id);
         
         res.render('details', { product });
     }

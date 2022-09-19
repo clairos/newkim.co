@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
     const Orders = sequelize.define('Orders', cols, config);
     
     Orders.associate = (models) => {
-        Orders.belongsTo(models.Clients, {
+        Orders.belongsTo(models.Clients, { // belongsTo: 1:1
             foreignKey: 'id_client'
         })
 
