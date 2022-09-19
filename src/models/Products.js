@@ -52,7 +52,17 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     }
 
-    const Product = sequelize.define('Product', cols, config);
+    const Products = sequelize.define('Products', cols, config);
 
-    return Product;
+    Products.associate = (models) => {
+        Products.hasMany(models.Cart_Products, { // hasMany: N:M
+            foreignKey: 'id_product'
+        })
+
+        Products.hasMany(models.Order_Products, {
+            foreignKey: 'id_product'
+        })
+    }
+
+    return Products;
 }
