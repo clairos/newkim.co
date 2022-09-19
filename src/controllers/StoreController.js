@@ -6,6 +6,7 @@ const StoreController = {
 
         res.render('store', { products });
     },
+    
     collection: async (req, res) => {
         const { collection } = req.params;
         const products = await Product.findAll({
