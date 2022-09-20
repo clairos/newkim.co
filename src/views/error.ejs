@@ -1,4 +1,23 @@
-
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/error.css">
+    <%- include('partials/head') %>
+</head>
+<body>
+    <div class="box">
+        <div class="gif">
+            <img src="/img/sad-face.jpeg" alt="error gif">
+        </div>
+        <div class="error">
+            <h1>PAGE NOT FOUND</h1>
+            <h4>Sorry, there's no one here.</h4>
+            <a href="/">
+                <button class="btn btn-tp1">
+                    GO HOME
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

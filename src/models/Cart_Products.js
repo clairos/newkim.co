@@ -6,13 +6,17 @@ module.exports = (sequelize, DataTypes) => {
             autoIncrement: true
         },
         
-        id_client: {
+        id_product: {
             type: DataTypes.INTEGER(10).UNSIGNED
         },
 
         finished: {
             type: DataTypes.TINYINT,
             defaultValue: 0
+        },
+
+        id_cart: {
+            type: DataTypes.INTEGER(10).UNSIGNED
         }
     }
 

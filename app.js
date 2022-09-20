@@ -42,6 +42,7 @@ const orderSuccessRouter = require('./src/routes/orderSuccess');
 const trackCodeRouter = require('./src/routes/trackCode');
 const trackOrderRouter = require('./src/routes/trackOrder');
 const aboutRouter = require('./src/routes/about');
+const errorRouter = require('./src/routes/error');
 
 app.use('/', homeRouter);
 app.use('/store', storeRouter);
@@ -57,11 +58,12 @@ app.use('/order-success', orderSuccessRouter);
 app.use('/track-code', trackCodeRouter);
 app.use('/track-order', trackOrderRouter);
 app.use('/about', aboutRouter);
+app.use('/error', errorRouter);
 
 // ************ catch 404 and forward to error handler ************
-// app.use('*', (req, res) =>{
-//   res.send('Error 404')
-// });
+app.use('*', (req, res) =>{
+  res.render('error')
+});
 
 // ************ error handler ************
 app.use(function(err, req, res, next) {
