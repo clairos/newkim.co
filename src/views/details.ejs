@@ -26,18 +26,22 @@
                             <option value="color"><%= product.color %> </option>
                         </select>
                     </div>
-                    <div class="secondBar">
-                        <h3>Size:</h3>
-                        <select name="" id="sizeBar">
-                            <option value="small">S</option>
-                            <option value="medium">M</option>
-                            <option value="large">L</option>
-                        </select>
-                    </div>
-                    <p>Size Chart</p>
-                    <a href="/cart">
-                        <button class="btn btn-tp1" id="addcart">ADD TO CART</button>
-                    </a>
+                    <form action="/cart" method="POST">
+                        <div class="secondBar">
+                            <h3>Size:</h3>
+                            <select name="" id="sizeBar">
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                            </select>
+                        </div>
+                        <p>Size Chart</p>
+                        <input type="hidden" name="productId" value="<%= product.id_product %>">
+                        <input type="hidden" name="cartId" value="<%= product.id_cart %>">
+                        <a href="/cart">
+                            <button class="btn btn-tp1" id="addcart" type="submit">ADD TO CART</button>
+                        </a>
+                    </form>
                     <a href="/cart">
                         <button class="btn2 btn-tp2" id="buynow">BUY NOW</button>
                     </a>
