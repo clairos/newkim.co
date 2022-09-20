@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { name } = require('ejs');
-const {validationResult} = require('express-validator');
+const { validationResult } = require('express-validator');
 const Register = require('../models/Register');
 const bcrypt = require('../helpers/bcrypt');
 
@@ -13,8 +13,6 @@ const RegisterController = {
     save (req, res) {
         const user = req.body;
         const errors = [];
-
-        
     },
     // Create - form to create
     // Pag para criar um item
@@ -27,11 +25,12 @@ const RegisterController = {
     store: async function(req, res) {
         const errors = validationResult(req);
         console.log(errors)
+
         if (!errors.isEmpty()) {
             res.render("register", {
                 errors: errors.mapped(),
                 old: req.body,
-            });
+            })
         } else {
             //caminho para data
             const userJson = fs.readFileSync(
@@ -60,6 +59,7 @@ const RegisterController = {
                 modificadoEm: new Date()
             };
             users.push(newUser)
+            
             fs.writeFileSync(                
                 path.join(__dirname, "..", "data", "register.json"),
                 JSON.stringify(users) //converte os novos cadastros em uma sequencia

@@ -72,7 +72,7 @@ module.exports = (sequelize, DataTypes) => {
             foreignKey: 'id_client'
         })
         
-        Clients.hasMany(models.Order, {
+        Clients.hasMany(models.Orders, {
             foreignKey: 'id_client'
         })
     }

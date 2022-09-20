@@ -9,14 +9,16 @@
         <main>
             <div class="product">
                 <div class="prod">
-                    <img id="model2" src="/img/<%= product.image_model %>" alt="<%= product.imageAlt %> ">
-                    <img id="model3" src="/img/<%= product.imageDetail %>" alt="<%= product.imageAlt %> ">
+                    <img id="model2" src="/img/<%= product.image_model %>" alt="<%= product.image_alt %> ">
+                    <% if (product.image_detail != "" && product.image_detail != " ") { %>
+                        <img id="model3" src="/img/<%= product.image_detail %>" alt="<%= product.image_alt %> ">
+                    <% } %>
                 </div>
                 <div class="prodp">
-                    <img id="model1" src="/img/<%= product.image %> " alt="<%= product.imageAlt %> ">
+                    <img id="model1" src="/img/<%= product.image %> " alt="<%= product.image_alt %> ">
                 </div>
                 <div class="info">
-                    <h1><%= product.name %> </h1>
+                    <h1><%= product.product_name %> </h1>
                     <h2>$<%= product.price %> </h2>
                     <div class="firstBar">
                         <h3>Color:</h3>
