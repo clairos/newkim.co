@@ -145,7 +145,6 @@ button {
     height: 50px;
     border: 1px solid #020B0F;
     cursor: pointer;
-    display: block;
     margin: 5px;
 }
 

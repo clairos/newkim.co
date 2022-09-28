@@ -1,67 +1,68 @@
 const fs = require('fs');
 const path = require('path');
 const { name } = require('ejs');
-const {validationResult} = require('express-validator');
-const Register = require('../models/Register');
+const { validationResult } = require('express-validator');
+const { Login }= require('../models');
 const bcrypt = require('../helpers/bcrypt');
 const { json } = require('express');
 
 const LoginController = {
     // VALIDAÇÃO LOGIN //
-loginIndex: (req, res) => {
-    res.render('login');
-},
+    loginIndex: (req, res) => {
+        res.render('login');
+    },
 
-auth: (req, res) => {
-    res.clearCookie('user');
-    // res.clearCookie('admin');
+    auth: async (req, res) => {
+        res.clearCookie('user');
+        // res.clearCookie('admin');
 
-    const usersJson = fs.readFileSync(
-        path.join(__dirname, "..", "data", "register.json"),
-        "utf-8" // caminho para acessar o db
-    );
-
-    const users = JSON.parse(usersJson);
-        // console.log(users)
-    const { email, password } = req.body;
-    const userAuth = users.find((user) => {
-        if (user.email === email) {
-            if (bcrypt.compareSync(password, user.password)){
-                return true;
+        const { email, password } = req.body;
+        const userAuth = await Login.findOne({
+            where: {
+                email
             }
-            // O if de cima é a mesma coisa da linha abaixo
-    // return bcrypt.compareHash(senha, user.senha);
+        })
+        
+        console.log(userAuth);
+
+        if (!userAuth) {
+            res.render('login', {
+                title: "Login | Minjukim",
+                user: req.cookies.user,
+                old: req.body,
+                error: {
+                    message: "Invalid credentials"
+                }
+            });
+
+            return
         }
-    });
-    
 
-    if (!userAuth) {
-        res.render('login', {
-            title: "Faça Login | Mijukim",
-            user: req.cookies.user,
-            old: req.body,
-            error: {
-                message: "Email or password required"
-            }
-        });
-        return
-    }  
-        //Filtra as chaves que o objeto irá ter
-    const user = JSON.parse(
-    JSON.stringify(userAuth, ["id", "FullName", "password", "admin"])
-    );
-    req.session.email = userAuth.email;
-    res.cookie("user", user);
-    // res.cookie("admin", user.admin);
+        if (!bcrypt.compareSync(password, userAuth.password)) {
+            res.render('login', {
+                title: "Login | Minjukim",
+                user: req.cookies.user,
+                old: req.body,
+                error: {
+                    message: "Invalid credentials"
+                }
+            });
+
+            return
+        }
+        
+        req.session.email = userAuth.email;
+        res.cookie("user", userAuth);
+        // res.cookie("admin", user.admin);
+
+        res.redirect("/profile");
+    },
     
-    res.redirect("/profile");
-},
-// Processamento do deslogar
-logout: (req, res) => {
-    req.session.destroy();
-    res.clearCookie("user");
-    // res.clearCookie("admin");
-    res.redirect("/home");
+    logout: (req, res) => {
+        req.session.destroy();
+        res.clearCookie("user");
+        // res.clearCookie("admin");
+        res.redirect("/home");
 
     }
 }
