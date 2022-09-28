@@ -1,10 +1,24 @@
-const { Products, Cart_Products } = require('../models');
+const { Login, Products, Cart, Cart_Products } = require('../models');
 
 const CartController = {
     index: async (req, res) => {
+        const client = await Login.findOne({
+            where: {
+                email: req.cookies.user
+            }
+        })
+
+        if (!client){
+            res.redirect('/login');
+        }
+
+        const newCart = await Cart.create({
+            id_client: client.id
+        })
+
         const products = await Products.findAll();
 
-        res.render('cart', { products });
+        res.render('cart', { products, cart: newCart });
     },
 
     listProducts: async (req, res) => {
@@ -38,9 +52,9 @@ const CartController = {
         res.redirect('/cart/' + cart.cartId);
     },
 
-    // viewCart: async (req, res) => {
+    viewCart: async (req, res) => {
 
-    // }
+    }
 }
 
 module.exports = CartController;
