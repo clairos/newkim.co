@@ -40,7 +40,7 @@ header:hover {
     filter: invert(0);
 }
 
-.menu-search {
+/* .menu-search {
     display: flex;
 }
 
@@ -54,6 +54,129 @@ header:hover {
     max-width: 100%;
     margin-left: 20%;
     align-self: center;
+} */
+#menu {
+    width: 35px;
+    max-width: 100%;
+}
+.navigation {
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    height: 20px;
+}
+
+.toggle.active::before {
+    content: 'Close';
+}
+.toggle span {
+    position: relative;
+    width: 20px;
+    height: 50px;
+}
+.toggle.active span::before {
+    transform: rotate(225deg);
+    top: 24px;
+}
+.toggle.active span::after {
+    transform: rotate(135deg);
+    bottom: 24px;
+}
+ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+ul li {
+    position: relative;
+    list-style: none;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-250px);
+    transition-delay: calc(0.1s * var(--i));
+}
+.navigation.active ul li {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+}
+ul li a {
+    position: relative;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    height: 50px;
+    background: #fff;
+    color:#020B0F;
+}
+ ul li a:hover {
+    background:#E4E3DF;
+    color: #AAAAAA;
+    transition: 0s;
+ }
+.searchBox {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    justify-content: space-between; 
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0, 1);
+}
+.searchBox.acive{ 
+    width: 360px;
+}
+
+.searchBox .search {
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.searchBox .close {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.25em;
+    scale: 0;
+    transition: 0.5s;
+}
+
+.searchBox.active .close
+{
+    scale: 1;
+    transition-delay: 0.5s;
+}
+.searchBox .searchInput {
+    position: absolute;
+    left: 60px;
+    width: calc(100% - 120px);
+    height: 100%;
+    line-height: 60px;
+}
+.searchBox .searchInput input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.25em;
 }
 
 #logo {
