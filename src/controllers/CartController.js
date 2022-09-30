@@ -1,10 +1,10 @@
-const { Login, Products, Cart, Cart_Products } = require('../models');
+const { Login, Products, Cart, Cart_Products, Clients } = require('../models');
 
 const CartController = {
     index: async (req, res) => {
         const client = await Login.findOne({
             where: {
-                email: req.cookies.user
+                email: req.cookies.user.email
             }
         })
 
@@ -13,7 +13,7 @@ const CartController = {
         }
 
         const newCart = await Cart.create({
-            id_client: client.id
+            id_client: client.id_client
         })
 
         const products = await Products.findAll();
@@ -37,11 +37,13 @@ const CartController = {
     },
 
     add: async (req, res) => {
+        const clientEmail = req.session.email;
+        const client = await Clients.findOne({ where: { email: clientEmail }});   
         const product = await Products.findByPk(req.body.productId);
-        const cart = await Products.findByPk(req.body.cartId);
+        const cart = await Cart.findOne({ where: { id_client }});
         
         if (product) {
-            const newCartProduct = Cart_Products.create({
+            const newCartProduct = await Cart_Products.create({
                 id_product: product.productId,
                 id_cart: cart.cartId,
                 quantity: 1,
@@ -53,7 +55,12 @@ const CartController = {
     },
 
     viewCart: async (req, res) => {
-
+        const clientEmail = req.session.email;
+        const client = await Clients.findOne({ where: { email: clientEmail }});        
+        const cart = await Cart.findOne({ where: { id_client }});
+        const cartProducts = await Cart_Products.findAll({ where: { id_cart: cart.id_cart}})
+        
+        res.render('cart', { products: cartProducts, cart });
     }
 }
 
