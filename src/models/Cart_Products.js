@@ -10,11 +10,6 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER(10).UNSIGNED
         },
 
-        finished: {
-            type: DataTypes.TINYINT,
-            defaultValue: 0
-        },
-
         id_cart: {
             type: DataTypes.INTEGER(10).UNSIGNED
         }
