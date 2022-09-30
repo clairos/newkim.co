@@ -1,4 +1,4 @@
-const { Login, Products, Cart, Cart_Products, Clients } = require('../models');
+const { Login, Products, Cart, Cart_Products, Client } = require('../models');
 
 const CartController = {
     index: async (req, res) => {
@@ -38,7 +38,7 @@ const CartController = {
 
     add: async (req, res) => {
         const clientEmail = req.session.email;
-        const client = await Clients.findOne({ where: { email: clientEmail }});   
+        const client = await Client.findOne({ where: { email: clientEmail }});  
         const product = await Products.findByPk(req.body.productId);
         const cart = await Cart.findOne({ where: { id_client }});
         
