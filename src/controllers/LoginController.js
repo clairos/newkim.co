@@ -53,7 +53,7 @@ const LoginController = {
         
         req.session.email = userAuth.email;
         res.cookie("user", userAuth);
-        // res.cookie("admin", user.admin);
+        // res.cookies("admin", user.admin);
 
         res.redirect("/profile");
     },

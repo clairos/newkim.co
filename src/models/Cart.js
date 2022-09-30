@@ -8,11 +8,6 @@ module.exports = (sequelize, DataTypes) => {
         
         id_client: {
             type: DataTypes.INTEGER(10).UNSIGNED
-        },
-
-        finished: {
-            type: DataTypes.TINYINT,
-            defaultValue: 0
         }
     }
 
@@ -24,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     const Cart = sequelize.define('Cart', cols, config);
     
     Cart.associate = (models) => {
-        Cart.belongsTo(models.Clients, {
+        Cart.belongsTo(models.Client, {
             foreignKey: 'id_client'
         })
     }
