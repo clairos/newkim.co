@@ -81,6 +81,7 @@ main {
     font-family: 'Heebo', sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
 }
 
 .carrinho {
@@ -89,26 +90,38 @@ main {
     margin-left: 10%;
 }
 
-#product1,
-#product2 {
+#product1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.product {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 1%;
+    width: 80vw;
+    justify-content: space-evenly;
+}
+
+h3 {
+    margin: 0;
 }
 
 .form {
+    width: 60%;
     display: flex;
     flex-direction: column;
-    margin-left: -20%;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
-.form h2 {
-    margin-top: 0;
+.quant, .size {
+    width: 70%;
 }
 
-.imagem1,
-.imagem2 {
+.imagem1 {
     width: 10vw;
 }
 
@@ -119,11 +132,9 @@ select {
     font-family: 'Heebo', sans-serif;
     background-color: #E4E3DF;
     border: 1px solid #020B0F;
-    margin-bottom: 1%;
 }
 
-.preco,
-.preco2 {
+.preco {
     display: flex;
     align-items: flex-end;
 }

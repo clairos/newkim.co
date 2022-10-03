@@ -73,3 +73,7 @@ CREATE TABLE cart_products(
 
 ALTER TABLE orders ADD COLUMN id_cart INT UNSIGNED NOT NULL;
 ALTER TABLE orders ADD CONSTRAINT id_cart FOREIGN KEY (id_cart) REFERENCES cart(id_cart);
+
+ALTER TABLE cart_products ADD COLUMN id_cart INT(10) UNSIGNED NOT NULL;
+ALTER TABLE cart_products ADD CONSTRAINT id_cart FOREIGN KEY (id_cart) REFERENCES cart(id_cart);
+ALTER TABLE cart_products ADD COLUMN size INT(2) UNSIGNED NOT NULL;
