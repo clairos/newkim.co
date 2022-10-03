@@ -59,6 +59,9 @@ header:hover {
     width: 35px;
     max-width: 100%;
 }
+.nav-container {
+    display: flex;
+}
 .navigation {
     display: flex;
     position: relative;
@@ -106,25 +109,28 @@ ul li a {
     position: relative;
     text-decoration: none;
     display: block;
-    padding: 10px 20px;
+    padding: 30px 70px;
     height: 50px;
-    background: #fff;
-    color:#020B0F;
+    background: #E4E3DF;
+    color: #E4E3DF;
 }
  ul li a:hover {
     background:#E4E3DF;
     color: #AAAAAA;
     transition: 0s;
  }
+
+ /* search */
 .searchBox {
-    position: relative;
     width: 60px;
     height: 60px;
+    left: 20%;
+    top:-50%;
+    position: absolute;
     /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center; 
-    justify-content: space-between; 
     transition: 0.5s;
     overflow: hidden;
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0, 1);
@@ -134,11 +140,9 @@ ul li a {
 }
 
 .searchBox .search {
-    position: relative;
     min-width: 60px;
     height: 60px;
     display: flex;
-    justify-content: center;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
@@ -146,7 +150,6 @@ ul li a {
 }
 
 .searchBox .close {
-    position: relative;
     width: 60px;
     height: 60px;
     display: flex;
@@ -164,14 +167,11 @@ ul li a {
     transition-delay: 0.5s;
 }
 .searchBox .searchInput {
-    position: absolute;
-    left: 60px;
     width: calc(100% - 120px);
     height: 100%;
     line-height: 60px;
 }
 .searchBox .searchInput input {
-    position: absolute;
     width: 100%;
     height: 100%;
     border: none;
