@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING(50)
         },
 
-        client_password: {
+        password: {
             type: DataTypes.STRING(100)
         },
 
@@ -65,17 +65,17 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false
     }
 
-    const Clients = sequelize.define('Clients', cols, config);
+    const Client = sequelize.define('Client', cols, config);
 
-    Clients.associate = (models) => {
-        Clients.hasMany(models.Cart, {
+    Client.associate = (models) => {
+        Client.hasMany(models.Cart, {
             foreignKey: 'id_client'
         })
         
-        Clients.hasMany(models.Orders, {
+        Client.hasMany(models.Orders, {
             foreignKey: 'id_client'
         })
     }
 
-    return Clients;
+    return Client;
 }

@@ -7,7 +7,7 @@ const bcrypt = require('../helpers/bcrypt');
 
 const RegisterController = {
     register: (req, res) => {
-        res.render('register', { user: req.cookies.user, errors: [] });
+        res.render('register', { user: req.cookies.user, errors: [], old: {} });
     },
 
     create: (req, res) => {

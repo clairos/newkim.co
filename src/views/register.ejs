@@ -12,15 +12,15 @@
                 <form action="/register" method="POST">
                     <div class="contactInfo">
                         <h2>Create new account</h2>                         
-                        <input class="col-12" value="<%= locals.old && old.email %>" type="email" id="email" name="email" placeholder="E-mail"> 
+                        <input class="col-12" value="<%= locals?.old?.email || old?.email %>" type="email" id="email" name="email" placeholder="E-mail" > 
                         <% if (locals.errors && errors.email) { %>
                             <span class="error"> <%= errors.email.msg %> </span>
                            <% } %>
-                        <input class="col-12" type="text" id="name" name="FullName" placeholder="Full name"> 
+                        <input class="col-12" type="text" id="name" name="FullName" placeholder="Full Name" value="<%= locals?.old?.FullName || old?.FullName %>"> 
                         <% if (locals.errors && errors.FullName) { %>
                             <span class="error"> <%= errors.FullName.msg %> </span>
                            <% } %>
-                        <input class="col-12" type="password" id="password" name="password" placeholder="Password">
+                        <input class="col-12" type="password" id="password" name="password" placeholder="Password" value="<%= locals?.old?.password || old?.password %>">
                         <% if (locals.errors && errors.password) { %>
                             <span class="error"> <%= errors.password.msg %> </span>
                            <% } %>
@@ -32,7 +32,7 @@
 
                         <h2>Address Information</h2>
                         <div class="flex">
-                            <select class="col-12" name="country" id="country">
+                            <select class="col-12" name="country" id="country" value="<%= locals?.old?.country || old?.country %>">
                                 <option>Country/region</option>
                                 <option value="AU">Australia</option>
                                 <option value="BR">Brazil</option>
@@ -49,39 +49,39 @@
                             </select>
                         </div>
                         <div class="flex">
-                            <input class="col-6" type="text" id="firstname" name="firstname" placeholder="First Name">
+                            <input class="col-6" type="text" id="firstname" name="firstname" placeholder="First Name" value="<%= locals?.old?.firstname || old?.firstname %>">
                             <% if (locals.errors && errors.firstname) { %>
                                <% } %>
-                            <input class="col-6" type="text" id="surname" name="lastname" placeholder="Last Name">
+                            <input class="col-6" type="text" id="surname" name="lastname" placeholder="Last Name" value="<%= locals?.old?.lastname || old?.lastname %>">
                             <% if (locals.errors && errors.lastname) { %>
                                 <span class="error"> <%= errors.lastname.msg %> </span>
                                <% } %>
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress" name="address" placeholder="Adress Line 1">
+                            <input class="col-12" type="text" id="address" name="address" placeholder="Address Line 1" value="<%= locals?.old?.address || old?.address %>">
                             <% if (locals.errors && errors.address) { %>
                                 <span class="error"> <%= errors.address.msg %> </span>
                                <% } %>
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress2" name="adress2" placeholder="Adress Line 2 (optional)">
+                            <input class="col-12" type="text" id="address2" name="address2" placeholder="Address Line 2 (optional)" value="<%= locals?.old?.address2 || old?.address2 %>">
                         </div>
                         <div class="flex">
-                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City">
-                            <% if (locals.errors && errors.suburd) { %>
+                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City" value="<%= locals?.old?.suburb || old?.suburb %>">
+                            <% if (locals.errors && errors.suburb) { %>
                                 <span class="error"> <%= errors.suburb.msg %> </span>
                                <% } %>
-                            <input class="col-4" type="text" id="state" name="state" placeholder="State/territory">
+                            <input class="col-4" type="text" id="state" name="state" placeholder="State/territory" value="<%= locals?.old?.state || old?.state %>">
                             <% if (locals.errors && errors.state) { %>
                                 <span class="error"> <%= errors.state.msg %> </span>
                                <% } %>
-                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode">
+                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode" value="<%= locals?.old?.postcode || old?.postcode %>">
                             <% if (locals.errors && errors.postcode) { %>
                                 <span class="error"> <%= errors.postcode.msg %> </span>
                                <% } %>
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone">
+                            <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone" value="<%= locals?.old?.phone || old?.phone %>">
                             <% if (locals.errors && errors.phone) { %>
                                 <span class="error"> <%= errors.phone.msg %> </span>
                                <% } %>
