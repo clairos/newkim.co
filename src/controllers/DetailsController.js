@@ -12,7 +12,6 @@ const DetailsController = {
             })
         }
         
-        console.log(product);
         res.render('details', { product, cart });
     }
 }

@@ -46,6 +46,7 @@ const CartController = {
         const client = await Client.findOne({ where: { email: clientEmail }});  
         const product = await Products.findByPk(req.body.productId);
         const cart = await Cart.findOne({ where: { id_client: client.id_client }});
+        console.log("body", req.body);
         
         if (product) {
             await Cart_Products.create({
@@ -57,7 +58,43 @@ const CartController = {
         }
         const cartData = await viewCart(req.cookies.user.email);
 
-        console.log(cart);
+        //console.log(cart);
+        //res.json(cartData);
+        res.render('cart', { cart: cartData });
+    },
+
+    update: async (req,res) => {
+        const clientEmail = req.cookies.user.email;
+        const client = await Client.findOne({ where: { email: clientEmail }});  
+        const product = await Products.findByPk(req.body.productId);
+        const cart = await Cart.findOne({ where: { id_client: client.id_client }});
+
+        if (product) {
+            await Cart_Products.update({
+                quantity: req.body.quantity,
+                size: req.body.size
+            })
+        }
+        const cartData = await viewCart(req.cookies.user.email);
+
+        res.render('cart', { cart: cartData });
+    },
+
+    destroy: async (req,res) => {
+        const clientEmail = req.cookies.user.email;
+        const client = await Client.findOne({ where: { email: clientEmail }});  
+        const product = await Products.findByPk(req.body.productId);
+        const cart = await Cart.findOne({ where: { id_client: client.id_client }});
+
+        if (product) {
+            await Cart_Products.destroy({
+                id_product: product.id_product,
+                quantity: 1,
+                size: req.body.size
+            })
+        }
+        const cartData = await viewCart(req.cookies.user.email);
+
         res.render('cart', { cart: cartData });
     }
 }
