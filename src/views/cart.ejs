@@ -12,36 +12,45 @@
             <% for( let i = 0; i < cart.length; i++ ) { %>
                 <div class="product">
                     <img class="imagem1" src="/img/<%= cart[i].product.image %> " alt="">
-                    <div class="form">
-                        <h3><%= cart[i].product.product_name %></h3>
-                        <div class="quant">
-                            <b>Quantity: </b>
-                            <select id="Quantidade">
-                                <option>Select the quantity</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                            </select>
+                    <form action="/cart?__method=PUT" method="POST">
+                        <div class="form">
+                            <h3><%= cart[i].product.product_name %></h3>
+                            <div class="quant">
+                                <b>Quantity: </b>
+                                <select name="quantity" id="Quantidade" value="<%= cart[i].quantity %>">
+                                    <option>Select the quantity</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div class="size">
+                                <b>Size:</b>
+                                <select name="size" id=Size value="<%= cart[i].size %>">
+                                    <option>Select a size</option>
+                                    <option value="34">34</option>
+                                    <option value="36">36</option>
+                                    <option value="38">38</option>
+                                    <option value="40">40</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="size">
-                            <b>Size:</b>
-                            <select id=Size>
-                                <option>Select a size</option>
-                                <option value="XS">XS</option>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="L">L</option>
-                            </select>
+                    </form>
+                    <div class="price-delete">
+                        <div class="price">
+                            <h2>$<%= cart[i].product.price %></h2>
                         </div>
-                    </div>
-                    <div class="preco">
-                        <h2>$<%= cart[i].product.price %></h2>
+                        <form action="/cart?__method=DELETE" method="POST" class="form-delete">
+                            <button class="delete">
+                                <img src="/img/trash-bin.png" alt="">
+                            </button>
+                        </form>
                     </div>
                 </div>
             <% } %>

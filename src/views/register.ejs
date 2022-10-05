@@ -16,7 +16,7 @@
                         <% if (locals.errors && errors.email) { %>
                             <span class="error"> <%= errors.email.msg %> </span>
                            <% } %>
-                        <input class="col-12" type="text" id="name" name="FullName" placeholder="Full Name" value="<%= locals?.old?.FullName || old?.FullName %>"> 
+                        <input class="col-12" type="text" id="name" name="fullName" placeholder="Full Name" value="<%= locals?.old?.FullName || old?.FullName %>"> 
                         <% if (locals.errors && errors.FullName) { %>
                             <span class="error"> <%= errors.FullName.msg %> </span>
                            <% } %>
@@ -49,10 +49,10 @@
                             </select>
                         </div>
                         <div class="flex">
-                            <input class="col-6" type="text" id="firstname" name="firstname" placeholder="First Name" value="<%= locals?.old?.firstname || old?.firstname %>">
+                            <input class="col-6" type="text" id="firstname" name="firstName" placeholder="First Name" value="<%= locals?.old?.firstname || old?.firstname %>">
                             <% if (locals.errors && errors.firstname) { %>
                                <% } %>
-                            <input class="col-6" type="text" id="surname" name="lastname" placeholder="Last Name" value="<%= locals?.old?.lastname || old?.lastname %>">
+                            <input class="col-6" type="text" id="surname" name="lastName" placeholder="Last Name" value="<%= locals?.old?.lastname || old?.lastname %>">
                             <% if (locals.errors && errors.lastname) { %>
                                 <span class="error"> <%= errors.lastname.msg %> </span>
                                <% } %>
