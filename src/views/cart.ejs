@@ -11,33 +11,35 @@
         <section id="product1">
             <% for( let i = 0; i < cart.length; i++ ) { %>
                 <div class="product">
-                    <img class="imagem1" src="/img/<%= cart[i].product.image %> " alt="">
-                    <form action="/cart?__method=PUT" method="POST">
+                    <img class="imagem1" src="/img/<%= cart[i].product.image %>" alt="">
+                    <form action="/cart/<%= cart[i].id_cart_products %>?__method=PUT" method="POST">
                         <div class="form">
                             <h3><%= cart[i].product.product_name %></h3>
                             <div class="quant">
-                                <b>Quantity: </b>
-                                <select name="quantity" id="Quantidade" value="<%= cart[i].quantity %>">
-                                    <option>Select the quantity</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
+                                <b>Quantity:</b>
+                                <select name="quantity" id="Quantidade">
+                                    <% Array(9).fill().forEach((option, index) => { %> 
+                                    <option 
+                                        <% if(index + 1 == cart[i].quantity) {%> 
+                                        selected
+                                        <% } %> 
+                                        value="<%= index + 1 %>">
+                                        <%= index + 1 %>
+                                    </option>
+                                    <% }) %>                                         
                                 </select>
                             </div>
                             <div class="size">
                                 <b>Size:</b>
                                 <select name="size" id=Size value="<%= cart[i].size %>">
-                                    <option>Select a size</option>
-                                    <option value="34">34</option>
-                                    <option value="36">36</option>
-                                    <option value="38">38</option>
-                                    <option value="40">40</option>
+                                    <% [34,36,38,40].forEach((option, index) => { %> 
+                                    <option <% if(option == cart[i].size) {%> 
+                                        selected
+                                        <% } %> 
+                                    value="<%= option %>">
+                                    <%= option %>
+                                    </option>
+                                    <% }) %> 
                                 </select>
                             </div>
                         </div>
@@ -46,7 +48,7 @@
                         <div class="price">
                             <h2>$<%= cart[i].product.price %></h2>
                         </div>
-                        <form action="/cart?__method=DELETE" method="POST" class="form-delete">
+                        <form action="/cart/<%= cart[i].id_cart_products %>?__method=DELETE" method="POST" class="form-delete">
                             <button class="delete">
                                 <img src="/img/trash-bin.png" alt="">
                             </button>
@@ -92,7 +94,7 @@
         </section> -->
         <div class="total">
             <h2 class="total">Total:</h2>
-            <h2>$<%= cart.reduce((total, item) => Number(item.product.price) + total, 0.00) %> </h2>
+            <h2>$<%= cart.reduce((total, item) => Number(item.product.price) + total, 0.00) %></h2>
         </div>
         
         <div class="final">
