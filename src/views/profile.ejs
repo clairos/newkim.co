@@ -4,42 +4,43 @@
     <link rel="stylesheet" href="/css/profile.css">
     <%- include('partials/head') %>
 </head>
-<body>
+
+]<body>
     <%- include('partials/header') %>
 
     <main>
         <div class="box">
-            <div class="profile">
-                <h2>Profile</h2>
-                <div class="row">
-                    <h3>Name: </h3><span>Full Name</span>
+                <div class="profile">
+                    <h2>Profile</h2>
+                    <div class="row">
+                        <h3>Name: </h3><span><%= clientInfo.profile_name %></span>
+                    </div>
+                    <div class="row">
+                        <h3>E-mail: </h3><span><%= clientInfo.email %></span>
+                    </div>
+                    <div class="row">
+                        <h3>Phone number: </h3><span><%= clientInfo.phone %></span>
+                    </div>
                 </div>
-                <div class="row">
-                    <h3>E-mail: </h3><span>E-mail</span>
-                </div>
-                <div class="row">
-                    <h3>Phone number: </h3><span>Number</span>
+                <div class="address">
+                    <h2>Address</h2>
+                    <div class="row">
+                        <h3>Country: </h3><span><%= clientInfo.country %></span>
+                    </div>
+                    <div class="row">
+                        <h3>State: </h3><span><%= clientInfo.state_territory %></span>
+                    </div>
+                    <div class="row">
+                        <h3>Suburb: </h3><span><%= clientInfo.suburb_city %></span>
+                    </div>
+                    <div class="row">
+                        <h3>Address Line: </h3><span><%= clientInfo.address_line1 %></span>
+                    </div>
+                    <div class="row">
+                        <h3>Zip Code: </h3><span><%= clientInfo.postcode %></span>
+                    </div>
                 </div>
             </div>
-            <div class="address">
-                <h2>Address</h2>
-                <div class="row">
-                    <h3>Country: </h3><span>Country</span>
-                </div>
-                <div class="row">
-                    <h3>State: </h3><span>State</span>
-                </div>
-                <div class="row">
-                    <h3>Suburb: </h3><span>Suburb</span>
-                </div>
-                <div class="row">
-                    <h3>Address Line: </h3><span>Address Line</span>
-                </div>
-                <div class="row">
-                    <h3>Zip Code: </h3><span>Zip Code</span>
-                </div>
-            </div>
-        </div>
         <a href="/edit-user">
             <button class="btn btn-tp1">EDIT PROFILE</button>
         </a>
