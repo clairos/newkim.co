@@ -1,7 +1,7 @@
-const CartController = {
+const OrderSuccessController = {
     index: (req, res) => {
        res.render('orderSuccess');
     }
   }
   
-  module.exports = CartController;
+  module.exports = OrderSuccessController;

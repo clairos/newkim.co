@@ -1,12 +1,13 @@
 const { Login, Products, Cart, Cart_Products, Client } = require('../models');
 
-    const viewCart =  async (email) => {
+const viewCart =  async (email) => {
     const client = await Client.findOne({ where: { email }});        
     const cart = await Cart.findOne({ where: { id_client: client.id_client }});
     const cartProducts = await Cart_Products.findAll({ where: { id_cart: cart.id_cart}, include: { model: Products, required: true, as: 'product'}})
     
     return cartProducts;
-    }
+}
+
 const CartController = {
 
     index: async (req, res) => {
@@ -22,6 +23,7 @@ const CartController = {
 
         const cart = await viewCart(req.cookies.user.email);
         
+        // res.json(cart);
         res.render('cart', { cart });
         
     },
@@ -59,40 +61,35 @@ const CartController = {
         const cartData = await viewCart(req.cookies.user.email);
 
         //console.log(cart);
-        //res.json(cartData);
+        // res.json(cartData);
         res.render('cart', { cart: cartData });
     },
 
     update: async (req,res) => {
-        const clientEmail = req.cookies.user.email;
-        const client = await Client.findOne({ where: { email: clientEmail }});  
-        const product = await Products.findByPk(req.body.productId);
-        const cart = await Cart.findOne({ where: { id_client: client.id_client }});
+        const id = req.params.id;
+        const { size, quantity } = req.body;
 
-        if (product) {
-            await Cart_Products.update({
-                quantity: req.body.quantity,
-                size: req.body.size
-            })
-        }
+        await Cart_Products.update(
+            {
+                size,
+                quantity
+            }, 
+            {
+                where: { id_cart_products: id }
+            }
+        )
+      
         const cartData = await viewCart(req.cookies.user.email);
 
         res.render('cart', { cart: cartData });
     },
 
     destroy: async (req,res) => {
-        const clientEmail = req.cookies.user.email;
-        const client = await Client.findOne({ where: { email: clientEmail }});  
-        const product = await Products.findByPk(req.body.productId);
-        const cart = await Cart.findOne({ where: { id_client: client.id_client }});
-
-        if (product) {
-            await Cart_Products.destroy({
-                id_product: product.id_product,
-                quantity: 1,
-                size: req.body.size
-            })
-        }
+        
+        await Cart_Products.destroy({
+            where: { id_cart_products: req.params.id }
+        })
+       
         const cartData = await viewCart(req.cookies.user.email);
 
         res.render('cart', { cart: cartData });
