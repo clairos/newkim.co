@@ -24,19 +24,32 @@ const RegisterController = {
                 old: req.body,
             })
         } else {
-            const { FullName, email, password, country, addressLine, suburb, state, postcode, phone, emailOption } = req.body;
+            const { profile_name,
+                     email, 
+                     password, 
+                     country, 
+                     shipping_first_name,
+                     shipping_last_name,
+                     address_line1, 
+                     address_line2, 
+                     suburb_city, 
+                     state_territory, 
+                     postcode, 
+                     phone, 
+                     emailOption 
+                    } = req.body;
 
             let newUser = {
-                fullName, 
+                profile_name, 
                 email, 
                 password: bcrypt.generateHash(password), //cripto.. senha
                 country, 
-                firstName,
-                lastName,
-                address,
-                address2, 
-                suburb, 
-                state,
+                shipping_first_name,
+                shipping_last_name,
+                address_line1,
+                address_line2, 
+                suburb_city, 
+                state_territory,
                 postcode,
                 phone,
                 emailOption,

@@ -48,7 +48,7 @@ const CartController = {
         const client = await Client.findOne({ where: { email: clientEmail }});  
         const product = await Products.findByPk(req.body.productId);
         const cart = await Cart.findOne({ where: { id_client: client.id_client }});
-        console.log("body", req.body);
+        // console.log("body", req.body);
         
         if (product) {
             await Cart_Products.create({
