@@ -16,9 +16,9 @@
                         <% if (locals.errors && errors.email) { %>
                             <span class="error"> <%= errors.email.msg %> </span>
                            <% } %>
-                        <input class="col-12" type="text" id="name" name="fullName" placeholder="Full Name" value="<%= locals?.old?.FullName || old?.FullName %>"> 
-                        <% if (locals.errors && errors.FullName) { %>
-                            <span class="error"> <%= errors.FullName.msg %> </span>
+                        <input class="col-12" type="text" id="name" name="profile_name" placeholder="Full Name" value="<%= locals?.old?.profile_name || old?.profile_name %>"> 
+                        <% if (locals.errors && errors.profile_name) { %>
+                            <span class="error"> <%= errors.profile_name.msg %> </span>
                            <% } %>
                         <input class="col-12" type="password" id="password" name="password" placeholder="Password" value="<%= locals?.old?.password || old?.password %>">
                         <% if (locals.errors && errors.password) { %>
@@ -49,31 +49,32 @@
                             </select>
                         </div>
                         <div class="flex">
-                            <input class="col-6" type="text" id="firstname" name="firstName" placeholder="First Name" value="<%= locals?.old?.firstname || old?.firstname %>">
-                            <% if (locals.errors && errors.firstname) { %>
+                            <input class="col-6" type="text" id="firstname" name="shipping_first_name" placeholder="First Name" value="<%= locals?.old?.shipping_first_name || old?.shipping_first_name %>">
+                            <% if (locals.errors && errors.shipping_first_name) { %>
+                                <span class="error"> <%= errors.shipping_last_name.msg %> </span>
                                <% } %>
-                            <input class="col-6" type="text" id="surname" name="lastName" placeholder="Last Name" value="<%= locals?.old?.lastname || old?.lastname %>">
-                            <% if (locals.errors && errors.lastname) { %>
-                                <span class="error"> <%= errors.lastname.msg %> </span>
-                               <% } %>
-                        </div>
-                        <div class="flex">
-                            <input class="col-12" type="text" id="address" name="address" placeholder="Address Line 1" value="<%= locals?.old?.address || old?.address %>">
-                            <% if (locals.errors && errors.address) { %>
-                                <span class="error"> <%= errors.address.msg %> </span>
+                            <input class="col-6" type="text" id="surname" name="shipping_last_name" placeholder="Last Name" value="<%= locals?.old?.shipping_last_name || old?.shipping_last_name %>">
+                            <% if (locals.errors && errors.shipping_last_name) { %>
+                                <span class="error"> <%= errors.shipping_last_name.msg %> </span>
                                <% } %>
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="address2" name="address2" placeholder="Address Line 2 (optional)" value="<%= locals?.old?.address2 || old?.address2 %>">
+                            <input class="col-12" type="text" id="address" name="address_line1" placeholder="Address Line 1" value="<%= locals?.old?.address_line1 || old?.address_line1 %>">
+                            <% if (locals.errors && errors.address_line1) { %>
+                                <span class="error"> <%= errors.address_line1.msg %> </span>
+                               <% } %>
                         </div>
                         <div class="flex">
-                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City" value="<%= locals?.old?.suburb || old?.suburb %>">
-                            <% if (locals.errors && errors.suburb) { %>
-                                <span class="error"> <%= errors.suburb.msg %> </span>
+                            <input class="col-12" type="text" id="address2" name="address_line2" placeholder="Address Line 2 (optional)" value="<%= locals?.old?.address_line2 || old?.address_line2 %>">
+                        </div>
+                        <div class="flex">
+                            <input class="col-4" type="text" id="suburb" name="suburb_city" placeholder="Suburb/City" value="<%= locals?.old?.suburb_city || old?.suburb_city %>">
+                            <% if (locals.errors && errors.suburb_city) { %>
+                                <span class="error"> <%= errors.suburb_city.msg %> </span>
                                <% } %>
-                            <input class="col-4" type="text" id="state" name="state" placeholder="State/territory" value="<%= locals?.old?.state || old?.state %>">
-                            <% if (locals.errors && errors.state) { %>
-                                <span class="error"> <%= errors.state.msg %> </span>
+                            <input class="col-4" type="text" id="state" name="state_territory" placeholder="State/territory" value="<%= locals?.old?.state_territory || old?.state_territory %>">
+                            <% if (locals.errors && errors.state_territory) { %>
+                                <span class="error"> <%= errors.state_territory.msg %> </span>
                                <% } %>
                             <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode" value="<%= locals?.old?.postcode || old?.postcode %>">
                             <% if (locals.errors && errors.postcode) { %>

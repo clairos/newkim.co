@@ -1,10 +1,5 @@
 USE newkim;
-
-ALTER TABLE products ADD COLUMN category VARCHAR(20) NOT NULL;
-ALTER TABLE products MODIFY COLUMN image_detail VARCHAR(50);
-ALTER TABLE products MODIFY COLUMN image VARCHAR(50);
-ALTER TABLE products MODIFY COLUMN image_model VARCHAR(50);
-ALTER TABLE products MODIFY COLUMN display_home TINYINT UNSIGNED NOT NULL DEFAULT 0;                                                                        
+                                                                 
 INSERT INTO products(product_name, price, color, image , image_model, image_detail,  image_alt, collection, display_home, category)
 VALUES
 /* PRODUTOS DO ID-20 AO ID-31 */

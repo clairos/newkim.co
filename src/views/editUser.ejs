@@ -13,9 +13,9 @@
                     <div class="contactInfo">
                         <h2>Edit Profile</h2>
 
-                        <input class="col-12" type="email" id="email" name="email" placeholder="E-mail" value="">
-                        <input class="col-12" type="text" id="name" name="name" placeholder="Full name" value="">
-                        <input class="col-12" type="password" id="password" name="password" placeholder="Password" value="">
+                        <input class="col-12" type="email" id="email" name="email" placeholder="E-mail" value="<%= clientInfo.email %>">
+                        <input class="col-12" type="text" id="name" name="name" placeholder="Full name" value="<%= clientInfo.profile_name %>">
+                        <input class="col-12" type="password" id="password" name="password" placeholder="Password" value="<%= clientInfo.password %>"">
                         <div class="flex itens-center">
                             <input type="checkbox" name="emailOption" id="emailOption"><label for="emailOption" value="">Email me with news and offers</label>
                         </div>
@@ -25,7 +25,7 @@
                         <h2>Address Information</h2>
                         <div class="flex">
                             <select class="col-12" name="country" id="country">
-                                <option>Country/region</option>
+                                <option value=""><%= clientInfo.country %></option>
                                 <option value="AU">Australia</option>
                                 <option value="BR">Brazil</option>
                                 <option value="FRA">France</option>
@@ -38,23 +38,23 @@
                             </select>
                         </div>
                         <div class="flex">
-                            <input class="col-6" type="text" id="name" name="name" placeholder="First Name" value="">
-                            <input class="col-6" type="text" id="surname" name="surname" placeholder="Last Name" value="">
+                            <input class="col-6" type="text" id="name" name="name" placeholder="First Name" value="<%= clientInfo.shipping_first_name %>">
+                            <input class="col-6" type="text" id="surname" name="surname" placeholder="Last Name" value="<%= clientInfo.shipping_last_name %>">
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="text" id="adress" name="adress" placeholder="Adress Line 1" value="">
+                            <input class="col-12" type="text" id="adress" name="adress" placeholder="Adress Line 1" value="<%= clientInfo.address_line1 %>">
                         </div>
                         <div class="flex">
                             <input class="col-12" type="text" id="adress" name="adress"
-                                placeholder="Adress Line 2 (optional)" value="">
+                                placeholder="Adress Line 2 (optional)" value="<%= clientInfo.address_line2 %>">
                         </div>
                         <div class="flex">
-                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City" value="">
-                            <input class="col-4" type="text" id="state" name="state" placeholder="State/territory" value="">
-                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode" value="">
+                            <input class="col-4" type="text" id="suburb" name="suburb" placeholder="Suburb/City" value="<%= clientInfo.suburb_city %>">
+                            <input class="col-4" type="text" id="state" name="state" placeholder="State/territory" value="<%= clientInfo.state_territory %>">
+                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode" value="<%= clientInfo.postcode %>">
                         </div>
                         <div class="flex">
-                            <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone" value="">
+                            <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone" value="<%= clientInfo.phone %>">
                         </div>
                     </div>
                 </form>
