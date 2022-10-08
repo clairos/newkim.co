@@ -5,21 +5,22 @@ USE newkim;
 CREATE TABLE products(
 	id_product INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     product_name VARCHAR(50) NOT NULL, 
-    price DECIMAL(12,2) UNSIGNED NOT NULL, 
-    color VARCHAR(15) NOT NULL,
-    image VARCHAR(30) NOT NULL, 
-    image_model VARCHAR(30),
-    image_detail VARCHAR(30) NOT NULL, 
+    price DECIMAL(12,2) UNSIGNED, 
+    color VARCHAR(30),
+    image VARCHAR(50), 
+    image_model VARCHAR(50),
+    image_detail VARCHAR(50), 
     image_alt VARCHAR(100) NOT NULL, 
     collection VARCHAR(30) NOT NULL, 
-    display_home TINYINT UNSIGNED NOT NULL
+    display_home TINYINT NOT NULL DEFAULT 0,
+    category VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE clients(
 	id_client INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     profile_name VARCHAR(100) NOT NULL, 
     email VARCHAR(50) NOT NULL, 
-    client_password VARCHAR(100) NOT NULL, 
+    password VARCHAR(100) NOT NULL, 
     country VARCHAR(20) NOT NULL,
     shipping_first_name VARCHAR(50) NOT NULL, 
     shipping_last_name VARCHAR(50) NOT NULL, 
@@ -37,7 +38,9 @@ CREATE TABLE orders(
     order_code VARCHAR(6) NOT NULL, 
     order_date DATE, 
     id_client INT UNSIGNED NOT NULL,
-    FOREIGN KEY (id_client) REFERENCES clients(id_client)
+    FOREIGN KEY (id_client) REFERENCES clients(id_client),
+    id_cart INT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_cart) REFERENCES cart(id_cart)
 );
 
 CREATE TABLE order_products(
@@ -49,15 +52,6 @@ CREATE TABLE order_products(
     FOREIGN KEY (id_order) REFERENCES orders(id_order)
 );
 
-ALTER TABLE products ADD COLUMN category VARCHAR(20) NOT NULL;
-ALTER TABLE products MODIFY COLUMN image VARCHAR(50);
-ALTER TABLE products MODIFY COLUMN image_model VARCHAR(50);
-ALTER TABLE products MODIFY COLUMN image_detail VARCHAR(50);
-ALTER TABLE products MODIFY COLUMN color VARCHAR(30);
-ALTER TABLE products MODIFY COLUMN display_home TINYINT NOT NULL DEFAULT 0;
-ALTER TABLE products AUTO_INCREMENT = 1;
-ALTER TABLE products MODIFY COLUMN price DECIMAL(12,2) UNSIGNED;
-
 CREATE TABLE cart(
 	id_cart INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     id_client INT UNSIGNED NOT NULL,
@@ -68,8 +62,23 @@ CREATE TABLE cart_products(
 	id_cart_products INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     id_product INT UNSIGNED NOT NULL,
     FOREIGN KEY (id_product) REFERENCES products(id_product),
-    quantity INT UNSIGNED NOT NULL
+    id_cart INT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_cart) REFERENCES cart(id_cart),
+    quantity INT UNSIGNED NOT NULL,
+    size INT(2) UNSIGNED NOT NULL
 );
+
+-- CASO NECESSITE ALTERAR AS TABELAS QUE JÁ HAVIAM SIDO CRIADAS
+
+ALTER TABLE products AUTO_INCREMENT = 1; -- PARA ZERAR O ID_PRODUCT CASO NECESSÁRIO
+
+ALTER TABLE products ADD COLUMN category VARCHAR(20) NOT NULL;
+ALTER TABLE products MODIFY COLUMN image VARCHAR(50);
+ALTER TABLE products MODIFY COLUMN image_model VARCHAR(50);
+ALTER TABLE products MODIFY COLUMN image_detail VARCHAR(50);
+ALTER TABLE products MODIFY COLUMN color VARCHAR(30);
+ALTER TABLE products MODIFY COLUMN display_home TINYINT NOT NULL DEFAULT 0;
+ALTER TABLE products MODIFY COLUMN price DECIMAL(12,2) UNSIGNED;
 
 ALTER TABLE orders ADD COLUMN id_cart INT UNSIGNED NOT NULL;
 ALTER TABLE orders ADD CONSTRAINT id_cart FOREIGN KEY (id_cart) REFERENCES cart(id_cart);
