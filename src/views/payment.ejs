@@ -9,19 +9,20 @@
 
     <main>
         <div class="cart-details">
+            <% for( let i = 0; i < cart.length; i++ ) { %>
             <div class="item">
-                <img src="/img/16-model-front-dress.jpeg" alt="">
+                <img src="/img/<%= cart[i].product.image %>" alt="">
                 <div class="item-details">
-                    <h4> Descrição da roupa </h4>
-                    <h5> $ Preço </h5>
+                    <h4><%= cart[i].product.product_name %></h4>
+                    <h5>$ <%= cart[i].product.price %></h5>
                 </div>
             </div>
+            <% } %>
 
             <div class="total">
-                <h3> TOTAL: </h3><span>$ 999</span>
+                <h3>TOTAL:</h3><span>$ <%= cart.reduce((total, item) => Number(item.product.price) + total, 0.00) %></span>
             </div>
         </div>
-
         <div class="checkout">
             <div class="express-checkout">
                 <div class="options-box">
@@ -68,7 +69,7 @@
             </div>
 
             <div class="buttons">
-                <a href="/profile">Return to Shipping</a>
+                <a href="/edit-user">Return to shipping</a>
                 <button type="submit" class="btn btn-tp1">PAY NOW</button>
             </div>
         </div>

@@ -6,7 +6,7 @@ VALUES
     ('Strappy Midi Dress', 219.00, 'Pink','4-dress.jpeg', '4-model-front-dress.jpeg', '1-model-front-dress-detail.jpeg','Strappy midi dress - pink and a large green bar at the bottom', 'otherstories', 1, 'Dress'),
     ('Voluminous Jacquard Mini Dress', 149.00, 'White Print','5-dress.jpeg', '5-model-front-dress.jpeg', '5-model-side-dress.jpeg','Voluminous large strap mini dress - white print', 'otherstories', 0, 'Dress'),
     ('Bow Strap Silk Midi Dress', 219.00, 'Black','6-dress.jpeg', '6-model-front-dress.jpeg', '6-model-side-dress-detail.jpeg','Bow strap silk midi dress - black', 'otherstories', 0, 'Dress'),
-    ('Whimsical Hair Clip Set', 15.00, 'Pink & Yellow', '7-hairpin.jpeg', '7-model-hairpin.jpeg', 'null', 'Whimsical hair clip set - pink/green and yellow/white', 'otherstories', 0, 'Acessories'),
+    ('Whimsical Hair Clip Set', 15.00, 'Pink & Yellow', '7-hairpin.jpeg', '7-model-hairpin.jpeg', ' ', 'Whimsical hair clip set - pink/green and yellow/white', 'otherstories', 0, 'Acessories'),
     ('Puff Sleeve Crop Blouse', 493.00, 'Pink', '8-model-front-cropped.jpeg', '8-model-side-cropped.jpeg', '8-model-back-cropped.jpeg', 'Puff sleeve crop blouse - pink', 'bari', 0, 'Top'),
     ('Volume Sleeve Jacket', 881.00, 'White & Yellow', '9-model-side-jacket.jpeg', '9-model-front-jacket.jpeg', '9-model-back-jacket.jpeg', 'Volume sleeve jacket - white and yellow print', 'bari', 0, 'Top'),
     ('Ruffle Organza Mini Dress', 591.00, 'Yellow', '10-model-front-dress.jpeg', '10-model- back-dress.jpeg', '10-model-side-dress.jpeg', 'Ruffle organza mini dress - yellow print', 'bari', 0, 'Dress'),

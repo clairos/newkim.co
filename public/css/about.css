@@ -81,6 +81,7 @@ main {
     font-family: 'Heebo', sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 76vh;
 }
 
 .about {
@@ -178,9 +179,7 @@ footer {
 
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
 @media screen and (min-width: 1001px) {
-    main {
-        /* height: 76vh; */
-    }
+   
 }
 
 @media screen and (max-width: 1000px) {

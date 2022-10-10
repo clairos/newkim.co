@@ -1,6 +1,15 @@
 const { Login, Products, Cart, Cart_Products, Client } = require('../models');
 
+const viewCart =  async (email) => {
+    const client = await Client.findOne({ where: { email }});        
+    const cart = await Cart.findOne({ where: { id_client: client.id_client }});
+    const cartProducts = await Cart_Products.findAll({ where: { id_cart: cart.id_cart}, include: { model: Products, required: true, as: 'product'}})
+    
+    return cartProducts;
+}
+
 const CartController = {
+
     index: async (req, res) => {
         const client = await Login.findOne({
             where: {
@@ -12,13 +21,11 @@ const CartController = {
             res.redirect('/login');
         }
 
-        const newCart = await Cart.create({
-            id_client: client.id_client
-        })
-
-        const products = await Products.findAll();
-
-        res.render('cart', { products, cart: newCart });
+        const cart = await viewCart(req.cookies.user.email);
+        
+        // res.json(cart);
+        res.render('cart', { cart });
+        
     },
 
     listProducts: async (req, res) => {
@@ -31,36 +38,61 @@ const CartController = {
 
     product: async (req, res) => {
         const productId = req.params.id
-        const product = await Products.findAll(s => { return s.id == productId });
+        const product = await Products.findAll(product => { return product.id == productId });
 
         res.render('productId', { productId: product, title: 'Products' })
     },
 
     add: async (req, res) => {
-        const clientEmail = req.session.email;
+        const clientEmail = req.cookies.user.email;
         const client = await Client.findOne({ where: { email: clientEmail }});  
         const product = await Products.findByPk(req.body.productId);
-        const cart = await Cart.findOne({ where: { id_client }});
+        const cart = await Cart.findOne({ where: { id_client: client.id_client }});
+        // console.log("body", req.body);
         
         if (product) {
-            const newCartProduct = await Cart_Products.create({
-                id_product: product.productId,
-                id_cart: cart.cartId,
+            await Cart_Products.create({
+                id_product: product.id_product,
+                id_cart: cart.id_cart,
                 quantity: 1,
                 size: req.body.size
             })
         }
+        const cartData = await viewCart(req.cookies.user.email);
 
-        res.redirect('/cart/' + cart.cartId);
+        //console.log(cart);
+        // res.json(cartData);
+        res.render('cart', { cart: cartData });
     },
 
-    viewCart: async (req, res) => {
-        const clientEmail = req.session.email;
-        const client = await Clients.findOne({ where: { email: clientEmail }});        
-        const cart = await Cart.findOne({ where: { id_client }});
-        const cartProducts = await Cart_Products.findAll({ where: { id_cart: cart.id_cart}})
+    update: async (req,res) => {
+        const id = req.params.id;
+        const { size, quantity } = req.body;
+
+        await Cart_Products.update(
+            {
+                size,
+                quantity
+            }, 
+            {
+                where: { id_cart_products: id }
+            }
+        )
+      
+        const cartData = await viewCart(req.cookies.user.email);
+
+        res.render('cart', { cart: cartData });
+    },
+
+    destroy: async (req,res) => {
         
-        res.render('cart', { products: cartProducts, cart });
+        await Cart_Products.destroy({
+            where: { id_cart_products: req.params.id }
+        })
+       
+        const cartData = await viewCart(req.cookies.user.email);
+
+        res.render('cart', { cart: cartData });
     }
 }
 
