@@ -81,6 +81,7 @@ const CartController = {
       
         const cartData = await viewCart(req.cookies.user.email);
 
+        console.log(req.body);
         res.render('cart', { cart: cartData });
     },
 
