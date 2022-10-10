@@ -12,11 +12,9 @@ router.get('/', guestMiddleware, CartController.index);
 router.post('/', guestMiddleware, CartController.add);
 
 /* PUT cart page. */
-router.post('/', guestMiddleware, CartController.index);
 router.put('/:id', guestMiddleware, CartController.update);
 
 /* DELETE cart page. */
-router.post('/', guestMiddleware, CartController.index);
 router.delete('/:id', guestMiddleware, CartController.destroy);
 
 

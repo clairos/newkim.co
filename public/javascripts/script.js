@@ -1,14 +1,19 @@
 function onChange(id_cart) {
-  document.getElementById('cartForm').addEventListener('onsubmit', (e) => {
+  const form = document.getElementById('cartForm');
+  form.addEventListener('onsubmit', function (e) {
     e.preventDefault();
     fetch('/cart/' + id_cart, {
-      method: 'POST',
-      body: new FormData(cartForm)
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'PUT',
+      body: JSON.stringfy(Object.fromEntries(new FormData(form)))
     })
     .then(response => response.json())
     .then(data => window.reload())
 
+    console.log(submit);
   })
-  console.log(FormData);
   return false;
 }
+
