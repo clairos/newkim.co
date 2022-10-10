@@ -3,6 +3,7 @@
 <head>
     <%- include('partials/head')  %> 
     <link rel="stylesheet" href="/css/cart.css">
+    <script defer src="/javascripts/script.js"></script>
 </head>
 <body>
     <%- include('partials/header')  %> 
@@ -12,12 +13,12 @@
             <% for( let i = 0; i < cart.length; i++ ) { %>
                 <div class="product">
                     <img class="imagem1" src="/img/<%= cart[i].product.image %>" alt="">
-                    <form action="/cart/<%= cart[i].id_cart_products %>?__method=PUT" method="POST">
+                    <form action="/cart/<%= cart[i].id_cart_products %>?__method=PUT" method="POST" id="cartForm">
                         <div class="form">
                             <h3><%= cart[i].product.product_name %></h3>
                             <div class="quant">
                                 <b>Quantity:</b>
-                                <select name="quantity" id="Quantidade">
+                                <select name="quantity" onchange="onChange('<%= cart[i].id_cart_products %>')" id="Quantidade">
                                     <% Array(9).fill().forEach((option, index) => { %> 
                                     <option 
                                         <% if(index + 1 == cart[i].quantity) {%> 
@@ -31,7 +32,7 @@
                             </div>
                             <div class="size">
                                 <b>Size:</b>
-                                <select name="size" id=Size value="<%= cart[i].size %>">
+                                <select name="size" onchange="onChange('<%= cart[i].id_cart_products %>')" id=Size value="<%= cart[i].size %>">
                                     <% [34,36,38,40].forEach((option, index) => { %> 
                                     <option <% if(option == cart[i].size) {%> 
                                         selected
