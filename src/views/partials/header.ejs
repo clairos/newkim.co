@@ -1,33 +1,26 @@
 <header class="navbar">
-  <!-- <div class="menu-search">
-        <img id="menu" src="/img/menu.png" alt="menu hamburger">
-        <img id="search" src="/img/search.png" alt="search logo">
-    </div> -->
   <div class="navigation">
-      <div class="toggle">
-        <span>
-          <img id="menu" src="/img/menu.png" alt="menu hamburger" />
-        </span>
-    </div>
-      <div class="searchBox">
-        <div class="search">
-          <ion-icon name="search-outline"></ion-icon>
-        </div>
-        <div class="searchInput">
-          <input type="text" placeholder="Search Here" />
-        </div>
-        <div class="close">
-          <ion-icon name="close-outline"></ion-icon>
-        </div>
+    <div class="search">
+      <ion-icon name="search-outline"></ion-icon>
+      <input type="text" class="input" placeholder="Search Here">
+      <button class="searchInput">
+      <i class="fas fa-search"></i>
+      </button>
       </div>
 
-    <ul>
-      <li style="--i: 0"><a href="#">Home</a></li>
-      <li style="--i: 2"><a href="#">Home</a></li>
-      <li style="--i: 3"><a href="#">Home</a></li>
-      <li style="--i: 4"><a href="#">Home</a></li>
-      <li style="--i: 5"><a href="#">Home</a></li>
-    </ul>
+      <div id='menu-bar'>
+        <div id='menu' onclick='onClickMenu()'>
+          <img id="menu-nav" src="/img/menu.png" alt="menu hamburger">
+        </div>
+        <ul class='nav' id='nav'>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>Home</a></li>
+        </ul> 
+        </div>
+        <div class='menu-bg' id='menu-bg'></div>
   </div>
 
   <a href="/">

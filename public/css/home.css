@@ -40,6 +40,93 @@ header:hover {
     filter: invert(0);
 }
 
+/* #menu {
+    width: 35px;
+    max-width: 100%;
+}
+#search {
+    width: 20px;
+    max-width: 100%;
+    margin-left: 20%;
+    align-self: center;
+}
+.overlay {
+    position: absolute;
+    background: #E4E3DF;
+    width: 30%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+}
+.overlay.open {
+    opacity: 0.9;
+    visibility: visible;
+    height: 50%;
+}
+
+.overlay.open li {
+    animation: fadeInRigth 0.5s ease forwards;
+    animation-delay: 0.35s;
+}
+.overlay.open li:nth-of-type(2) {
+    animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(3){
+    animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4){
+    animation-delay: 0.5s;
+}
+.overlay nav {
+    position: relative;
+    height: 70%;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+}
+.overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+}
+.overlay ul li {
+    display: block;
+    height: 20%;
+    height: calc(100% / 5);
+    min-height: 40px;
+    position: relative;
+    opacity: 0;
+}
+.overlay ul li a {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+.overlay ul li a:hover:after,
+.overlayul li a:focus:after,
+.overlay ul li a:active:after {
+    width: 100%;
+}
+.overlay ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #fff;
+    transition: 0.35s;
+} */
 /* .menu-search {
     display: flex;
 }
@@ -50,85 +137,133 @@ header:hover {
 }
 
 #search {
-    width: 20px;
-    max-width: 100%;
-    margin-left: 20%;
-    align-self: center;
+    
 } */
-#menu {
+
+#menu-nav {
     width: 35px;
-    max-width: 100%;
-}
-.nav-container {
-    display: flex;
-}
-.navigation {
-    display: flex;
-    position: relative;
-    max-width: 100%;
-    height: 20px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
 }
 
-.toggle.active::before {
-    content: 'Close';
-}
-.toggle span {
-    position: relative;
-    width: 20px;
-    height: 50px;
-}
-.toggle.active span::before {
-    transform: rotate(225deg);
-    top: 24px;
-}
-.toggle.active span::after {
-    transform: rotate(135deg);
-    bottom: 24px;
-}
-ul {
-    position: relative;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-ul li {
-    position: relative;
-    list-style: none;
-    transition: 0.5s;
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(-250px);
-    transition-delay: calc(0.1s * var(--i));
-}
-.navigation.active ul li {
-    visibility: visible;
-    opacity: 1;
-    transform: translateX(0px);
-}
-ul li a {
-    position: relative;
+.nav li a {
+    color: #fff;
     text-decoration: none;
-    display: block;
-    padding: 30px 70px;
-    height: 50px;
-    background: #E4E3DF;
-    color: #E4E3DF;
+    border: 30%;
+    border-color: #8D928D;
 }
- ul li a:hover {
-    background:#E4E3DF;
-    color: #AAAAAA;
-    transition: 0s;
- }
 
- /* search */
-.searchBox {
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px 0;
+}
+
+.nav {
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+
+.menu-bg,
+#menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg:hover {
+    -webkit-text-stroke: 1px #E4E3DF;
+    color: #E4E3DF;
+    background-color: #E4E3DF;
+    filter: invert(0);
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+
+}
+
+.change .bar {
+    background-color: white;
+
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+/* search */
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.search .input {
+    /* background-color: #fff; */
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.searchInput {
+    background-color: #020B0F;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.searchInput:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .searchInput {
+    transform: translateX(198px);
+}
+
+/* .searchBox {
     width: 60px;
     height: 60px;
     left: 20%;
     top:-50%;
     position: absolute;
     /* background: #fff; */
-    display: flex;
+/* display: flex;
     justify-content: center;
     align-items: center; 
     transition: 0.5s;
@@ -177,7 +312,7 @@ ul li a {
     border: none;
     outline: none;
     font-size: 1.25em;
-}
+} */
 
 #logo {
     width: 200px;
@@ -199,6 +334,7 @@ ul li a {
     width: 31px;
     max-width: 100%;
 }
+
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
@@ -286,7 +422,7 @@ ul li a {
 .video {
     width: max-content;
     height: max-content;
-} 
+}
 
 .videoauto {
     position: absolute;
@@ -594,24 +730,25 @@ footer {
     max-width: 100%;
     filter: invert(1);
 }
+
 /* --- F ----- FOOTER ----- */
 
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
 
-@media (min-width: 1100px){
+@media (min-width: 1100px) {
     .videoauto {
         width: 100%;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 16/9) {
     .videoauto {
         width: 100%;
         height: 100vh;
     }
 }
 
-@media (max-width: 1099px){
+@media (max-width: 1099px) {
     .videoauto {
         display: none;
     }
@@ -655,9 +792,9 @@ footer {
 }
 
 @media (max-width: 675px) {
-     .img-bg {
+    .img-bg {
         display: none;
-    } 
+    }
 
     header {
         filter: invert(1.0);
@@ -696,7 +833,7 @@ footer {
     }
 
     .scroll3 img {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .btn3 {
@@ -709,21 +846,21 @@ footer {
 }
 
 
-@media (min-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16/9) {
     .videoauto2 {
         width: 100%;
         height: 100vh;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 16/9) {
     .videoauto2 {
         width: 100%;
         height: 100vh;
     }
 }
 
-@media (max-width: 675px){
+@media (max-width: 675px) {
     .logo2 {
         display: none;
     }
@@ -747,4 +884,5 @@ footer {
     }
 
 }
+
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */
