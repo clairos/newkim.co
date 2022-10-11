@@ -11,6 +11,6 @@ Colour palette: Platinum #E4E4DF, Rich Black FOGRA29 #020B0F, Silver Chalice #AA
 Typography: Heebo ExtraLight 200 on Google Fonts
 
 It is part of the Integrative Project for the 2022 Fullstack Web Developer class at Digital House Brasil. <br>
-Members: Ana Clara Brusamarello Barbosa, Raquel Schroeder de Souza, Roberta Hassib, Roberta Neukamp Guerreiros, Suane Oliveira.
+Members: Ana Clara Brusamarello Barbosa, Roberta Hassib, Roberta Neukamp Guerreiros, Suane Oliveira.
 
 All pictures used were taken from the original website www.minjukim.co and from the fashion designer Minju Kim's Instagram profile https://www.instagram.com/_minjukim_/
