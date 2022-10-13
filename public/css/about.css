@@ -36,10 +36,11 @@ header {
     height: 30px;
     margin: 30px 0 20px 20px;
     cursor: pointer;
+    filter: invert(1);
 }
 
 .nav li a {
-    color: #020B0F;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -58,7 +59,7 @@ header {
     transition: 0.3s ease;
     display: none;
     position: absolute;
-    background: #E4E3DF;
+    background: #020B0F;
     width: 10vw;
     height: 25vh;
     text-align: center;
@@ -72,9 +73,9 @@ header {
 }
 
 .menu-bg:hover {
-    -webkit-text-stroke: 1px #E4E3DF;
-    color: #E4E3DF;
-    background-color: #E4E3DF;
+    -webkit-text-stroke: 1px #020B0F;
+    color: #020B0F;
+    background-color: #020B0F;
     filter: invert(0);
 }
 
