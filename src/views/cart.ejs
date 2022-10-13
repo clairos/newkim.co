@@ -13,7 +13,7 @@
             <% for( let i = 0; i < cart.length; i++ ) { %>
                 <div class="product">
                     <img class="imagem1" src="/img/<%= cart[i].product.image %>" alt="">
-                    <form action="/cart/<%= cart[i].id_cart_products %>?__method=PUT" method="POST" id="cartForm">
+                    <form id="cartForm">
                         <div class="form">
                             <h3><%= cart[i].product.product_name %></h3>
                             <div class="quant">
@@ -49,8 +49,8 @@
                         <div class="price">
                             <h2>$<%= cart[i].product.price %></h2>
                         </div>
-                        <form action="/cart/<%= cart[i].id_cart_products %>?__method=DELETE" method="POST" class="form-delete">
-                            <button class="delete">
+                        <form class="form-delete">
+                            <button onclick="onDelete('<%= cart[i].id_cart_products %>')" type="button" class="delete">
                                 <img src="/img/trash-bin.png" alt="">
                             </button>
                         </form>
@@ -95,7 +95,7 @@
         </section> -->
         <div class="total">
             <h2 class="total">Total:</h2>
-            <h2>$<%= cart.reduce((total, item) => Number(item.product.price) + total, 0.00) %></h2>
+            <h2>$<%= cart.reduce((total, item) => (Number(item.product.price) * Number(item.quantity)) + total, 0.00) %></h2>
         </div>
         
         <div class="final">
