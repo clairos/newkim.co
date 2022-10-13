@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // const close = document.querySelector('.menu-search');
 // const open = document.querySelector('.ham');
 // const menu = document.querySelector('.menu');
@@ -48,3 +49,24 @@ btn.addEventListener('click', () => {
 search.classList.toggle('active')
 input.focus()
 })
+=======
+function onChange(id_cart) {
+  const form = document.getElementById('cartForm');
+  form.addEventListener('onsubmit', function (e) {
+    e.preventDefault();
+    fetch('/cart/' + id_cart, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'PUT',
+      body: JSON.stringfy(Object.fromEntries(new FormData(form)))
+    })
+    .then(response => response.json())
+    .then(data => window.reload())
+
+    console.log(submit);
+  })
+  return false;
+}
+
+>>>>>>> 30725c50ad9622e5f64750815592f8cbb6b94624
