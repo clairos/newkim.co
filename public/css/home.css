@@ -40,106 +40,6 @@ header:hover {
     filter: invert(0);
 }
 
-/* #menu {
-    width: 35px;
-    max-width: 100%;
-}
-#search {
-    width: 20px;
-    max-width: 100%;
-    margin-left: 20%;
-    align-self: center;
-}
-.overlay {
-    position: absolute;
-    background: #E4E3DF;
-    width: 30%;
-    height: 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-    overflow: hidden;
-}
-.overlay.open {
-    opacity: 0.9;
-    visibility: visible;
-    height: 50%;
-}
-
-.overlay.open li {
-    animation: fadeInRigth 0.5s ease forwards;
-    animation-delay: 0.35s;
-}
-.overlay.open li:nth-of-type(2) {
-    animation-delay: 0.4s;
-}
-.overlay.open li:nth-of-type(3){
-    animation-delay: 0.45s;
-}
-.overlay.open li:nth-of-type(4){
-    animation-delay: 0.5s;
-}
-.overlay nav {
-    position: relative;
-    height: 70%;
-    top: 40%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    font-weight: 200;
-    text-align: center;
-}
-.overlay ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    height: 100%;
-}
-.overlay ul li {
-    display: block;
-    height: 20%;
-    height: calc(100% / 5);
-    min-height: 40px;
-    position: relative;
-    opacity: 0;
-}
-.overlay ul li a {
-    display: block;
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    overflow: hidden;
-}
-.overlay ul li a:hover:after,
-.overlayul li a:focus:after,
-.overlay ul li a:active:after {
-    width: 100%;
-}
-.overlay ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0%;
-    transform: translateX(-50%);
-    height: 3px;
-    background: #fff;
-    transition: 0.35s;
-} */
-/* .menu-search {
-    display: flex;
-}
-
-#menu {
-    width: 35px;
-    max-width: 100%;
-}
-
-#search {
-    
-} */
-
 #menu-nav {
     width: 35px;
     height: 30px;
@@ -148,10 +48,8 @@ header:hover {
 }
 
 .nav li a {
-    color: #fff;
+    color: #020B0F;
     text-decoration: none;
-    border: 30%;
-    border-color: #8D928D;
 }
 
 .nav li a:hover {
@@ -160,14 +58,19 @@ header:hover {
 
 .nav li {
     list-style: none;
-    padding: 16px 0;
+    padding: 16px;
 }
 
 .nav {
     padding: 0;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     transition: 0.3s ease;
     display: none;
+    position: absolute;
+    background: #E4E3DF;
+    width: 10vw;
+    height: 25vh;
+    text-align: center;
 }
 
 .menu-bg,
@@ -217,13 +120,19 @@ header:hover {
 }
 
 /* search */
+#search {
+    width: 30px;
+    max-width: 100%;
+    margin-left: 100%;
+    align-self: center;
+}
 .search {
     position: relative;
     height: 50px;
 }
 
 .search .input {
-    /* background-color: #fff; */
+    background-color: #fff;
     border: 0;
     font-size: 18px;
     padding: 15px;
@@ -232,18 +141,20 @@ header:hover {
     transition: width 0.3s ease;
 }
 
-.searchInput {
-    background-color: #020B0F;
+.btn {
+    background-color: #fff;
     border: 0;
     cursor: pointer;
     font-size: 24px;
     position: absolute;
+    top: 0;
+    left: 0;
     height: 50px;
     width: 50px;
     transition: transform 0.3s ease;
 }
 
-.searchInput:focus,
+.btn:focus,
 .input:focus {
     outline: none;
 }
@@ -252,67 +163,9 @@ header:hover {
     width: 200px;
 }
 
-.search.active .searchInput {
+.search.active .btn {
     transform: translateX(198px);
 }
-
-/* .searchBox {
-    width: 60px;
-    height: 60px;
-    left: 20%;
-    top:-50%;
-    position: absolute;
-    /* background: #fff; */
-/* display: flex;
-    justify-content: center;
-    align-items: center; 
-    transition: 0.5s;
-    overflow: hidden;
-    box-shadow: 0 25px 35px rgba(0, 0, 0, 0, 1);
-}
-.searchBox.acive{ 
-    width: 360px;
-}
-
-.searchBox .search {
-    min-width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.searchBox .close {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.25em;
-    scale: 0;
-    transition: 0.5s;
-}
-
-.searchBox.active .close
-{
-    scale: 1;
-    transition-delay: 0.5s;
-}
-.searchBox .searchInput {
-    width: calc(100% - 120px);
-    height: 100%;
-    line-height: 60px;
-}
-.searchBox .searchInput input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    font-size: 1.25em;
-} */
 
 #logo {
     width: 200px;
