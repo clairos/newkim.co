@@ -81,8 +81,7 @@ const CartController = {
       
         const cartData = await viewCart(req.cookies.user.email);
 
-        console.log(req.body);
-        res.render('cart', { cart: cartData });
+        res.redirect('/cart');
     },
 
     destroy: async (req,res) => {
@@ -91,9 +90,8 @@ const CartController = {
             where: { id_cart_products: req.params.id }
         })
        
-        const cartData = await viewCart(req.cookies.user.email);
-
-        res.render('cart', { cart: cartData });
+        
+        res.redirect('/cart');
     }
 }
 
