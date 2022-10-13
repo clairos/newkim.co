@@ -32,4 +32,3 @@ function onDelete(id_cart) {
 if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
-

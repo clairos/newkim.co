@@ -31,24 +31,133 @@ header {
     max-width: 100%;
     background-color: #020B0F;
 }
-
-
-.menu-search {
-    display: flex;
-}
-
-#menu {
+#menu-nav {
     width: 35px;
-    max-width: 100%;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
     filter: invert(1);
 }
 
+.nav li a {
+    color: #020B0F;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px;
+}
+
+.nav {
+    padding: 0;
+    /* margin: 0 20px; */
+    transition: 0.3s ease;
+    display: none;
+    position: absolute;
+    background: #E4E3DF;
+    width: 10vw;
+    height: 25vh;
+    text-align: center;
+}
+
+.menu-bg,
+#menu-bar {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.menu-bg:hover {
+    -webkit-text-stroke: 1px #E4E3DF;
+    color: #E4E3DF;
+    background-color: #E4E3DF;
+    filter: invert(0);
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+
+}
+
+.change .bar {
+    background-color: white;
+
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+/* search */
 #search {
     width: 20px;
     max-width: 100%;
     margin-left: 20%;
     align-self: center;
     filter: invert(1);
+}
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.search .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
 }
 
 #logo {

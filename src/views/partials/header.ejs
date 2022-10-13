@@ -1,17 +1,38 @@
 <header class="navbar">
-    <div class="menu-search">
-        <img id="menu" src="/img/menu.png" alt="menu hamburger">
-        <img id="search" src="/img/search.png" alt="search logo">
+  <div class="navigation">
+    <div class="search">
+      <img id="search" src="/img/search.png" alt="">
+      <!-- <ion-icon name="search-outline"></ion-icon>
+      <input type="text" class="input" placeholder="Search Here" />
+      <button class="searchInput">
+        <i class="fas fa-search"></i>
+      </button> -->
     </div>
-    <a href="/">
-        <img id="logo" src="/img/logo.png" alt="logo">
+
+    <div id="menu-bar">
+      <div id="menu" onclick="onClickMenu()">
+        <img id="menu-nav" src="/img/menu.png" alt="menu hamburger" />
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/store">Store</a></li>
+        <li><a href="/cart">Cart</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+  </div>
+
+  <a href="/">
+    <img id="logo" src="/img/logo.png" alt="logo" />
+  </a>
+  <div class="cart-acc">
+    <a href="/cart">
+      <img id="cart" src="/img/cart.png" alt="cart" />
     </a>
-    <div class="cart-acc">
-        <a href="/cart">
-            <img id="cart" src="/img/cart.png" alt="cart">
-        </a>
-        <a href="/login">
-            <img id="account" src="/img/account.png" alt="profile icon">
-        </a>
-    </div>
+    <a href="/login">
+      <img id="account" src="/img/account.png" alt="profile icon" />
+    </a>
+  </div>
 </header>
