@@ -136,8 +136,8 @@ header {
 } */
 
 #menu-bar {
-    top: -7px;
-    left: -3px;
+    top: 0px;
+    left: 0px;
     position: absolute;
 }
 
@@ -438,9 +438,14 @@ footer {
         width: 100vw;
     }
 
+    #menu-bar {
+        top: -5px;
+        left: 0px;
+    }
+
     .box {
         width: 40vw;
-        height: 50vh;
+        height: 70vh;
     }
 
     footer {
@@ -453,9 +458,14 @@ footer {
         max-width: 100vw;
     }
 
+    #menu-bar {
+        top: -5px;
+        left: -5px;
+    }
+
     .box {
-        width: 40vw;
-        height: 50vh;
+        width: 55vw;
+        height: 70vh;
     }
 
     footer {
@@ -468,9 +478,14 @@ footer {
         width: 100vw;
     }
 
+    #menu-bar {
+        top: -5px;
+        left: -15px;
+    }
+
     .box {
-        width: 40vw;
-        height: 50vh;
+        width: 68vw;
+        height: 70vh;
     }
 
     .logo2 img {
@@ -497,7 +512,7 @@ footer {
 
     .box {
         width: 80vw;
-        height: 50vh;
+        height: 70vh;
     }
 
     .itens-center {

@@ -48,7 +48,7 @@ header {
 .burger-btn {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #020B0F;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
@@ -59,7 +59,7 @@ header {
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #020B0F;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
@@ -103,7 +103,7 @@ header {
 }
 
 .nav li a {
-    color: #fff;
+    color: #020B0F;
     text-decoration: none;
 }
 
@@ -122,9 +122,8 @@ header {
     transition: 0.3s ease;
     display: none;
     position: absolute;
-    background: #020B0F;
+    background: #E4E3DF;
     width: 10vw;
-    height: 25vh;
     text-align: center;
 }
 
@@ -135,15 +134,15 @@ header {
 } */
 
 #menu-bar {
-    top: -7px;
-    left: -3px;
+    top: 0px;
+    left: 0px;
     position: absolute;
 }
 
 .menu-bg:hover {
-    -webkit-text-stroke: 1px #020B0F;
-    color: #020B0F;
-    background-color: #020B0F;
+    -webkit-text-stroke: 1px #E4E3DF;
+    color: #E4E3DF;
+    background-color: #E4E3DF;
     filter: invert(0);
 }
 
@@ -185,7 +184,6 @@ header {
     max-width: 100%;
     margin-left: 100%;
     align-self: center;
-    filter: invert(1);
 }
 /* .search {
     position: relative;
@@ -398,6 +396,11 @@ footer {
         width: 100vw;
     }
 
+    #menu-bar {
+        top: -5px;
+        left: -4px;
+    }
+
     main {
         width: 100vw;
     }
@@ -414,6 +417,11 @@ footer {
 @media screen and (max-width: 875px) {
     header {
         width: 100vw;
+    }
+
+    #menu-bar {
+        top: -5px;
+        left: -12px;
     }
 
     footer {

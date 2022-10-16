@@ -136,8 +136,8 @@ header {
 } */
 
 #menu-bar {
-    top: -7px;
-    left: -3px;
+    top: 3px;
+    left: 0px;
     position: absolute;
 }
 
@@ -500,6 +500,11 @@ footer {
 @media screen and (max-width: 1000px) {
     header {
         width: 100vw;
+    }
+
+    #menu-bar {
+        top: -5px;
+        left: -4px;
     }
 
     main {

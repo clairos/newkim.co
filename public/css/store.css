@@ -47,7 +47,7 @@ header {
 .burger-btn {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #020B0F;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
@@ -58,7 +58,7 @@ header {
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #020B0F;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
@@ -134,9 +134,9 @@ header {
 } */
 
 #menu-bar {
-    top: -7px;
-    left: -3px;
-    position: absolute;
+  top: 4px;
+  left: 0px;
+  position: absolute;
 }
 
 .menu-bg:hover {
@@ -158,7 +158,7 @@ header {
 }
 
 .change .bar {
-    background-color: white;
+    background-color: #020B0F;
 
 }
 
@@ -184,7 +184,6 @@ header {
     max-width: 100%;
     margin-left: 100%;
     align-self: center;
-    filter: invert(1);
 }
 /* .search {
     position: relative;
@@ -192,7 +191,7 @@ header {
 } */
 
 .search .input {
-  background-color: #fff;
+  background-color: #020B0F;
   border: 0;
   font-size: 18px;
   padding: 15px;
@@ -369,6 +368,11 @@ footer {
   header {
     width: 100vw;
   }
+
+  #menu-bar {
+    top: -5px;
+    left: -4px;
+}
 
   body {
     width: 100vw;
