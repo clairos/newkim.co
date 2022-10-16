@@ -49,7 +49,7 @@ header {
 .burger-btn {
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #020B0F;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
@@ -60,7 +60,7 @@ header {
     position: absolute;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: #020B0F;
     border-radius: 10px;
     transition: all .3s ease-in-out;
 }
@@ -136,8 +136,8 @@ header {
 } */
 
 #menu-bar {
-    top: -7px;
-    left: -3px;
+    top: 0px;
+    left: 5px;
     position: absolute;
 }
 
@@ -186,7 +186,6 @@ header {
     max-width: 100%;
     margin-left: 100%;
     align-self: center;
-    filter: invert(1);
 }
 /* .search {
     position: relative;
@@ -412,6 +411,11 @@ footer {
 @media screen and (max-width: 1000px) {
     header {
         width: 100vw;
+    }
+
+    #menu-bar {
+        top: -5px;
+        left: -4px;
     }
 
     main {

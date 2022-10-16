@@ -129,7 +129,7 @@ header:hover {
     display: none;
     position: absolute;
     background: #E4E3DF;
-    width: 15vw;
+    width: 14vw;
     text-align: center;
 }
 
@@ -140,8 +140,8 @@ header:hover {
 } */
 
 #menu-bar {
-    top: -7px;
-    left: -3px;
+    top: 0px;
+    left: 0px;
     position: absolute;
 }
 
@@ -650,17 +650,28 @@ footer {
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
 
 @media (min-width: 1100px) {
+
+    header {
+        filter: invert(0);
+        width: 100%;
+    }
+
+    .index {
+        height: 85vh;
+    }
+
     .videoauto {
         width: 100%;
     }
 }
 
-@media (max-aspect-ratio: 16/9) {
+/* @media (max-aspect-ratio: 16/9) {
     .videoauto {
         width: 100%;
         height: 100vh;
     }
-}
+} */
+
 
 @media (max-width: 1099px) {
     .videoauto {
@@ -670,10 +681,6 @@ footer {
     header {
         filter: invert(0);
         width: 100%;
-    }
-
-    .index {
-        height: 80vh;
     }
 
     #bg-img {
@@ -688,6 +695,10 @@ footer {
         z-index: -1;
         width: 100%;
         object-fit: contain;
+    }
+
+    .index {
+        height: 75vh;
     }
 
     .info p {
@@ -733,6 +744,7 @@ footer {
         object-fit: cover;
     }
 
+
     .btn {
         box-shadow: none;
     }
@@ -775,6 +787,10 @@ footer {
 }
 
 @media (max-width: 675px) {
+    .index {
+        height: 40vh;
+    }
+
     .logo2 {
         display: none;
     }
@@ -785,6 +801,10 @@ footer {
 }
 
 @media screen and (max-width: 470px) {
+    .index {
+        height: 90vh;
+    }
+
     #search {
         display: none;
     }
