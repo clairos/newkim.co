@@ -105,6 +105,7 @@ header {
 .nav li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .nav li a:hover {
@@ -123,8 +124,7 @@ header {
     display: none;
     position: absolute;
     background: #020B0F;
-    width: 10vw;
-    height: 25vh;
+    width: 14vw;
     text-align: center;
 }
 
