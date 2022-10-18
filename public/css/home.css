@@ -21,19 +21,19 @@ body {
 }
 
 /* --- I ----- HEADER ----- */
-header {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-width: max-content;
     height: 10vh;
     padding: 0 3vh;
-    filter: invert(1.0);
+    filter: invert(1);
     background-color: transparent;
     transition: 0.6s;
 }
 
-header:hover {
+.navbar:hover {
     -webkit-text-stroke: 1px #E4E3DF;
     color: #E4E3DF;
     background-color: #E4E3DF;

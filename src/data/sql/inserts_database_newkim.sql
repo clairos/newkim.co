@@ -9,7 +9,7 @@ VALUES
     ('Whimsical Hair Clip Set', 15.00, 'Pink & Yellow', '7-hairpin.jpeg', '7-model-hairpin.jpeg', ' ', 'Whimsical hair clip set - pink/green and yellow/white', 'otherstories', 0, 'Acessories'),
     ('Puff Sleeve Crop Blouse', 493.00, 'Pink', '8-model-front-cropped.jpeg', '8-model-side-cropped.jpeg', '8-model-back-cropped.jpeg', 'Puff sleeve crop blouse - pink', 'bari', 0, 'Top'),
     ('Volume Sleeve Jacket', 881.00, 'White & Yellow', '9-model-side-jacket.jpeg', '9-model-front-jacket.jpeg', '9-model-back-jacket.jpeg', 'Volume sleeve jacket - white and yellow print', 'bari', 0, 'Top'),
-    ('Ruffle Organza Mini Dress', 591.00, 'Yellow', '10-model-front-dress.jpeg', '10-model- back-dress.jpeg', '10-model-side-dress.jpeg', 'Ruffle organza mini dress - yellow print', 'bari', 0, 'Dress'),
+    ('Ruffle Organza Mini Dress', 591.00, 'Yellow', '10-model-front-dress.jpeg', '10-model-back-dress.jpeg', '10-model-side-dress.jpeg', 'Ruffle organza mini dress - yellow print', 'bari', 0, 'Dress'),
     ('Flag Mini Dress', 746.00, 'White', '11-model-front-dress.jpeg', '11-model-side-dress.jpeg', '11-model-back-dress.jpeg', 'Fringe decorations strappy mini dress - white', 'bari', 0, 'Dress'),
     ('Square Puff Coat', 816.00, 'Yellow', '12-model-side-coat.jpeg', '12-model-back-coat.jpeg', '12-model-front-coat.jpeg', 'Puff sleeves long coat with a wide ribbon band behind - yellow', 'bari', 0, 'Top'),
     ('Volume Sleeve Jacket', 700.00, 'Black', '13-model-front-jacket.jpeg', '13-model-side-jacket.jpeg', '13-model-back-jacket.jpeg', 'Volume sleeve jacket - black', 'bari', 0, 'Top'),
