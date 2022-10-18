@@ -40,10 +40,71 @@ header:hover {
     filter: invert(0);
 }
 
+.menu-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    margin: 20px 20px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn {
+    width: 30px;
+    height: 3px;
+    background: #020B0F;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn::before, 
+.burger-btn::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #020B0F;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn::before {
+    transform: translateY(-10px);
+}
+
+.burger-btn::after {
+    transform: translateY(10px);
+}
+
+/* animation */
+.menu-nav.open .burger-btn {
+    transform: translateX(-30px);
+    background: transparent;
+}
+
+.menu-nav.open .burger-btn::before {
+    transform: rotate(45deg) translate(20px, -20px);
+}
+
+.menu-nav.open .burger-btn::after {
+    transform: rotate(-45deg) translate(20px, 20px);
+}
+/* animation */
+
+.navigation {
+    width: 6%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
 #menu-nav {
     width: 35px;
     height: 30px;
-    margin: 30px 0 20px 20px;
+    margin: 30px 0 0 20px;
     cursor: pointer;
 }
 
@@ -68,15 +129,19 @@ header:hover {
     display: none;
     position: absolute;
     background: #E4E3DF;
-    width: 10vw;
-    height: 25vh;
+    width: 14vw;
     text-align: center;
 }
 
-.menu-bg,
-#menu-bar {
+/* .menu-bg {
     top: 0;
     left: 0;
+    position: absolute;
+} */
+
+#menu-bar {
+    top: 0px;
+    left: 0px;
     position: absolute;
 }
 
@@ -99,7 +164,7 @@ header:hover {
 }
 
 .change .bar {
-    background-color: white;
+    background-color: #E4E3DF;
 
 }
 
@@ -121,14 +186,10 @@ header:hover {
 
 /* search */
 #search {
-    width: 30px;
+    width: 25px;
     max-width: 100%;
     margin-left: 100%;
     align-self: center;
-}
-.search {
-    position: relative;
-    height: 50px;
 }
 
 .search .input {
@@ -589,17 +650,28 @@ footer {
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
 
 @media (min-width: 1100px) {
+
+    header {
+        filter: invert(0);
+        width: 100%;
+    }
+
+    .index {
+        height: 85vh;
+    }
+
     .videoauto {
         width: 100%;
     }
 }
 
-@media (max-aspect-ratio: 16/9) {
+/* @media (max-aspect-ratio: 16/9) {
     .videoauto {
         width: 100%;
         height: 100vh;
     }
-}
+} */
+
 
 @media (max-width: 1099px) {
     .videoauto {
@@ -609,10 +681,6 @@ footer {
     header {
         filter: invert(0);
         width: 100%;
-    }
-
-    .index {
-        height: 80vh;
     }
 
     #bg-img {
@@ -627,6 +695,10 @@ footer {
         z-index: -1;
         width: 100%;
         object-fit: contain;
+    }
+
+    .index {
+        height: 75vh;
     }
 
     .info p {
@@ -672,6 +744,7 @@ footer {
         object-fit: cover;
     }
 
+
     .btn {
         box-shadow: none;
     }
@@ -714,6 +787,10 @@ footer {
 }
 
 @media (max-width: 675px) {
+    .index {
+        height: 40vh;
+    }
+
     .logo2 {
         display: none;
     }
@@ -724,6 +801,10 @@ footer {
 }
 
 @media screen and (max-width: 470px) {
+    .index {
+        height: 90vh;
+    }
+
     #search {
         display: none;
     }

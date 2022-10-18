@@ -33,6 +33,68 @@ header {
     background-color: #020B0F;
 }
 
+
+.menu-nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+    margin: 20px 20px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn {
+    width: 30px;
+    height: 3px;
+    background: #E4E3DF;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn::before, 
+.burger-btn::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #E4E3DF;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn::before {
+    transform: translateY(-10px);
+}
+
+.burger-btn::after {
+    transform: translateY(10px);
+}
+
+/* animation */
+.menu-nav.open .burger-btn {
+    transform: translateX(-30px);
+    background: transparent;
+}
+
+.menu-nav.open .burger-btn::before {
+    transform: rotate(45deg) translate(20px, -20px);
+}
+
+.menu-nav.open .burger-btn::after {
+    transform: rotate(-45deg) translate(20px, 20px);
+}
+/* animation */
+
+.navigation {
+    width: 6%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
 #menu-nav {
     width: 35px;
     height: 30px;
@@ -42,8 +104,9 @@ header {
 }
 
 .nav li a {
-    color: #020B0F;
+    color: #fff;
     text-decoration: none;
+    font-size: 16px;
 }
 
 .nav li a:hover {
@@ -61,23 +124,27 @@ header {
     transition: 0.3s ease;
     display: none;
     position: absolute;
-    background: #E4E3DF;
-    width: 10vw;
-    height: 25vh;
+    background: #020B0F;
+    width: 14vw;
     text-align: center;
 }
 
-.menu-bg,
-#menu-bar {
+/* .menu-bg {
     top: 0;
     left: 0;
+    position: absolute;
+} */
+
+#menu-bar {
+    top: 3px;
+    left: 0px;
     position: absolute;
 }
 
 .menu-bg:hover {
-    -webkit-text-stroke: 1px #E4E3DF;
-    color: #E4E3DF;
-    background-color: #E4E3DF;
+    -webkit-text-stroke: 1px #020B0F;
+    color: #020B0F;
+    background-color: #020B0F;
     filter: invert(0);
 }
 
@@ -115,16 +182,16 @@ header {
 
 /* search */
 #search {
-    width: 20px;
+    width: 25px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 100%;
     align-self: center;
     filter: invert(1);
 }
-.search {
+/* .search {
     position: relative;
     height: 50px;
-}
+} */
 
 .search .input {
     background-color: #fff;
@@ -433,6 +500,11 @@ footer {
 @media screen and (max-width: 1000px) {
     header {
         width: 100vw;
+    }
+
+    #menu-bar {
+        top: -5px;
+        left: -4px;
     }
 
     main {
