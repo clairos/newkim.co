@@ -16,4 +16,7 @@ function onClickMenu() {
     document.getElementById('menu').classList.toggle('change');
     document.getElementById('nav').classList.toggle('change');
     document.getElementById('menu-bg').classList.toggle('change');
+    document.getElementById('nav').addEventListener('blur', (event) => {
+        event.target.style.display = 'none';
+    })
 }
