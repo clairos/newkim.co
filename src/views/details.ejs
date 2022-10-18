@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+        <link rel="stylesheet" href="/css/details.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+        <main>
+            <div class="product">
+                <div class="prod">
+                    <img id="model2" src="/img/<%= product.image_model %>" alt="<%= product.image_alt %> ">
+                    <% if (product.image_detail != "" && product.image_detail != " ") { %>
+                        <img id="model3" src="/img/<%= product.image_detail %>" alt="<%= product.image_alt %> ">
+                    <% } %>
+                </div>
+                <div class="prodp">
+                    <img id="model1" src="/img/<%= product.image %> " alt="<%= product.image_alt %> ">
+                </div>
+                <div class="info">
+                    <h1><%= product.product_name %> </h1>
+                    <h2>$<%= product.price %> </h2>
+                    <div class="firstBar">
+                        <h3>Color:</h3>
+                        <select name="" id="colorBar">
+                            <option value="color"><%= product.color %> </option>
+                        </select>
+                    </div>
+                    <form action="/cart" method="POST">
+                        <div class="secondBar">
+                            <h3>Size:</h3>
+                            <select name="size" id="sizeBar">
+                                <option disabled selected>Select size</option>
+                                <option value="34">34</option>
+                                <option value="36">36</option>
+                                <option value="38">38</option>
+                                <option value="40">40</option>
+                            </select>
+                        </div>
+                        <p>Size Chart</p>
+                        <input type="hidden" name="productId" value="<%= product.id_product %>">
+                        <input type="hidden" name="cartId" value="<%= cart?.id_cart %>">
+                        <button class="btn btn-tp1" id="addcart" type="submit">ADD TO CART</button>
+                        <a href="/payment">
+                            <button class="btn2 btn-tp2" id="buynow">BUY NOW</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <%- include('partials/footer') %>
+</body>
+</html>

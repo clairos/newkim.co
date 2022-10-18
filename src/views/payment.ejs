@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/payment.css">
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <div class="cart-details">
+            <% for( let i = 0; i < cart.length; i++ ) { %>
+            <div class="item">
+                <img src="/img/<%= cart[i].product.image %>" alt="">
+                <div class="item-details">
+                    <h4><%= cart[i].product.product_name %></h4>
+                    <h5>$ <%= cart[i].product.price %></h5>
+                </div>
+            </div>
+            <% } %>
+
+            <div class="total">
+                <h3>TOTAL:</h3><span>$ <%= cart.reduce((total, item) => Number(item.product.price) + total, 0.00) %></span>
+            </div>
+        </div>
+        <div class="checkout">
+            <div class="express-checkout">
+                <div class="options-box">
+                    <span> EXPRESS CHECKOUT </span>
+                </div>
+                <div class="payment-options">
+                    <button>
+                        <img src="/img/icon-apple-pay.png" alt="">
+                    </button>
+                    <button>
+                        <img src="/img/icon-google-pay.png" alt="">
+                    </button>
+                    <button>
+                        <img class="paypal" src="/img/icon-paypal.png" alt="">
+                    </button>
+                </div>
+            </div>
+            
+            <div class="payment-separator">
+                <span> OR </span>
+            </div>
+
+            <div class="payment-form">
+                <form action="">
+                    <div class="flex">
+                        <input class="col-12" type="number" id="card" name="card"
+                            placeholder="Card Number">
+                    </div>
+                    <div class="flex">
+                        <input class="col-12" type="text" id="name" name="name"
+                            placeholder="Cardholder Name">
+                    </div>
+                    <div class="flex">
+                        <input class="col-6" type="text" id="date" name="date" 
+                            placeholder="Expiration Date (MM / YY)">
+                        <input class="col-6" type="number" id="code" name="code" 
+                            placeholder="Security Code">
+                    </div>
+                    <!-- <div class="flex">
+                        <input class="col-12" type="number" id="cpf" name="cpf"
+                            placeholder="CPF">
+                    </div> -->
+                </form>
+            </div>
+
+            <div class="buttons">
+                <a href="/edit-user">Return to shipping</a>
+                <button type="submit" class="btn btn-tp1">PAY NOW</button>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 /*-- CORES --
 Branco #E4E3DF
-Cinza #8D928D
+Cinza #AAAAAA
 Preto #020B0F */
 
 * {
@@ -21,39 +21,211 @@ body {
 }
 
 /* --- I ----- HEADER ----- */
-header {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-width: max-content;
     height: 10vh;
     padding: 0 3vh;
-    filter: invert(1.0);
+    filter: invert(1);
     background-color: transparent;
     transition: 0.6s;
 }
 
-header:hover {
+.navbar:hover {
     -webkit-text-stroke: 1px #E4E3DF;
     color: #E4E3DF;
     background-color: #E4E3DF;
     filter: invert(0);
 }
 
-.menu-search {
+.menu-nav {
+    position: relative;
     display: flex;
-}
-
-#menu {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     width: 35px;
-    max-width: 100%;
+    height: 30px;
+    margin: 20px 20px;
+    transition: all .3s ease-in-out;
 }
 
+.burger-btn {
+    width: 30px;
+    height: 3px;
+    background: #020B0F;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn::before, 
+.burger-btn::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #020B0F;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.burger-btn::before {
+    transform: translateY(-10px);
+}
+
+.burger-btn::after {
+    transform: translateY(10px);
+}
+
+/* animation */
+.menu-nav.open .burger-btn {
+    transform: translateX(-30px);
+    background: transparent;
+}
+
+.menu-nav.open .burger-btn::before {
+    transform: rotate(45deg) translate(20px, -20px);
+}
+
+.menu-nav.open .burger-btn::after {
+    transform: rotate(-45deg) translate(20px, 20px);
+}
+/* animation */
+
+.navigation {
+    width: 6%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#menu-nav {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 0 20px;
+    cursor: pointer;
+}
+
+.nav li a {
+    color: #020B0F;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    font-weight: bold;
+}
+
+.nav li {
+    list-style: none;
+    padding: 16px;
+}
+
+.nav {
+    padding: 0;
+    /* margin: 0 20px; */
+    transition: 0.3s ease;
+    display: none;
+    position: absolute;
+    background: #E4E3DF;
+    width: 14vw;
+    text-align: center;
+}
+
+/* .menu-bg {
+    top: 0;
+    left: 0;
+    position: absolute;
+} */
+
+#menu-bar {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.menu-bg:hover {
+    -webkit-text-stroke: 1px #E4E3DF;
+    color: #E4E3DF;
+    background-color: #E4E3DF;
+    filter: invert(0);
+}
+
+#menu-bar {
+    z-index: 2;
+}
+
+.change-bg {
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%, -30%);
+
+}
+
+.change .bar {
+    background-color: #E4E3DF;
+
+}
+
+.change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change #bar2 {
+    opacity: 0;
+}
+
+.change {
+    display: block;
+}
+
+/* search */
 #search {
-    width: 20px;
+    width: 25px;
     max-width: 100%;
-    margin-left: 20%;
+    margin-left: 100%;
     align-self: center;
+}
+
+.search .input {
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+}
+
+.btn {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
 }
 
 #logo {
@@ -76,6 +248,7 @@ header:hover {
     width: 31px;
     max-width: 100%;
 }
+
 /* --- F ----- HEADER ----- */
 
 /* --- I ----- MAIN ----- */
@@ -163,7 +336,7 @@ header:hover {
 .video {
     width: max-content;
     height: max-content;
-} 
+}
 
 .videoauto {
     position: absolute;
@@ -471,27 +644,12 @@ footer {
     max-width: 100%;
     filter: invert(1);
 }
+
 /* --- F ----- FOOTER ----- */
 
 /* --- I ----- AJUSTE TAMANHO TELAS ----- */
 
-@media (min-width: 1100px){
-    .videoauto {
-        width: 100%;
-    }
-}
-
-@media (max-aspect-ratio: 16/9){
-    .videoauto {
-        width: 100%;
-        height: 100vh;
-    }
-}
-
-@media (max-width: 1099px){
-    .videoauto {
-        display: none;
-    }
+@media (min-width: 1100px) {
 
     header {
         filter: invert(0);
@@ -499,7 +657,30 @@ footer {
     }
 
     .index {
-        height: 80vh;
+        height: 85vh;
+    }
+
+    .videoauto {
+        width: 100%;
+    }
+}
+
+/* @media (max-aspect-ratio: 16/9) {
+    .videoauto {
+        width: 100%;
+        height: 100vh;
+    }
+} */
+
+
+@media (max-width: 1099px) {
+    .videoauto {
+        display: none;
+    }
+
+    header {
+        filter: invert(0);
+        width: 100%;
     }
 
     #bg-img {
@@ -514,6 +695,10 @@ footer {
         z-index: -1;
         width: 100%;
         object-fit: contain;
+    }
+
+    .index {
+        height: 75vh;
     }
 
     .info p {
@@ -532,9 +717,9 @@ footer {
 }
 
 @media (max-width: 675px) {
-     .img-bg {
+    .img-bg {
         display: none;
-    } 
+    }
 
     header {
         filter: invert(1.0);
@@ -559,6 +744,7 @@ footer {
         object-fit: cover;
     }
 
+
     .btn {
         box-shadow: none;
     }
@@ -573,7 +759,7 @@ footer {
     }
 
     .scroll3 img {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .btn3 {
@@ -586,21 +772,25 @@ footer {
 }
 
 
-@media (min-aspect-ratio: 16/9){
+@media (min-aspect-ratio: 16/9) {
     .videoauto2 {
         width: 100%;
         height: 100vh;
     }
 }
 
-@media (max-aspect-ratio: 16/9){
+@media (max-aspect-ratio: 16/9) {
     .videoauto2 {
         width: 100%;
         height: 100vh;
     }
 }
 
-@media (max-width: 675px){
+@media (max-width: 675px) {
+    .index {
+        height: 40vh;
+    }
+
     .logo2 {
         display: none;
     }
@@ -609,4 +799,24 @@ footer {
         margin-top: 2%;
     }
 }
+
+@media screen and (max-width: 470px) {
+    .index {
+        height: 90vh;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #cart {
+        display: none;
+    }
+
+    #account {
+        display: none;
+    }
+
+}
+
 /* --- F ----- AJUSTE TAMANHO TELAS ----- */

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+        <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+        <main>
+            <div class="bg">
+                <form action="/register" method="POST">
+                    <div class="contactInfo">
+                        <h2>Create new account</h2>                         
+                        <input class="col-12" value="<%= locals?.old?.email || old?.email %>" type="email" id="email" name="email" placeholder="E-mail" > 
+                        <% if (locals.errors && errors.email) { %>
+                            <span class="error"> <%= errors.email.msg %> </span>
+                           <% } %>
+                        <input class="col-12" type="text" id="name" name="profile_name" placeholder="Full Name" value="<%= locals?.old?.profile_name || old?.profile_name %>"> 
+                        <% if (locals.errors && errors.profile_name) { %>
+                            <span class="error"> <%= errors.profile_name.msg %> </span>
+                           <% } %>
+                        <input class="col-12" type="password" id="password" name="password" placeholder="Password" value="<%= locals?.old?.password || old?.password %>">
+                        <% if (locals.errors && errors.password) { %>
+                            <span class="error"> <%= errors.password.msg %> </span>
+                           <% } %>
+                        <div class="flex itens-center">
+                            <input type="checkbox" value="true" name="emailOption" id="emailOption"><label for="emailOption">Email me with news and offers</label>
+                        </div>
+                    </div>
+                    <div class="shippingInfo">
+
+                        <h2>Address Information</h2>
+                        <div class="flex">
+                            <select class="col-12" name="country" id="country" value="<%= locals?.old?.country || old?.country %>">
+                                <option>Country/region</option>
+                                <option value="AU">Australia</option>
+                                <option value="BR">Brazil</option>
+                                <option value="FRA">France</option>
+                                <option value="ITA">Italy</option>
+                                <option value="JA">Japan</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="PT">Portugal</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <% if (locals.errors && errors.country) { %>
+                                    <span class="error"> <%= errors.country.msg %> </span>
+                                   <% } %>
+                            </select>
+                        </div>
+                        <div class="flex">
+                            <input class="col-6" type="text" id="firstname" name="shipping_first_name" placeholder="First Name" value="<%= locals?.old?.shipping_first_name || old?.shipping_first_name %>">
+                            <% if (locals.errors && errors.shipping_first_name) { %>
+                                <span class="error"> <%= errors.shipping_last_name.msg %> </span>
+                               <% } %>
+                            <input class="col-6" type="text" id="surname" name="shipping_last_name" placeholder="Last Name" value="<%= locals?.old?.shipping_last_name || old?.shipping_last_name %>">
+                            <% if (locals.errors && errors.shipping_last_name) { %>
+                                <span class="error"> <%= errors.shipping_last_name.msg %> </span>
+                               <% } %>
+                        </div>
+                        <div class="flex">
+                            <input class="col-12" type="text" id="address" name="address_line1" placeholder="Address Line 1" value="<%= locals?.old?.address_line1 || old?.address_line1 %>">
+                            <% if (locals.errors && errors.address_line1) { %>
+                                <span class="error"> <%= errors.address_line1.msg %> </span>
+                               <% } %>
+                        </div>
+                        <div class="flex">
+                            <input class="col-12" type="text" id="address2" name="address_line2" placeholder="Address Line 2 (optional)" value="<%= locals?.old?.address_line2 || old?.address_line2 %>">
+                        </div>
+                        <div class="flex">
+                            <input class="col-4" type="text" id="suburb" name="suburb_city" placeholder="Suburb/City" value="<%= locals?.old?.suburb_city || old?.suburb_city %>">
+                            <% if (locals.errors && errors.suburb_city) { %>
+                                <span class="error"> <%= errors.suburb_city.msg %> </span>
+                               <% } %>
+                            <input class="col-4" type="text" id="state" name="state_territory" placeholder="State/territory" value="<%= locals?.old?.state_territory || old?.state_territory %>">
+                            <% if (locals.errors && errors.state_territory) { %>
+                                <span class="error"> <%= errors.state_territory.msg %> </span>
+                               <% } %>
+                            <input class="col-4" type="number" id="postcode" name="postcode" placeholder="Postcode" value="<%= locals?.old?.postcode || old?.postcode %>">
+                            <% if (locals.errors && errors.postcode) { %>
+                                <span class="error"> <%= errors.postcode.msg %> </span>
+                               <% } %>
+                        </div>
+                        <div class="flex">
+                            <input class="col-12" type="number" id="phone" name="phone" placeholder="Phone" value="<%= locals?.old?.phone || old?.phone %>">
+                            <% if (locals.errors && errors.phone) { %>
+                                <span class="error"> <%= errors.phone.msg %> </span>
+                               <% } %>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <a href="/login">
+                            <button type="submit" class="btn btn-tp1">CREATE ACCOUNT</button>
+                        </a>                  
+                    </div>
+                </form>
+            </div>
+        </main>
+        <%- include('partials/footer') %>
+</body>
+</html>

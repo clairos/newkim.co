@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/login.css">
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <div class="box">
+            <img src="/img/account.png" alt="account icon">
+            <div class="login">
+                <form action="/login" method="POST">
+                    <input class="col-4" type="email" value="<%= locals.old&&old.email%>" id="email" name="email" placeholder="E-mail Address"><br>
+                    <input class="col-4" type="password"  value="<%= locals.old&&old.password%>" id="password" name="password" placeholder="Password">
+                    <% if (locals.error) { %>
+                        <div><span class="error"> <%= error.message %> </span></div>
+                    <% } %>
+                    <div class="flex itens-center">
+                        <div class="remember">
+                            <input type="checkbox" name="remember" id="remember"><label for="remember">Remember me</label>
+                        </div>
+                    
+                        <a href="/forgot-password">Forgot your password?</a>
+                    </div>
+                    <div class="buttons">
+                        <a href="/profile">
+                            <button class="btn btn-tp1" type="submit">LOGIN</button>
+                        </a>
+                    </div>
+                </form>
+            <div class="register" >
+                <a href="/register">Don't have an account?</a>
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap');
+
+/*-- CORES --
+Branco #E4E3DF
+Cinza #AAAAAA
+Preto #020B0F */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 3rem;
+    height: 100vh;
+}
+
+.gif img {
+    width: 500px;
+    filter: saturate(0.8);
+}
+
+.error h1 {
+    font-weight: bolder;
+}
+
+.btn {
+    position: relative;
+    width: 145px;
+    height: 40px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn-tp1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 0%;
+    height: 100%;
+    transition: width .4s ease-in-out;
+    background-color: white;
+    z-index: -1;
+}
+
+.btn-tp1:hover {
+    background-color: #020B0F;
+    border: solid 1px #020B0F;
+    text-shadow: 0px 0.3px 0.3px rgba(2, 11, 15, 1);
+    color: #020B0F;
+}
+
+.btn-tp1:hover::before {
+    width: 100%;
+}
+
+/* --- I ----- AJUSTE TAMANHO TELAS ----- */
+@media screen and (max-width: 920px) {
+    .box {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gif img {
+        width: 70vw;
+    }
+
+    .error {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+    }
+}   
+
+@media screen and (max-width: 380px) {
+    .error h1 {
+        font-size: 1.5em;
+    }
+}
+/* --- F ----- AJUSTE TAMANHO TELAS ----- */
