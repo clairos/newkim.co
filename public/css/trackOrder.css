@@ -282,7 +282,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #ececec;
     padding: 25px;
     border-radius: 7px;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.25);
@@ -331,7 +331,7 @@ main {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #AAAAAA;
+    background-color: #ececec;
     z-index: -1;
 }
 
@@ -354,7 +354,7 @@ main {
     width: 0%;
     height: 100%;
     transition: width .4s ease-in-out;
-    background-color: #AAAAAA;
+    background-color: #ececec;
     z-index: -1;
 }
 
