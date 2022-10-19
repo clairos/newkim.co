@@ -33,6 +33,23 @@ CREATE TABLE clients(
     administrator TINYINT UNSIGNED NOT NULL
 );
 
+
+CREATE TABLE cart(
+	id_cart INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_client INT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_client) REFERENCES clients(id_client)
+);
+
+CREATE TABLE cart_products(
+	id_cart_products INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_product INT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_product) REFERENCES products(id_product),
+    id_cart INT UNSIGNED NOT NULL,
+    FOREIGN KEY (id_cart) REFERENCES cart(id_cart),
+    quantity INT UNSIGNED NOT NULL,
+    size INT(2) UNSIGNED NOT NULL
+);
+
 CREATE TABLE orders(
 	id_order INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
     order_code VARCHAR(6) NOT NULL, 
@@ -50,22 +67,6 @@ CREATE TABLE order_products(
     FOREIGN KEY (id_product) REFERENCES products(id_product),
     id_order INT UNSIGNED NOT NULL, 
     FOREIGN KEY (id_order) REFERENCES orders(id_order)
-);
-
-CREATE TABLE cart(
-	id_cart INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    id_client INT UNSIGNED NOT NULL,
-    FOREIGN KEY (id_client) REFERENCES clients(id_client)
-);
-
-CREATE TABLE cart_products(
-	id_cart_products INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    id_product INT UNSIGNED NOT NULL,
-    FOREIGN KEY (id_product) REFERENCES products(id_product),
-    id_cart INT UNSIGNED NOT NULL,
-    FOREIGN KEY (id_cart) REFERENCES cart(id_cart),
-    quantity INT UNSIGNED NOT NULL,
-    size INT(2) UNSIGNED NOT NULL
 );
 
 -- CASO NECESSITE ALTERAR AS TABELAS QUE JÁ HAVIAM SIDO CRIADAS
