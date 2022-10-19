@@ -17,6 +17,13 @@ const ProfileController = {
         
         // res.json(clientInfo);
         res.render('profile', { clientInfo });
+    },
+
+    logout: (req, res) => {
+        req.session.destroy();
+        res.clearCookie("user");
+        // res.clearCookie("admin");
+        res.redirect("/login");
     }
 }
 

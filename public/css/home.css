@@ -125,19 +125,12 @@ body {
 .nav {
     padding: 0;
     /* margin: 0 20px; */
-    transition: 0.3s ease;
     display: none;
-    position: absolute;
+    /* position: absolute; */
     background: #E4E3DF;
     width: 14vw;
     text-align: center;
 }
-
-/* .menu-bg {
-    top: 0;
-    left: 0;
-    position: absolute;
-} */
 
 #menu-bar {
     top: 0px;
@@ -154,30 +147,6 @@ body {
 
 #menu-bar {
     z-index: 2;
-}
-
-.change-bg {
-    width: 550px;
-    height: 540px;
-    transform: translate(-60%, -30%);
-
-}
-
-.change .bar {
-    background-color: #E4E3DF;
-
-}
-
-.change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-}
-
-.change #bar2 {
-    opacity: 0;
 }
 
 .change {
