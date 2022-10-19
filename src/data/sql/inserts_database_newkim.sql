@@ -3,7 +3,7 @@ VALUES
     ('Voluminous Silk Midi Dress', 249.00, 'Pink & Yellow','1-dress.jpeg', '1-model-front-dress.jpeg', '1-model-front-dress-detail.jpeg','Voluminous long sleeve midi dress - pink and yellow with flowers', 'otherstories', 1, 'Dress'),
     ('Sailor Collar Silk Blouse', 189.00, 'Blue & Yellow','2-blouse.jpeg', '2-model-front-blouse.jpeg', '2-model-back-blouse-detail.jpeg','Short sleeves sailor collar silk blouse - blue and yellow with little flowers', 'otherstories', 1, 'Top'),
     ('Wide Printed Silk Trousers', 199.00, 'Blue & Yellow','3-trousers.jpeg', '3-model-front-trousers.jpeg', '3-model-side-trousers-detail.jpeg','Wide printed silk trousers - blue and yellow print', 'otherstories', 1, 'Bottom'),
-    ('Strappy Midi Dress', 219.00, 'Pink','4-dress.jpeg', '4-model-front-dress.jpeg', '1-model-front-dress-detail.jpeg','Strappy midi dress - pink and a large green bar at the bottom', 'otherstories', 1, 'Dress'),
+    ('Strappy Midi Dress', 219.00, 'Pink','4-dress.jpeg', '4-model-front-dress.jpeg', '4-model-front-dress-detail.jpeg','Strappy midi dress - pink and a large green bar at the bottom', 'otherstories', 1, 'Dress'),
     ('Voluminous Jacquard Mini Dress', 149.00, 'White Print','5-dress.jpeg', '5-model-front-dress.jpeg', '5-model-side-dress.jpeg','Voluminous large strap mini dress - white print', 'otherstories', 0, 'Dress'),
     ('Bow Strap Silk Midi Dress', 219.00, 'Black','6-dress.jpeg', '6-model-front-dress.jpeg', '6-model-side-dress-detail.jpeg','Bow strap silk midi dress - black', 'otherstories', 0, 'Dress'),
     ('Whimsical Hair Clip Set', 15.00, 'Pink & Yellow', '7-hairpin.jpeg', '7-model-hairpin.jpeg', ' ', 'Whimsical hair clip set - pink/green and yellow/white', 'otherstories', 0, 'Acessories'),
